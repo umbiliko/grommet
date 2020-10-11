@@ -3,12 +3,10 @@ import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 import { cleanup, render } from '@testing-library/react';
 
-import { hpe as hpeTheme } from 'hercules-theme-theme-hpe';
-
 import { Hercules } from '..';
 import { Heading } from '../../Heading';
 import { AnnounceContext, ResponsiveContext } from '../../../contexts';
-import { microfocus } from '../../../themes/grommet';
+import { microfocus } from '../../../themes';
 
 const TestAnnouncer = ({ announce }) => {
   React.useEffect(() => announce('hello', 'assertive'));
@@ -56,13 +54,6 @@ describe('Hercules', () => {
 
   test('hercules-theme theme', () => {
     const component = renderer.create(<Hercules theme={microfocus} />);
-    expect(component.toJSON()).toMatchSnapshot();
-  });
-
-  test('hpe theme', () => {
-    const component = renderer.create(
-      <Hercules theme={hpeTheme}>Hercules App</Hercules>,
-    );
     expect(component.toJSON()).toMatchSnapshot();
   });
 

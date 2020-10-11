@@ -3,11 +3,11 @@ import pick from '../../../utils/pick';
 import { FlatButtonStyling } from './styling';
 
 const flat = ({ style }: FlatButtonStyling) => css`
-  border-style: ${style.borderStyle};
+  border-style: ${style.border.style};
   ${() =>
-    style.borderColor
+    style.border.color
       ? css`
-          border-color: ${pick(style.borderColor)};
+          border-color: ${pick(style.border.color)};
         `
       : css``};
   font-size: ${style.fontSize};

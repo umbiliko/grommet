@@ -1,13 +1,16 @@
 import { css } from 'styled-components';
 import { PartialThemeGenerator } from '.';
 import dropdownListItem from '../quantum-ux/dropdown-list-item';
+import { backgroundColor } from '../utils/css';
 import pick from '../utils/pick';
 
 export const select = {
   drop: {
-    backgroundColor: {
-      dark: dropdownListItem.backgroundColorDark,
-      light: dropdownListItem.backgroundColor,
+    background: {
+      color: {
+        dark: dropdownListItem.backgroundColorDark,
+        light: dropdownListItem.backgroundColor,
+      },
     },
     color: {
       dark: dropdownListItem.fontColorHoverDark,
@@ -15,9 +18,11 @@ export const select = {
     },
 
     hover: {
-      backgroundColor: {
-        dark: dropdownListItem.backgroundColorHoverDark,
-        light: dropdownListItem.backgroundColorHover,
+      background: {
+        color: {
+          dark: dropdownListItem.backgroundColorHoverDark,
+          light: dropdownListItem.backgroundColorHover,
+        },
       },
       color: {
         dark: dropdownListItem.fontColorHoverDark,
@@ -27,9 +32,11 @@ export const select = {
   },
 
   button: {
-    backgroundColor: {
-      dark: 'black',
-      light: 'white',
+    background: {
+      color: {
+        dark: 'black',
+        light: 'white',
+      },
     },
     borderRadius: 0,
     fontSize: '16px',
@@ -49,9 +56,11 @@ export const select = {
       },
     },
     primary: {
-      backgroundColor: {
-        dark: dropdownListItem.backgroundColorHoverDark,
-        light: dropdownListItem.backgroundColorHover,
+      background: {
+        color: {
+          dark: dropdownListItem.backgroundColorHoverDark,
+          light: dropdownListItem.backgroundColorHover,
+        },
       },
       color: {
         dark: dropdownListItem.fontColorHoverDark,
@@ -59,9 +68,11 @@ export const select = {
       },
     },
     value: {
-      backgroundColor: {
-        dark: dropdownListItem.backgroundColorHoverDark,
-        light: dropdownListItem.backgroundColorHover,
+      background: {
+        color: {
+          dark: dropdownListItem.backgroundColorHoverDark,
+          light: dropdownListItem.backgroundColorHover,
+        },
       },
       color: {
         dark: dropdownListItem.fontColorHoverDark,
@@ -74,7 +85,7 @@ export const select = {
 export type SelectTheme = typeof select;
 
 const buttonStyle = css`
-  background-color: ${select.button.backgroundColor};
+  background-color: ${backgroundColor(select.button)};
   text-transform: ${select.button.textTransform};
   > div {
     padding: 0;
@@ -93,13 +104,13 @@ const buttonStyle = css`
 const buttonHoverStyle = css`
   &:hover,
   &:active {
-    background-color: ${pick(select.button.primary.backgroundColor)};
+    background-color: ${backgroundColor(select.button.primary)};
     color: ${pick(select.button.primary.color)};
   }
 `;
 
 const buttonPrimaryStyle = css`
-  background-color: ${pick(select.button.primary.backgroundColor)};
+  background-color: ${backgroundColor(select.button.primary)};
   color: ${pick(select.button.primary.color)};
 `;
 
@@ -107,7 +118,7 @@ const buttonValueStyle = css`
   > div {
     &:hover,
     &:active {
-      background-color: ${pick(select.button.value.backgroundColor)};
+      background-color: ${backgroundColor(select.button.value)};
       color: ${pick(select.button.value.color)};
     }
   }
@@ -116,7 +127,7 @@ const buttonValueStyle = css`
 const dropStyle = css`
   &:hover,
   &:active {
-    background-color: ${pick(select.drop.hover.backgroundColor)};
+    background-color: ${backgroundColor(select.drop.hover)};
     color: ${pick(select.drop.hover.color)};
   }
 `;

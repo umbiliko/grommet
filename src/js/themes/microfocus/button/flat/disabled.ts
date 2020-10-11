@@ -10,7 +10,7 @@ const disabled = (
   disabled
     ? css`
         color: ${pick(disabled.color)};
-        background-color: ${pick(disabled.backgroundColor)};
+        background-color: ${pick(disabled.background.color)};
         box-shadow: ${pick(disabled.boxShadow)};
       `
     : css``;

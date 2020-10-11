@@ -1,5 +1,5 @@
 import { storiesOf } from '@storybook/react';
-import { Hercules as GrommetIcon } from 'grommet-icons';
+import { Grommet as GrommetIcon } from 'grommet-icons';
 import { Anchor, Box, Footer, Hercules, Main, microfocus, Text } from 'hercules-theme';
 import React from 'react';
 import styled from 'styled-components';

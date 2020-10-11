@@ -71,11 +71,11 @@ const colors = {
   },
   brand: brandColor,
   control: {
-    dark: 'accent-1',
+    dark: 'accent-4',
     light: 'brand',
   },
   focus: focusColor,
-  'graph-0': 'accent-1',
+  'graph-0': 'accent-4',
   'graph-1': 'neutral-1',
   'graph-2': 'neutral-2',
   'graph-3': 'neutral-3',

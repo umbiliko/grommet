@@ -1,3 +1,4 @@
+import { rgba } from 'polished';
 import { css } from 'styled-components';
 import { PartialThemeGenerator } from '.';
 import color from '../quantum-ux/color';
@@ -10,10 +11,16 @@ const layer: PartialThemeGenerator<'layer'> = ({
 }) => {
   return {
     layer: {
-      overlay: {
-        background: layerOverlayBackgroundColor,
+      background: {
+        dark: color.dark,
+        light: color.light
       },
-      background: color.light,
+      overlay: {
+        background: {
+          dark: rgba(48, 48, 48, 0.5),
+          light: layerOverlayBackgroundColor,
+        },
+      },
       extend: css`
         > div:nth-child(2) {
           border: none;

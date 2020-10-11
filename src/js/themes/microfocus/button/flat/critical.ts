@@ -2,13 +2,15 @@ import buttonDivider from '../../../quantum-ux/button-divider';
 import buttonFlat from '../../../quantum-ux/button-flat';
 import { undefinedColor } from '../../colors';
 import { normalize } from '../../../utils/pick';
-import defaultStyle, { FlatButtonStyle } from './default';
+import button, { FlatButtonStyle } from './index';
+import { deepMerge } from 'hercules-theme/utils';
 
-const criticalStyle: FlatButtonStyle = {
-  ...defaultStyle,
-  backgroundColor: {
-    dark: buttonFlat.backgroundColorWarningDark,
-    light: buttonFlat.backgroundColorWarning,
+const criticalStyle: FlatButtonStyle = deepMerge({ } as any, button, {
+  background: {
+    color: {
+      dark: buttonFlat.backgroundColorWarningDark,
+      light: buttonFlat.backgroundColorWarning,
+    },
   },
   color: {
     dark: buttonFlat.colorWarningDark,
@@ -16,9 +18,11 @@ const criticalStyle: FlatButtonStyle = {
   },
 
   active: {
-    backgroundColor: {
-      dark: buttonFlat.backgroundColorWarningActiveDark,
-      light: buttonFlat.backgroundColorWarningActive,
+    background: {
+      color: {
+        dark: buttonFlat.backgroundColorWarningActiveDark,
+        light: buttonFlat.backgroundColorWarningActive,
+      },
     },
     color: {
       dark: buttonFlat.colorWarningActiveDark,
@@ -90,6 +94,6 @@ const criticalStyle: FlatButtonStyle = {
       color: undefinedColor,
     },
   },
-};
+});
 
 export default criticalStyle;

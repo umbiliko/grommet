@@ -207,9 +207,11 @@ export const navigationPillsExpander = {
 };
 
 export const navigationPillsHighlight = {
-  backgroundColor: {
-    dark: _navigationPillsHighlight.backgroundColorDark,
-    light: _navigationPillsHighlight.backgroundColor,
+  background: {
+    color: {
+      dark: _navigationPillsHighlight.backgroundColorDark,
+      light: _navigationPillsHighlight.backgroundColor,
+    },
   },
   content: _navigationPillsHighlight.content,
   display: _navigationPillsHighlight.display,

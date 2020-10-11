@@ -6,6 +6,7 @@ import radioButtonControlSize from '../quantum-ux/radio-button-control-size';
 import radioButtonSize from '../quantum-ux/radio-button-size';
 import radioLabel from '../quantum-ux/radio-label';
 import radioTick from '../quantum-ux/radio-tick';
+import { backgroundColor, borderColor } from '../utils/css';
 import pick from '../utils/pick';
 
 export const radioButton = {
@@ -26,13 +27,17 @@ export const radioButton = {
   innerHeight: radioButtonSize,
 
   focus: {
-    backgroundColor: {
-      dark: radio.backgroundColorFocusDark,
-      light: radio.backgroundColorFocus,
+    background: {
+      color: {
+        dark: radio.backgroundColorFocusDark,
+        light: radio.backgroundColorFocus,
+      },
     },
-    borderColor: {
-      dark: radio.borderColorFocusDark,
-      light: radio.borderColorFocus,
+    border: {
+      color: {
+        dark: radio.borderColorFocusDark,
+        light: radio.borderColorFocus,
+      },
     },
     boxShadow: {
       dark: radio.boxShadowFocusDark,
@@ -41,13 +46,17 @@ export const radioButton = {
   },
 
   hover: {
-    backgroundColor: {
-      dark: radio.backgroundColorHoverDark,
-      light: radio.backgroundColorHover,
+    background: {
+      color: {
+        dark: radio.backgroundColorHoverDark,
+        light: radio.backgroundColorHover,
+      },
     },
-    borderColor: {
-      dark: radio.borderColorHoverDark,
-      light: radio.borderColorHover,
+    border: {
+      color: {
+        dark: radio.borderColorHoverDark,
+        light: radio.borderColorHover,
+      },
     },
     color: {
       dark: radioLabel.colorHoverDark,
@@ -85,7 +94,7 @@ export const radioButton = {
 export type RadioButtonTheme = typeof radioButton;
 
 const baseStyle = css`
-  border-color: ${pick(radioButton.borderColor)};
+  border-color: ${borderColor(radioButton)};
   color: ${pick(radioButton.color)};
 
   &:hover {
@@ -93,7 +102,7 @@ const baseStyle = css`
   }
 
   input&:checked {
-    border-color: ${pick(radioButton.hover.borderColor)};
+    border-color: ${borderColor(radioButton.hover)};
   }
 
   div {
@@ -113,7 +122,7 @@ const baseStyle = css`
   }
 
   input&:focus {
-    border-color: ${pick(radioButton.focus.borderColor)};
+    border-color: ${borderColor(radioButton.focus)};
     box-shadow: ${pick(radioButton.focus.boxShadow)};
   }
 
@@ -121,8 +130,8 @@ const baseStyle = css`
     input&:focus {
       animation: ${radioButton.checked.animation};
       box-shadow: ${pick(radioButton.focus.boxShadow)};
-      border-color: ${pick(radioButton.focus.borderColor)};
-      background-color: ${pick(radioButton.focus.backgroundColor)};
+      border-color: ${borderColor(radioButton.focus)};
+      background-color: ${backgroundColor(radioButton.focus)};
       input&:after {
         animation: ${radioButton.tick.checked.animation};
       }
@@ -133,8 +142,8 @@ const baseStyle = css`
 
 const notDisabledStyle = css`
   input&:hover {
-    border-color: ${pick(radioButton.hover.borderColor)};
-    background-color: ${pick(radioButton.hover.backgroundColor)};
+    border-color: ${borderColor(radioButton.hover)};
+    background-color: ${backgroundColor(radioButton.hover)};
   }
 `;
 

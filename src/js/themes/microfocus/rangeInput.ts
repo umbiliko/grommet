@@ -3,17 +3,22 @@ import { PartialThemeGenerator } from '.';
 import sliderButton from '../quantum-ux/slider-button';
 import sliderHandle from '../quantum-ux/slider-handle';
 import sliderTrackOperated from '../quantum-ux/slider-track-operated';
+import { backgroundColor, borderColor } from '../utils/css';
 import pick from '../utils/pick';
 
 export const rangeInput = {
   thumb: {
-    backgroundColor: {
-      dark: '#000',
-      light: '#fff',
+    background: {
+      color: {
+        dark: '#000',
+        light: '#fff',
+      },
     },
-    borderColor: {
-      dark: '#fff',
-      light: '#000',
+    border: {
+      color: {
+        dark: '#fff',
+        light: '#000',
+      },
     },
     borderWidth: '2px',
     borderRadius: sliderHandle.borderRadius,
@@ -23,13 +28,17 @@ export const rangeInput = {
     zIndex: 10,
 
     active: {
-      backgroundColor: {
-        dark: sliderTrackOperated.backgroundColorDark,
-        light: sliderTrackOperated.backgroundColor,
+      background: {
+        color: {
+          dark: sliderTrackOperated.backgroundColorDark,
+          light: sliderTrackOperated.backgroundColor,
+        },
       },
-      borderColor: {
-        dark: sliderTrackOperated.backgroundColorDark,
-        light: sliderTrackOperated.backgroundColor,
+      border: {
+        color: {
+          dark: sliderTrackOperated.backgroundColorDark,
+          light: sliderTrackOperated.backgroundColor,
+        },
       },
       boxShadow: 'none',
       height: sliderHandle.baseSizeHover,
@@ -66,8 +75,8 @@ const extendThumb = css`
   border-radius: ${rangeInput.thumb.borderRadius};
   transition: ${sliderHandle.transition};
   border: ${rangeInput.thumb.borderWidth} solid
-    ${pick(rangeInput.thumb.borderColor)};
-  background-color: ${pick(rangeInput.thumb.backgroundColor)};
+    ${backgroundColor(rangeInput.thumb)};
+  background-color: ${backgroundColor(rangeInput.thumb)};
   top: ${rangeInput.thumb.top};
   z-index: ${rangeInput.thumb.zIndex};
   &:hover {
@@ -87,8 +96,8 @@ const extendThumb = css`
     top: ${rangeInput.thumb.active.top};
     box-shadow: ${rangeInput.thumb.active.boxShadow};
     border: ${rangeInput.thumb.borderWidth} solid
-      ${pick(rangeInput.thumb.active.borderColor)};
-    background-color: ${pick(rangeInput.thumb.active.backgroundColor)};
+      ${borderColor(rangeInput.thumb.active)};
+    background-color: ${backgroundColor(rangeInput.thumb.active)};
   }
 `;
 

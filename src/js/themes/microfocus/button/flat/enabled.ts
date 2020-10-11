@@ -1,11 +1,10 @@
 import { css } from 'styled-components';
-import { button } from '..';
 import { ButtonProps } from '../../../../components/Button';
 import pick from '../../../utils/pick';
 import { FlatButtonStyling } from './styling';
 
 export const enabled = (
-  { color, style: { active, focus, hover, ...style } }: FlatButtonStyling,
+  { color, style: { active, focus, hover, ...style } }: any,
   props: ButtonProps,
 ) => css`
   color: ${pick(style.color)};
@@ -45,7 +44,7 @@ export const enabled = (
   &:focus,
   &:focus:active {
     outline: 0;
-    transition: ${button.transition};
+    transition: ${style.transition};
   }
 
   &:hover,

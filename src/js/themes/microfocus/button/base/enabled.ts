@@ -10,7 +10,7 @@ interface StyledButtonProps extends Omit<ButtonProps, 'color'> {
 }
 
 export const enabled = (
-  { color, style: { active, focus, hover, ...style } }: BaseButtonStyling,
+  { color, style: { active, focus, hover, ...style } }: any,
   props: StyledButtonProps,
 ) => css`
   color: ${pick(style.color)};

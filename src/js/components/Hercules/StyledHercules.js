@@ -13,7 +13,7 @@ const StyledHercules = styled.div`
   ${props => !props.plain && baseStyle}
   ${props => props.full && fullStyle}
   ${props => props.theme.global.font.face}
-  ${props => props.theme.grommet.extend}
+  ${props => props.theme.hercules.extend}
   ${props =>
     props.cssVars &&
     Object.keys(props.theme.global.colors)

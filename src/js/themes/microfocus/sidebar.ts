@@ -25,16 +25,24 @@ const sidebarHerculesUX = {
     primary: colors.brand,
   },
   nav: {
-    backgroundColor: '#203037',
+    background: {
+      color: '#203037',
+    },
     fontWeight: 600,
     menu: {
-      backgroundColor: '#2e3f47',
+      background: {
+        color: '#2e3f47',
+      }
     },
     active: {
-      backgroundColor: '#1a4261',
+      background: {
+        color: '#1a4261',
+      }
     },
     hover: {
-      backgroundColor: '#1a4261',
+      background: {
+        color: '#1a4261',
+      }
     },
     item: {
       active: {
@@ -111,9 +119,12 @@ const sidebarQuantumUX = {
   },
 
   button: {
-    backgroundColor: normalize(color.light),
-    borderColor: normalize(color.neutral5),
-
+    background: {
+      color: normalize(color.light),
+    },
+    border: {
+      color: normalize(color.neutral5),
+    },
     icon: {
       stroke: normalize(color.darkest),
       height: icon.medium.height,
@@ -146,9 +157,11 @@ const sidebarQuantumUX = {
     padding: '20px 12px 20px 13px',
 
     hover: {
-      backgroundColor: {
-        dark: 'rgba(0,115,231,0.05)',
-        light: 'rgba(0,115,231,0.05)',
+      background: {
+        color: {
+          dark: 'rgba(0,115,231,0.05)',
+          light: 'rgba(0,115,231,0.05)',
+        },
       },
       color: {
         dark: '#000',

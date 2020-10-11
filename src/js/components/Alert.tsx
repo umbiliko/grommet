@@ -78,8 +78,8 @@ const BoxStyled = styled<React.ComponentType<AlertThemedProps>>(Box)`
     }
 
     return css`
-      background-color: ${pick(style.backgroundColor)};
-      border-radius: ${style.borderRadius};
+      background-color: ${pick(style.background.color)};
+      border-radius: ${style.border.radius};
       cursor: ${style.cursor};
       font-weight: ${style.fontWeight};
       margin-bottom: ${style.marginBottom};
@@ -89,7 +89,7 @@ const BoxStyled = styled<React.ComponentType<AlertThemedProps>>(Box)`
       min-height: ${style.minHeight};
 
       &:focus {
-        border-radius: ${style.borderRadius};
+        border-radius: ${style.border.radius};
       }
 
       svg {

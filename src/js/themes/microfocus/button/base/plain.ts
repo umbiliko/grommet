@@ -1,8 +1,8 @@
+import { deepMerge } from 'hercules-theme/utils';
 import button from '../../../quantum-ux/button';
 import buttonStyle from './button';
 
-export const plainStyle = {
-  ...buttonStyle,
+export const plainStyle = deepMerge({}, buttonStyle, {
   backgroundColor: {
     dark: button.backgroundColorDefaultDark,
     light: button.backgroundColorDefault,
@@ -87,7 +87,7 @@ export const plainStyle = {
       light: button.colorDefaultHover,
     },
   },
-};
+});
 
 export type BaseButtonStyle = typeof plainStyle;
 

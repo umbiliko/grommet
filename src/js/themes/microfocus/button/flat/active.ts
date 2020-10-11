@@ -8,7 +8,7 @@ const active = (
   props: ButtonProps,
 ) => css`
   color: ${pick(active.color)};
-  background-color: ${pick(active.backgroundColor)};
+  background-color: ${pick(active.background.color)};
   box-shadow: ${pick(active.boxShadow)};
 `;
 

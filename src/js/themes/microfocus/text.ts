@@ -39,9 +39,11 @@ export const text = {
   },
 
   code: {
-    backgroundColor: {
-      dark: _text.codeBackgroundColorDark,
-      light: _text.codeBackgroundColor,
+    background: {
+      color: {
+        dark: _text.codeBackgroundColorDark,
+        light: _text.codeBackgroundColor,
+      },
     },
   },
 

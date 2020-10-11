@@ -1,40 +1,40 @@
-import button from '../../../quantum-ux/button';
+import { deepMerge } from 'hercules-theme/utils';
+import _button from '../../../quantum-ux/button';
 import buttonDivider from '../../../quantum-ux/button-divider';
 import buttonFlat from '../../../quantum-ux/button-flat';
 import { normalize } from '../../../utils/pick';
-import defaultStyle, { FlatButtonStyle } from './default';
+import button, { FlatButtonStyle } from './index';
 
-export const successStyle: FlatButtonStyle = {
-  ...defaultStyle,
+export const successStyle: FlatButtonStyle = deepMerge({ } as any, button, {
   backgroundColor: {
-    dark: button.backgroundColorSuccessDark,
-    light: button.backgroundColorSuccess,
+    dark: _button.backgroundColorSuccessDark,
+    light: _button.backgroundColorSuccess,
   },
   borderColor: {
-    dark: button.borderColorSuccessDark,
-    light: button.borderColorSuccess,
+    dark: _button.borderColorSuccessDark,
+    light: _button.borderColorSuccess,
   },
   color: {
-    dark: button.colorSuccessDark,
-    light: button.colorSuccess,
+    dark: _button.colorSuccessDark,
+    light: _button.colorSuccess,
   },
 
   active: {
     backgroundColor: {
-      dark: button.backgroundColorSuccessActiveDark,
-      light: button.backgroundColorSuccessActive,
+      dark: _button.backgroundColorSuccessActiveDark,
+      light: _button.backgroundColorSuccessActive,
     },
     borderColor: {
-      dark: button.borderColorSuccessActiveDark,
-      light: button.borderColorSuccessActive,
+      dark: _button.borderColorSuccessActiveDark,
+      light: _button.borderColorSuccessActive,
     },
     boxShadow: {
-      dark: button.boxShadowSuccessActiveDark,
-      light: button.boxShadowSuccessActive,
+      dark: _button.boxShadowSuccessActiveDark,
+      light: _button.boxShadowSuccessActive,
     },
     color: {
-      dark: button.colorSuccessActiveDark,
-      light: button.colorSuccessActive,
+      dark: _button.colorSuccessActiveDark,
+      light: _button.colorSuccessActive,
     },
   },
 
@@ -55,45 +55,45 @@ export const successStyle: FlatButtonStyle = {
 
   focus: {
     backgroundColor: {
-      dark: button.backgroundColorSuccessFocusDark,
-      light: button.backgroundColorSuccessFocus,
+      dark: _button.backgroundColorSuccessFocusDark,
+      light: _button.backgroundColorSuccessFocus,
     },
     borderColor: {
-      dark: button.borderColorSuccessFocusDark,
-      light: button.borderColorSuccessFocus,
+      dark: _button.borderColorSuccessFocusDark,
+      light: _button.borderColorSuccessFocus,
     },
     boxShadow: {
       dark: buttonFlat.boxShadowFocusDark,
       light: buttonFlat.boxShadowFocus,
     },
     color: {
-      dark: button.colorSuccessFocusDark,
-      light: button.colorSuccessFocus,
+      dark: _button.colorSuccessFocusDark,
+      light: _button.colorSuccessFocus,
     },
   },
 
   hover: {
     backgroundColor: {
-      dark: button.backgroundColorSuccessHoverDark,
-      light: button.backgroundColorSuccessHover,
+      dark: _button.backgroundColorSuccessHoverDark,
+      light: _button.backgroundColorSuccessHover,
     },
     borderColor: {
-      dark: button.borderColorSuccessHoverDark,
-      light: button.borderColorSuccessHover,
+      dark: _button.borderColorSuccessHoverDark,
+      light: _button.borderColorSuccessHover,
     },
     boxShadow: {
-      dark: button.boxShadowSuccessHoverDark,
-      light: button.boxShadowSuccessHover,
+      dark: _button.boxShadowSuccessHoverDark,
+      light: _button.boxShadowSuccessHover,
     },
     color: {
-      dark: button.colorSuccessHoverDark,
-      light: button.colorSuccessHover,
+      dark: _button.colorSuccessHoverDark,
+      light: _button.colorSuccessHover,
     },
   },
 
   divider: {
     color: normalize(buttonDivider.colorSuccess),
   },
-};
+});
 
 export default successStyle;

@@ -83,7 +83,7 @@ jobs:
       - run:
           command: |
             git config --global user.name "Hercules Community Bot"
-            git config --global user.email "grommet@hpe.com"
+            git config --global user.email "hercules@microfocus.com"
             yarn release-stable
   publish:
     <<: *defaults

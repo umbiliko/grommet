@@ -27,7 +27,7 @@ ${(props: any) =>
   props.breadcrumbsBox &&
   css`
     font-size: ${breadcrumbs.fontSize};
-    background-color: ${breadcrumbs.backgroundColor};
+    background-color: ${breadcrumbs.background.color};
     border-radius: ${breadcrumbs.borderRadius};
     margin-bottom: ${breadcrumbs.marginBottom};
     padding: ${breadcrumbs.padding};

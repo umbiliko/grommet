@@ -1,88 +1,90 @@
-import { deepMerge } from 'grommet-icons/utils';
-import button from '../../../quantum-ux/button';
+import { deepMerge } from 'hercules-theme/utils';
+import _button from '../../../quantum-ux/button';
 import buttonDivider from '../../../quantum-ux/button-divider';
 import { normalize } from '../../../utils/pick';
-import defaultStyle from './default';
+import button from './button';
+
+const defaultStyle = button.default;
 
 const criticalStyle = deepMerge({}, defaultStyle, {
   backgroundColor: {
-    dark: button.backgroundColorWarningDark,
-    light: button.backgroundColorWarning,
+    dark: _button.backgroundColorWarningDark,
+    light: _button.backgroundColorWarning,
   },
   color: {
-    dark: button.colorWarningDark,
-    light: button.colorWarning,
+    dark: _button.colorWarningDark,
+    light: _button.colorWarning,
   },
   borderColor: {
-    dark: button.borderColorWarningDark,
-    light: button.borderColorWarning,
+    dark: _button.borderColorWarningDark,
+    light: _button.borderColorWarning,
   },
 
   active: {
     backgroundColor: {
-      dark: button.backgroundColorWarningActiveDark,
-      light: button.backgroundColorWarningActive,
+      dark: _button.backgroundColorWarningActiveDark,
+      light: _button.backgroundColorWarningActive,
     },
     color: {
-      dark: button.colorWarningActiveDark,
-      light: button.colorWarningActive,
+      dark: _button.colorWarningActiveDark,
+      light: _button.colorWarningActive,
     },
     borderColor: {
-      dark: button.borderColorWarningActiveDark,
-      light: button.borderColorWarningActive,
+      dark: _button.borderColorWarningActiveDark,
+      light: _button.borderColorWarningActive,
     },
     boxShadow: {
-      dark: button.boxShadowWarningActiveDark,
-      light: button.boxShadowWarningActive,
+      dark: _button.boxShadowWarningActiveDark,
+      light: _button.boxShadowWarningActive,
     },
   },
 
   disabled: {
     backgroundColor: {
-      dark: button.backgroundColorWarningDisabledDark,
-      light: button.backgroundColorWarningDisabled,
+      dark: _button.backgroundColorWarningDisabledDark,
+      light: _button.backgroundColorWarningDisabled,
     },
     color: {
-      dark: button.colorWarningDisabledDark,
-      light: button.colorWarningDisabled,
+      dark: _button.colorWarningDisabledDark,
+      light: _button.colorWarningDisabled,
     },
   },
 
   focus: {
     backgroundColor: {
-      dark: button.backgroundColorWarningFocusDark,
-      light: button.backgroundColorWarningFocus,
+      dark: _button.backgroundColorWarningFocusDark,
+      light: _button.backgroundColorWarningFocus,
     },
     color: {
-      dark: button.colorWarningFocusDark,
-      light: button.colorWarningFocus,
+      dark: _button.colorWarningFocusDark,
+      light: _button.colorWarningFocus,
     },
     borderColor: {
-      dark: button.backgroundColorWarningFocusDark,
-      light: button.backgroundColorWarningFocus,
+      dark: _button.backgroundColorWarningFocusDark,
+      light: _button.backgroundColorWarningFocus,
     },
     boxShadow: {
-      dark: button.boxShadowFocus,
-      light: button.boxShadowFocus,
+      dark: _button.boxShadowFocus,
+      light: _button.boxShadowFocus,
     },
   },
 
   hover: {
     backgroundColor: {
-      dark: button.backgroundColorWarningDark,
-      light: button.backgroundColorWarning,
+      dark: _button.backgroundColorWarningDark,
+      light: _button.backgroundColorWarning,
     },
     color: {
-      dark: button.colorWarningDark,
-      light: button.colorWarning,
+      dark: _button.colorWarningDark,
+      light: _button.colorWarning,
     },
     borderColor: {
-      dark: button.backgroundColorWarningHoverDark,
-      light: button.backgroundColorWarningHover,
+      dark: _button.backgroundColorWarningHoverDark,
+      light: _button.backgroundColorWarningHover,
     },
     boxShadow: {
-      dark: button.boxShadowWarningHoverDark,
-      light: button.boxShadowWarningHover,
+      dark: _button.boxShadowWarningHoverDark,
+      light: _button.boxShadowWarningHover,
     },
   },
 

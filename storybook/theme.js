@@ -20,7 +20,7 @@ export default create({
   inputTextColor: '#333333',
   inputBorderRadius: 4,
 
-  brandTitle: 'Everything UX',
-  brandImage: 'hercules-theme-logo.svg',
-  brandUrl: 'https://v2.grommet.io/',
+  brandTitle: 'Hercules',
+  brandImage: 'hercules-logo.svg',
+  brandUrl: 'https://hercules.io/',
 });

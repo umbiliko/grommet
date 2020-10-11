@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 
 import {
-  Hercules as GrommetIcon,
+  Grommet as GrommetIcon,
   FacebookOption,
   Instagram,
   Twitter,

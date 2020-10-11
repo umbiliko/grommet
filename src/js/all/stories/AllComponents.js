@@ -35,14 +35,9 @@ import {
   Video,
 } from 'hercules-theme';
 import { FormNext } from 'grommet-icons';
-import { microfocus, microfocus } from 'hercules-theme/themes';
+import { microfocus, grommet } from 'hercules-theme/themes';
 import { generate } from 'hercules-theme/themes/base';
 import { deepMerge } from 'hercules-theme/utils';
-import { hpe } from 'hercules-theme-theme-hpe';
-import { aruba } from 'hercules-theme-theme-aruba';
-import { hp } from 'hercules-theme-theme-hp';
-import { dxc } from 'hercules-theme-theme-dxc';
-import { v1 } from 'hercules-theme-theme-v1';
 
 const Node = ({ id, ...rest }) => (
   <Box
@@ -67,13 +62,8 @@ const connection = (fromTarget, toTarget, { color, ...rest } = {}) => ({
 });
 
 const themes = {
+  grommet,
   microfocus,
-  microfocus,
-  hpe,
-  aruba,
-  hp,
-  dxc,
-  v1,
 };
 
 const Components = () => {
@@ -84,7 +74,7 @@ const Components = () => {
   const [radioButton, setRadioButton] = useState('RadioButton 1');
   const [rangeSelector, setRangeSelector] = useState([1, 2]);
   const [themeMode, setThemeMode] = useState();
-  const [themeName, setThemeName] = useState('hercules-theme');
+  const [themeName, setThemeName] = useState('microfocus');
   const [background, setBackground] = useState(undefined);
   const [tabIndex, setTabIndex] = useState(0);
 

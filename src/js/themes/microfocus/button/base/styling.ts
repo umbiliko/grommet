@@ -1,16 +1,19 @@
 import { ButtonProps } from '../../../../components/Button';
 import { css } from 'styled-components';
-import accentStyle from './accent';
 import active from './active';
-import base from './button';
+import _button from './button';
 import criticalStyle from './critical';
-import defaultStyle from './default';
 import disabled from './disabled';
 import enabled from './enabled';
-import plainStyle from './plain';
-import primaryStyle from './primary';
-import secondaryStyle from './secondary';
+import button from './button';
 import successStyle from './success';
+import { deepMerge } from 'hercules-theme/utils';
+
+const accentStyle = deepMerge({ }, button, button.accent);
+const defaultStyle = deepMerge({ }, button, button.default);
+const plainStyle = button;
+const primaryStyle = deepMerge({ }, button, button.primary);
+const secondaryStyle = deepMerge({ }, button, button.secondary);
 
 export const ACCENT = 'accent';
 export const CRITICAL = 'critical';
@@ -37,39 +40,40 @@ export type ButtonColor =
 export type BaseButtonStyling =
   | {
       color: Accent;
-      style: typeof accentStyle;
+      style: any;
     }
   | {
       color: Critical;
-      style: typeof criticalStyle;
+      style: any;
     }
   | {
       color: Default;
-      style: typeof defaultStyle;
+      style: any;
     }
   | {
       color: Primary;
-      style: typeof primaryStyle;
+      style: any;
     }
   | {
       color: Secondary;
-      style: typeof secondaryStyle;
+      style: any;
     }
   | {
       color: Success;
-      style: typeof successStyle;
+      style: any;
     };
 
 export const baseStyling = ({ style }: BaseButtonStyling) => css`
-  border-color: ${style.borderColor};
+  border-color: ${style.border.color};
   border-style: solid;
-  border-width: ${base.borderWidth};
-  font-size: ${base.fontSize};
-  font-weight: ${base.fontWeight};
-  line-height: ${base.lineHeight};
-  letter-spacing: ${base.letterSpacing};
-  min-height: ${base.height};
-  text-transform: ${base.textTransform};
+  border-width: ${_button.border.width};
+  border-radius: ${_button.border.radius};
+  font-size: ${_button.fontSize};
+  font-weight: ${_button.fontWeight};
+  line-height: ${_button.lineHeight};
+  letter-spacing: ${_button.letterSpacing};
+  min-height: ${_button.height};
+  text-transform: ${_button.textTransform};
 `;
 
 export const stylize = (styling: BaseButtonStyling, props: ButtonProps) => [

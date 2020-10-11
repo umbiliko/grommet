@@ -6,9 +6,11 @@ import _breadcrumbsSeparation from '../quantum-ux/breadcrumbs-separation';
 import _mastheadBreadcrumbsLinks from '../quantum-ux/masthead-breadcrumbs-links';
 
 export const breadcrumbs = {
-  backgroundColor: {
-    dark: _breadcrumbs.backgroundColorDark,
-    light: _breadcrumbs.backgroundColor,
+  background: {
+    color: {
+      dark: _breadcrumbs.backgroundColorDark,
+      light: _breadcrumbs.backgroundColor,
+    },
   },
   borderRadius: _breadcrumbs.borderRadius,
   display: _breadcrumbs.display,

@@ -1,13 +1,15 @@
 import buttonDivider from '../../../quantum-ux/button-divider';
 import buttonFlat from '../../../quantum-ux/button-flat';
 import { normalize } from '../../../utils/pick';
-import defaultStyle, { FlatButtonStyle } from './default';
+import defaultStyle, { FlatButtonStyle } from './index';
 
 const accentStyle: FlatButtonStyle = {
   ...defaultStyle,
-  backgroundColor: {
-    dark: buttonFlat.backgroundColorAccentDark,
-    light: buttonFlat.backgroundColorAccent,
+  background: {
+    color: {
+      dark: buttonFlat.backgroundColorAccentDark,
+      light: buttonFlat.backgroundColorAccent,
+    },
   },
   color: {
     dark: buttonFlat.colorAccentDark,
@@ -15,9 +17,11 @@ const accentStyle: FlatButtonStyle = {
   },
 
   active: {
-    backgroundColor: {
-      dark: buttonFlat.backgroundColorAccentActiveDark,
-      light: buttonFlat.backgroundColorAccentActive,
+    background: {
+      color: {
+        dark: buttonFlat.backgroundColorAccentActiveDark,
+        light: buttonFlat.backgroundColorAccentActive,
+      },
     },
     boxShadow: {
       dark: buttonFlat.boxShadowAccentActiveDark,
@@ -30,9 +34,11 @@ const accentStyle: FlatButtonStyle = {
   },
 
   disabled: {
-    backgroundColor: {
-      dark: buttonFlat.backgroundColorAccentDisabledDark,
-      light: buttonFlat.backgroundColorAccentDisabled,
+    background: {
+      color: {
+        dark: buttonFlat.backgroundColorAccentDisabledDark,
+        light: buttonFlat.backgroundColorAccentDisabled,
+      },
     },
     boxShadow: {
       dark: buttonFlat.boxShadowAccentDisabledDark,
@@ -45,13 +51,17 @@ const accentStyle: FlatButtonStyle = {
   },
 
   focus: {
-    backgroundColor: {
-      dark: buttonFlat.backgroundColorAccentFocusDark,
-      light: buttonFlat.backgroundColorAccentFocus,
+    background: {
+      color: {
+        dark: buttonFlat.backgroundColorAccentFocusDark,
+        light: buttonFlat.backgroundColorAccentFocus,
+      },
     },
-    borderColor: {
-      dark: buttonFlat.backgroundColorAccentFocusDark,
-      light: buttonFlat.backgroundColorAccentFocus,
+    border: {
+      color: {
+        dark: buttonFlat.backgroundColorAccentFocusDark,
+        light: buttonFlat.backgroundColorAccentFocus,
+      },
     },
     boxShadow: {
       dark: buttonFlat.boxShadowFocusDark,
@@ -64,13 +74,17 @@ const accentStyle: FlatButtonStyle = {
   },
 
   hover: {
-    backgroundColor: {
-      dark: buttonFlat.backgroundColorAccentDark,
-      light: buttonFlat.backgroundColorAccent,
+    background: {
+      color: {
+        dark: buttonFlat.backgroundColorAccentDark,
+        light: buttonFlat.backgroundColorAccent,
+      },
     },
-    borderColor: {
-      dark: buttonFlat.backgroundColorAccentHoverDark,
-      light: buttonFlat.backgroundColorAccentHover,
+    border: {
+      color: {
+        dark: buttonFlat.backgroundColorAccentHoverDark,
+        light: buttonFlat.backgroundColorAccentHover,
+      },
     },
     boxShadow: {
       dark: buttonFlat.boxShadowAccentHoverDark,

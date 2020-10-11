@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { microfocus, Box, Button, Herculesom 'hercules-theme';
+import { microfocus, Box, Button, Hercules } from 'hercules-theme';
 
 const BasicButtons = props => (
   <Hercules theme={microfocus}>

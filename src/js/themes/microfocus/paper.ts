@@ -3,9 +3,11 @@ import _paper from '../quantum-ux/paper';
 
 export const paper = {
   depth0: {
-    backgroundColor: {
-      dark: _paper.backgroundColorDepth0Dark,
-      light: _paper.backgroundColorDepth0,
+    background: {
+      color: {
+        dark: _paper.backgroundColorDepth0Dark,
+        light: _paper.backgroundColorDepth0,
+      },
     },
     boxShadow: {
       dark: _paper.boxShadowDepth0Dark,
@@ -15,9 +17,11 @@ export const paper = {
     padding: _paper.paddingDepth0,
   },
   depth1: {
-    backgroundColor: {
-      dark: _paper.backgroundColorDepth1Dark,
-      light: _paper.backgroundColorDepth1,
+    background: {
+      color: {
+        dark: _paper.backgroundColorDepth1Dark,
+        light: _paper.backgroundColorDepth1,
+      },
     },
     boxShadow: {
       dark: _paper.boxShadowDepth1Dark,

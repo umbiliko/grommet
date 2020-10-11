@@ -1,8 +1,13 @@
 import { normalize } from '../utils/pick';
 
 export default interface ButtonColorScheme {
-  backgroundColor: normalize;
-  borderColor: normalize;
+  background: {
+    color: normalize;
+  },
+  border: {
+    color: normalize;
+    [key: string]: any;
+  };
   boxShadow: normalize;
   color: normalize;
 }

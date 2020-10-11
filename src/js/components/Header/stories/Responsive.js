@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 
 import { Hercules, Header, Anchor, Box, ResponsiveContext, Menu } from 'hercules-theme';
-import { Hercules as GrommetIcon, Menu as MenuIcon } from 'grommet-icons';
+import { Grommet as GrommetIcon, Menu as MenuIcon } from 'grommet-icons';
 import { microfocus } from 'hercules-theme/themes';
 
 const Responsive = () => (

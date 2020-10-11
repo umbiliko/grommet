@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { Gremlin, Hercules } from 'grommet-icons';
+import { Gremlin, Grommet as GrommetIcon } from 'grommet-icons';
 import { Hercules, Box, RangeSelector, Stack, Text } from 'hercules-theme';
 import { microfocus } from 'hercules-theme/themes';
 import { deepMerge } from 'hercules-theme/utils';

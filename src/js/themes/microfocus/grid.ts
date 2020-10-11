@@ -1,5 +1,6 @@
 import { css } from 'styled-components';
 import { ExtendType, PartialThemeGenerator } from '.';
+import { backgroundColor, borderColor } from '../utils/css';
 import pick from '../utils/pick';
 import { sidebar } from './sidebar';
 
@@ -25,11 +26,11 @@ const extend = css<{ sidebarGrid: boolean }>`
         width: 32px;
         top: 50%;
         left: 93%;
-        background-color: ${pick(sidebar.button.backgroundColor)};
+        background-color: ${backgroundColor(sidebar.button)};
         z-index: 10;
         border-radius: 16px;
         border: solid 1px;
-        border-color: ${pick(sidebar.button.borderColor)};
+        border-color: ${borderColor(sidebar.button)};
         svg {
           stroke: ${pick(sidebar.button.icon.stroke)};
           height: ${sidebar.button.icon.height};
@@ -97,7 +98,7 @@ const extend = css<{ sidebarGrid: boolean }>`
             }
           }
           &:hover {
-            background-color: ${pick(sidebar.menu.hover.backgroundColor)};
+            background-color: ${backgroundColor(sidebar.menu.hover)};
             color: ${pick(sidebar.menu.hover.color)};
           }
           &.active {

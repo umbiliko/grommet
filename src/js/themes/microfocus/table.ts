@@ -3,6 +3,7 @@ import { PartialThemeGenerator } from '.';
 import _table from '../quantum-ux/table';
 import _tableCell from '../quantum-ux/table-cell';
 import _tableHeader from '../quantum-ux/table-header';
+import { backgroundColor } from '../utils/css';
 import pick from '../utils/pick';
 import { text } from './text';
 
@@ -17,15 +18,19 @@ export const table = {
 
 export const tableCell = {
   hover: {
-    backgroundColor: {
-      dark: _tableCell.backgroundColorHoverDark,
-      light: _tableCell.backgroundColorHover,
+    background: {
+      color: {
+        dark: _tableCell.backgroundColorHoverDark,
+        light: _tableCell.backgroundColorHover,
+      },
     },
   },
   focus: {
-    backgroundColor: {
-      dark: _tableCell.backgroundColorFocusDark,
-      light: _tableCell.backgroundColorFocus,
+    background: {
+      color: {
+        dark: _tableCell.backgroundColorFocusDark,
+        light: _tableCell.backgroundColorFocus,
+      },
     },
   },
 };
@@ -60,10 +65,10 @@ const generator: PartialThemeGenerator<'table'> = ({
         }
         tbody > tr {
           &:hover {
-            background-color: ${pick(tableCell.hover.backgroundColor)};
+            background-color: ${backgroundColor(tableCell.hover)};
           }
           &:focus {
-            background-color: ${pick(tableCell.focus.backgroundColor)};
+            background-color: ${backgroundColor(tableCell.focus)};
           }
         }
       `,

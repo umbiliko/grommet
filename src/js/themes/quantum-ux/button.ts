@@ -148,7 +148,7 @@ export default {
   backgroundColorPrimaryActiveDisabled: '#1668c1',
   borderColorPrimaryActiveDisabled: 'rgba(0,0,0,0)',
   zIndexPrimaryGroup: '0',
-  colorPrimaryDark: 'white',
+  colorPrimaryDark: '#ffffff',
   backgroundColorPrimaryDark: '#1f91ff',
   borderColorPrimaryDark: '#1f91ff',
   colorPrimaryHoverDark: 'white',

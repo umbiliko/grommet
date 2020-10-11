@@ -1,3 +1,4 @@
+import { deepMerge } from 'hercules-theme/utils';
 import { ButtonProps } from '../../../../components/Button';
 import {
   ACCENT,
@@ -6,18 +7,19 @@ import {
   DEFAULT,
   PRIMARY,
   SECONDARY,
-  SUCCESS,
+  SUCCESS
 } from '../base/styling';
 import accentStyle from './accent';
 import active from './active';
 import criticalStyle from './critical';
-import defaultStyle, { FlatButtonStyle } from './default';
 import disabled from './disabled';
 import enabled from './enabled';
 import flat from './flat';
-import primaryStyle from './primary';
-import secondaryStyle from './secondary';
+import defaultStyle, { FlatButtonStyle } from './index';
 import successStyle from './success';
+
+const primaryStyle = deepMerge({}, defaultStyle, defaultStyle.primary);
+const secondaryStyle = deepMerge({}, defaultStyle, defaultStyle.secondary);
 
 export interface FlatButtonStyling {
   color: ButtonColor;

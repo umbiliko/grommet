@@ -1,8 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-
 import { microfocus, Hercules, Box, Text } from 'hercules-theme';
-import { hpe } from 'hercules-theme-theme-hpe';
 
 const Background = () => {
   const themeColor = 'background-back';

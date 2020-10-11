@@ -3,9 +3,9 @@ import { PartialThemeGenerator } from '..';
 import { ButtonProps } from '../../../components/Button';
 import pick from '../../utils/pick';
 import buttonStyle from './base/button';
-import { defaultStyling, primaryStyling } from './base/styling';
+import { defaultStyling, primaryStyling, secondaryStyling } from './base/styling';
 export { default as buttonDivider } from '../../quantum-ux/button-divider';
-export { default as button } from './base/button';
+export { default as _button } from './base/button';
 
 const extend = css<ButtonProps>`
   box-shadow: ${pick(buttonStyle.boxShadow)};
@@ -16,8 +16,9 @@ const extend = css<ButtonProps>`
   min-height: ${buttonStyle.height};
   text-transform: ${buttonStyle.textTransform};
 
-  ${(props: any) => !props.primary && !props.plain && defaultStyling(props)}
+  ${(props: any) => !props.primary && !props.secondary && !props.plain && defaultStyling(props)}
   ${(props: any) => props.primary && !props.plain && primaryStyling(props)}
+  ${(props: any) => props.secondary && !props.plain && secondaryStyling(props)}
 `;
 
 export type ButtonTheme = typeof buttonStyle;
@@ -27,13 +28,10 @@ const generator: PartialThemeGenerator<'button'> = ({
   scale = 6,
 }) => {
   return {
-    button: {
-      border: {
-        radius: buttonStyle.borderRadius,
-        width: buttonStyle.borderWidth,
-      },
-      extend,
-    },
+    button : {
+      ...buttonStyle,
+      // extend,
+    }
   };
 };
 
