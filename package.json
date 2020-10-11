@@ -33,7 +33,10 @@
     "release-stable": "babel-node ./tools/release-stable",
     "lint": "eslint src",
     "lint-fix": "eslint src --fix",
-    "quantum-ux": "node ./scripts/quantum-ux/sass-to-javascript",
+    "quantum-ux": "npm run quantum-ux-extract && npm run quantum-ux-inflate",
+    "quantum-ux-extract": "node ./scripts/quantum-ux/extract",
+    "quantum-ux-inflate": "node ./scripts/quantum-ux/inflate",
+    "quantum-ux-update-specs": "node ./scripts/quantum-ux/update-specs",
     "test": "npm run generate-readme && jest --runInBand",
     "test-update": "npm run generate-readme && jest --updateSnapshot",
     "test-watch": "jest --watchAll",
@@ -42,8 +45,7 @@
     "storybook": "cross-env NODE_ENV=development start-storybook -p 9001 -c storybook -s ./storybook/public",
     "build-storybook": "build-storybook -c storybook -o storybook-static -s ./storybook/public",
     "prettier": "pretty-quick --staged",
-    "chromatic": "chromatic -t 9q99in2ygnh",
-    "update-specs": "node ./scripts/update-specs"
+    "chromatic": "chromatic -t 9q99in2ygnh"
   },
   "peerDependencies": {
     "react": ">= 16.6.1",
