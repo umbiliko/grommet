@@ -5,7 +5,7 @@ import 'jest-styled-components';
 
 import { findAllByType } from '../../../utils';
 
-import { Hercules } from '../../Hercules
+import { Hercules } from '../../Hercules';
 import { RoutedAnchor } from '..';
 
 class FakeRouter extends Component {

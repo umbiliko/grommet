@@ -6,7 +6,7 @@ import 'regenerator-runtime/runtime';
 
 import { axe } from 'jest-axe';
 import { cleanup, render, fireEvent, wait } from '@testing-library/react';
-import { Hercules } from '../../Hercules
+import { Hercules } from '../../Hercules';
 import { Box } from '../../Box';
 import { RadioButtonGroup } from '..';
 

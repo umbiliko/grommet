@@ -15,7 +15,7 @@ import {
   TextArea,
 } from 'hercules-theme';
 import { microfocus } from 'hercules-theme/themes';
-import { FormExtendedEvent } from '../../Form';
+import { FormExtendedEvent } from '../../../Form';
 
 // interface declarations can only be used in TypeScript files
 // Remove 'interface FormState' if you are not using TypeScript

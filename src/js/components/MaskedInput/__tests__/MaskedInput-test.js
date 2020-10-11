@@ -16,7 +16,7 @@ import { Search } from 'grommet-icons';
 
 import { createPortal, expectPortal } from '../../../utils/portal';
 
-import { Hercules } from '../../Hercules
+import { Hercules } from '../../Hercules';
 import { Keyboard } from '../../Keyboard';
 import { MaskedInput } from '..';
 

@@ -21,10 +21,26 @@
       "hercules-theme/themes": ["src/js/themes"],
       "hercules-theme/utils": ["src/js/utils"]
     },
-    "lib": ["dom", "es2017"],
+    "lib": [
+      "dom",
+      "es2017"
+    ],
     "types": [],
-    "typeRoots": ["./node_modules/@types/", "./src/@types/"]
+    "typeRoots": [
+      "./node_modules/@types/",
+      "./src/@types/"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true
   },
-  "exclude": ["node_modules"],
-  "include": ["src/**/*"]
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "src/**/*"
+  ]
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import 'jest-styled-components';
 import { cleanup, render, fireEvent } from '@testing-library/react';
 
-import { Hercules } from '../../Hercules
+import { Hercules } from '../../Hercules';
 import { DataTable } from '..';
 
 describe('DataTable', () => {

@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 
 import { Avatar } from '../../Avatar';
-import { Hercules } from '../../Hercules
+import { Hercules } from '../../Hercules';
 import { Sidebar } from '..';
 
 const src = '';
