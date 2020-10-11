@@ -1,4 +1,4 @@
-exports = {
+module.exports = {
   global: {
     alert: {
       fontSize: '14px',

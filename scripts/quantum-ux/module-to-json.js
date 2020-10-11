@@ -58,7 +58,9 @@ function _inflate(obj, prefix = '$qtm-', split = '__') {
 
 function formatFile(obj) {
   return (
-    'exports = ' + stringify(obj, null, ' ').replace(/(\\n)/gm, '\n') + ';'
+    'module.exports = ' +
+    stringify(obj, null, ' ').replace(/(\\n)/gm, '\n') +
+    ';'
   );
 }
 function inflate() {
@@ -74,7 +76,7 @@ function inflate() {
     console.error(err);
   }
   process.exit();
-};
+}
 
 module.exports = {
   inflate,

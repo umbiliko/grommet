@@ -1,3 +1,3 @@
-const { inflate } = require('module-to-json');
+const { inflate } = require('./module-to-json');
 
 inflate();

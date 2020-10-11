@@ -1,4 +1,4 @@
-exports = {
+module.exports = {
   global: {
     '$qtm-alert__font-size': '14px',
     '$qtm-alert__min-height': '24px',

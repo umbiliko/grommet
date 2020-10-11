@@ -3,20 +3,27 @@ const path = require('path');
 const { stringify } = require('javascript-stringify');
 const { allFileName } = require('./module-to-json');
 const root = path.join(__dirname, '../../');
-const specs = path.join(root, 'src', 'js', 'themes', 'microfocus', 'specs');
+const specs = path.join(root, 'src', 'js', 'themes', 'quantum-ux');
 
-try {
-  const { global } = require(allFileName);
-  Object.entries(global).forEach(([key, obj]) => {
-    const filename = path.join(specs, toSnakeCase(key) + '.spec.ts');
-    const content = formatFile(obj);
-    fs.writeFileSync(filename, content);
-    console.log(filename, content);
-  });
-  console.log('Done updating specs');
-} catch (err) {
-  console.error(err);
-}
+(function () {
+  try {
+    if (!fs.existsSync(specs)) {
+      fs.mkdirSync(specs, {
+        recursive: true
+      });
+    }
+    const { global } = require(allFileName);
+    Object.entries(global).forEach(([key, obj]) => {
+      const filename = path.join(specs, toSnakeCase(key) + '.ts');
+      const content = formatFile(obj);
+      fs.writeFileSync(filename, content);
+    });
+    console.log('Done updating specs at', specs);
+  } catch (err) {
+    console.error(err);
+  }
+  process.exit();
+})();
 
 function formatFile(obj) {
   return (
