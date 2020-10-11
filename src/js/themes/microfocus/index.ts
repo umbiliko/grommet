@@ -1,16 +1,14 @@
 import { ThemeType } from '../base';
 import { ColorType, deepMerge, ElevationType } from '../../utils';
 import { FlattenInterpolation } from 'styled-components';
-// import alert, { AlertTheme } from './alert';
+import alert, { AlertTheme } from './alert';
 import anchor from './anchor';
-// import box from './box';
-/*
+import box from './box';
 import breadcrumbs, {
   BreadcrumbsLinkTheme,
   BreadcrumbsSeparationTheme,
   BreadcrumbsTheme,
 } from './breadcrumbs';
-*/
 import button from './button';
 import calendar from './calendar';
 import carousel from './carousel';
@@ -70,7 +68,6 @@ export type ComponentTheme<
 export type ExtendType = string | ((...args: any) => void);
 
 export interface ExtendedTheme extends ThemeType {
-  /*
   alert: AlertTheme;
   alertDanger: AlertTheme;
   alertError: AlertTheme;
@@ -90,7 +87,6 @@ export interface ExtendedTheme extends ThemeType {
   breadcrumbs: BreadcrumbsTheme;
   breadcrumbsLink: BreadcrumbsLinkTheme;
   breadcrumbsSeparation: BreadcrumbsSeparationTheme;
-  */
   control: ControlTheme;
   form: FormTheme;
   grid: GridTheme;
@@ -142,10 +138,10 @@ export const generator = (
       },
     },
     [
-      // alert,
+      alert,
       anchor,
-      // box,
-      // breadcrumbs,
+      box,
+      breadcrumbs,
       button,
       calendar,
       carousel,

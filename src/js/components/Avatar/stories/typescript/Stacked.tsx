@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react';
 import { Favorite, UserFemale, UserNew } from 'grommet-icons';
 
 import { Avatar, Box, Grommet, Stack } from 'grommet';
-import theme from 'grommet/themes/microfocus';
+import theme from '../../../../themes/microfocus';
 
 const Stacked = () => {
   const shimi = '//s.gravatar.com/avatar/b7fb138d53ba0f573212ccce38a7c43b?s=80';
