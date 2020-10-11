@@ -1,0 +1,93 @@
+@import '../../node_modules/@micro-focus/quantum-ux/scss/common/qtm-colors_spec.scss';
+@import '../../node_modules/@micro-focus/quantum-ux/scss/radio/qtm-radio_spec.scss';
+@import '../../node_modules/@micro-focus/quantum-ux/scss/button/qtm-button_spec.scss';
+@import '../../node_modules/@micro-focus/quantum-ux/scss/scrollbar/qtm-scrollbar_spec.scss';
+@import '../../node_modules/@micro-focus/quantum-ux/scss/common/qtm-fonts_spec.scss';
+@import '../../node_modules/@micro-focus/quantum-ux/scss/input/qtm-input_spec.scss';
+@import '../../node_modules/@micro-focus/quantum-ux/scss/common/qtm-colors_spec.scss';
+@import '../../node_modules/@micro-focus/quantum-ux/scss/common/qtm-text_spec.scss';
+@import '../../node_modules/@micro-focus/quantum-ux/scss/common/qtm-icons_spec.scss';
+@import '../../node_modules/@micro-focus/quantum-ux/scss/common/qtm-paper_spec.scss';
+@import '../../node_modules/@micro-focus/quantum-ux/scss/breadcrumbs/qtm-breadcrumbs_spec.scss';
+@import '../../node_modules/@micro-focus/quantum-ux/scss/checkbox/qtm-checkbox_spec.scss';
+@import '../../node_modules/@micro-focus/quantum-ux/scss/radio/qtm-radio_spec.scss';
+@import '../../node_modules/@micro-focus/quantum-ux/scss/dropdown/qtm-dropdown_spec.scss';
+@import '../../node_modules/@micro-focus/quantum-ux/scss/table/qtm-table_spec.scss';
+@import '../../node_modules/@micro-focus/quantum-ux/scss/alert/qtm-alert_spec.scss';
+@import '../../node_modules/@micro-focus/quantum-ux/scss/tooltip/qtm-tooltip_spec.scss';
+@import '../../node_modules/@micro-focus/quantum-ux/scss/masthead/qtm-masthead_spec.scss';
+@import '../../node_modules/@micro-focus/quantum-ux/scss/slider/qtm-slider_spec.scss';
+@import '../../node_modules/@micro-focus/quantum-ux/scss/navigation/tabs/qtm-tabs_spec.scss';
+@import '../../node_modules/@micro-focus/quantum-ux/scss/side-menu/qtm-side-menu_spec.scss';
+@import '../../node_modules/@micro-focus/quantum-ux/scss/navigation/pills/qtm-pills_spec.scss';
+@import '../../node_modules/@micro-focus/quantum-ux/scss/common/qtm-icons_datauri-map.scss';
+
+// Text Area
+$border-color: $qtm-color__lighten-5 !default;
+
+// Layer Overlay Background
+$layer-overlay-background-color: $qtm-color__shade-5 !default;
+
+$radio-button-control-size: quarter($qtm-radio__size) - 2;
+
+// Menu css
+
+$qtm-menu__hover-background-color: $qtm-color__primary--hover;
+$qtm-menu__active-background-color: $qtm-color__primary--hover;
+
+// Masthead
+
+$masthead-padding-left: 0px;
+$masthead-margin-right: 24px;
+$masthead-color: white;
+$masthead-margin-left: 0;
+$masthead-margin-top: 19px;
+$masthead-margin-bottom: 0px;
+$masthead-justify-content: center;
+$masthead-text-decoration: none;
+$masthead-text-transform: uppercase;
+$masthead-border-bottom-style: solid;
+
+//Form Field Spec
+$qtm-form-field__error-min-height: 32px;
+$qtm-form-field__error-bottom: 5px;
+$qtm-form-field__error-icon-height: 14px;
+$qtm-form-field__error-icon-width: 14px;
+$qtm-form-field__label-width: 30%;
+$qtm-form-field__label-float: left;
+$qtm-form-field__label-margin-right: 5px;
+$qtm-form-field__help-width: 20%;
+$qtm-form-field__help-float: right;
+$qtm-form-field__help-margin-left: 5px;
+$qtm-form-field__textarea-margin-bottom: 0px;
+$qtm-form-field__rangeinput-marging-left: 0px;
+$qtm-form-field__rangeinput-padding-left: 0px;
+$qtm-form-field__rangeinput-padding-right: 0px;
+$qtm-form-field__datetime-padding-top: 0px;
+$qtm-form-field__select-input-width: 95%;
+$qtm-form-field__textinput-border-top: none;
+$qtm-form-field__textinput-border-left: none;
+$qtm-form-field__textinput-border-right: none;
+$qtm-form-field__error-display: block;
+$qtm-form-field__error-textalign: center;
+$qtm-form-field__error-position: absolute;
+$qtm-form-field__error-left: 33%;
+$qtm-form-field__error-display-before: inline-block;
+$qtm-form-field__error-margin-right: 5px;
+$qtm-form-field__error-vertical-align: middle;
+$qtm-form-field__error-background-repeat: no-repeat;
+$qtm-form-field__min-height: 72px;
+$qtm-form-field__error-margin-left: 5px;
+
+//Form Spec
+$qtm-form__small-size: 480px;
+$qtm-form__medium-size: 560px;
+$qtm-form__large-size: 720px;
+$qtm-form__header-padding-left: 24px;
+$qtm-form__footer-padding-top: 16px;
+$qtm-form__footer-padding-bottom: 16px;
+$qtm-form__fieldset-margin-top: 0px;
+$qtm-form__margin-top: 0px;
+$qtm-form__box-shadow: none;
+
+$radio-button--size: 12px;

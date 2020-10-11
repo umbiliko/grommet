@@ -32,3 +32,5 @@ grommet-*-src-with-dependecies.tgz
 .eslintcache
 .DS_Store
 
+yarn.lock
+scripts/quantum-ux/quantum-spec-module.js
