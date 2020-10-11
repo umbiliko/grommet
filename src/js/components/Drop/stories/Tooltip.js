@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, grommet, Box, Button, Drop, Text } from 'grommet';
+import { Hercules, microfocus, Box, Button, Drop, Text } from 'hercules-theme';
 import { Calculator, Bug, Achievement } from 'grommet-icons';
 
 const TooltipButton = ({ icon, name }) => {
@@ -41,13 +41,13 @@ const TooltipButton = ({ icon, name }) => {
 
 const Tooltip = () => {
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box align="center" pad="large">
         <TooltipButton icon={<Calculator />} name="Calculator" />
         <TooltipButton icon={<Bug />} name="Bug" />
         <TooltipButton icon={<Achievement />} name="Achievement" />
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

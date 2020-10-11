@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, List } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, List } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const locations = [
   'Boise',
@@ -27,7 +27,7 @@ for (let i = 0; i < 40; i += 1) {
 const OnClickItemList = () => {
   const [clicked, setClicked] = React.useState();
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box align="center" pad="large" gap="large">
         <List
           data={data.slice(0, 10)}
@@ -36,7 +36,7 @@ const OnClickItemList = () => {
 
         {clicked && JSON.stringify(clicked, null, 2)}
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

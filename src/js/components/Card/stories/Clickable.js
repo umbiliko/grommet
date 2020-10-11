@@ -9,9 +9,9 @@ import {
   CardFooter,
   Chart,
   Grid,
-  Grommet,
+  Hercules,
   Text,
-} from 'grommet';
+} from 'hercules-theme';
 
 const theme = {
   themeMode: 'dark',
@@ -105,7 +105,7 @@ const Identifier = ({ children, title, subTitle, size, ...rest }) => (
 );
 
 export const Example = () => (
-  <Grommet theme={theme} full>
+  <Hercules theme={theme} full>
     <Box pad="large" background="dark-1" height="100%">
       <Grid gap="medium" columns={{ count: 'fit', size: 'small' }}>
         {data.map(value => (
@@ -133,7 +133,7 @@ export const Example = () => (
         ))}
       </Grid>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Card', module).add('Clickable', () => <Example />);

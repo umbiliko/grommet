@@ -1,12 +1,12 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, CheckBoxGroup, Grommet, Text } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, CheckBoxGroup, Hercules, Text } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const Disabled = () => {
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box pad="medium" gap="large">
         <Box>
           <Text margin={{ vertical: 'small' }}>Disabled Group</Text>
@@ -23,7 +23,7 @@ const Disabled = () => {
           />
         </Box>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

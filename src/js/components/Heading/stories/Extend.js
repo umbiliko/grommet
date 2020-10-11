@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Grommet, Heading } from 'grommet';
-import { deepMerge } from 'grommet/utils';
-import { grommet } from 'grommet/themes';
+import { Hercules, Heading } from 'hercules-theme';
+import { deepMerge } from 'hercules-theme/utils';
+import { microfocus } from 'hercules-theme/themes';
 
 const letterSpace = {
   1: {
@@ -25,12 +25,12 @@ const letterSpace = {
 const letterSpacing = ({ level, size }) =>
   level && size ? `letter-spacing: ${letterSpace[level][size]}` : '';
 
-const customTheme = deepMerge(grommet, {
+const customTheme = deepMerge(microfocus, {
   heading: { extend: props => `${letterSpacing(props)}` },
 });
 
 const HeadingExtend = () => (
-  <Grommet theme={customTheme}>
+  <Hercules theme={customTheme}>
     <Heading level="1" size="large">
       This is using the extend property on Heading
     </Heading>
@@ -40,7 +40,7 @@ const HeadingExtend = () => (
     <Heading level="3" size="small">
       This is using the extend property on Heading
     </Heading>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Heading', module).add('Extend', () => <HeadingExtend />);

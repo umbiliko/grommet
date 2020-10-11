@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Button, DateInput, Form, FormField, Grommet } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Button, DateInput, Form, FormField, Hercules } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const Example = () => {
   const [value, setValue] = React.useState({ value: '' });
@@ -11,7 +11,7 @@ const Example = () => {
     setValue(nextValue);
   };
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box align="center" pad="large">
         <Form
           value={value}
@@ -24,7 +24,7 @@ const Example = () => {
           <Button type="submit" label="submit" />
         </Form>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

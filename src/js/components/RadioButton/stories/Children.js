@@ -1,15 +1,15 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, Button, RadioButton } from 'grommet';
+import { Hercules, Box, Button, RadioButton } from 'hercules-theme';
 import { Ascend } from 'grommet-icons';
-import { grommet } from 'grommet/themes';
+import { microfocus } from 'hercules-theme/themes';
 
 const ChildrenRadioButton = () => {
   const [selected, setSelected] = React.useState();
 
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box align="center" pad="large" gap="large">
         <RadioButton
           name="name"
@@ -24,7 +24,7 @@ const ChildrenRadioButton = () => {
 
         <Button label="clear" onClick={() => setSelected(undefined)} />
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

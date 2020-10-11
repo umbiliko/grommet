@@ -1,15 +1,15 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, InfiniteScroll, Text } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, InfiniteScroll, Text } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 export const allItems = Array(2000)
   .fill()
   .map((_, i) => `item ${i + 1}`);
 
 const SimpleInfiniteScroll = props => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box>
       <InfiniteScroll items={allItems} {...props}>
         {item => (
@@ -24,7 +24,7 @@ const SimpleInfiniteScroll = props => (
         )}
       </InfiniteScroll>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('InfiniteScroll', module)

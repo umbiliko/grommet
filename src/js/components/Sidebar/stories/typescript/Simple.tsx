@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Avatar, Button, Box, grommet, Grommet, Nav, Sidebar } from 'grommet';
+import { Avatar, Button, Box, microfocus, Hercules, Nav, Sidebar } from 'hercules-theme';
 
 import {
   Analytics,
@@ -44,7 +44,7 @@ const MainNavigation = () => (
 );
 
 export const SidebarIcons = () => (
-  <Grommet theme={grommet} full>
+  <Hercules theme={microfocus} full>
     <Box direction="row" height={{ min: '100%' }}>
       <Sidebar
         background="accent-1"
@@ -54,7 +54,7 @@ export const SidebarIcons = () => (
         <MainNavigation />
       </Sidebar>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Sidebar', module).add('Icons', () => <SidebarIcons />);

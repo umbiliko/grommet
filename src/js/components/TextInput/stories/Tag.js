@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Button, Grommet, Keyboard, Text, TextInput } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Button, Hercules, Keyboard, Text, TextInput } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 import { FormClose } from 'grommet-icons';
 
 const allSuggestions = ['sony', 'sonar', 'foo', 'bar'];
@@ -121,7 +121,7 @@ const TagTextInput = () => {
     );
 
   return (
-    <Grommet full theme={grommet}>
+    <Hercules full theme={microfocus}>
       <Box pad="small">
         <TagInput
           placeholder="Search for aliases..."
@@ -132,7 +132,7 @@ const TagTextInput = () => {
           onChange={({ target: { value } }) => onFilterSuggestion(value)}
         />
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

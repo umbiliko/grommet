@@ -7,7 +7,7 @@ import 'regenerator-runtime/runtime';
 import { axe } from 'jest-axe';
 import { cleanup, render, fireEvent, act } from '@testing-library/react';
 
-import { Accordion, AccordionPanel, Box, Grommet } from '../..';
+import { Accordion, AccordionPanel, Box, Hercules } from '../..';
 
 const customTheme = {
   accordion: {
@@ -20,11 +20,11 @@ describe('Accordion', () => {
 
   test('should have no accessibility violations', async () => {
     const { container } = render(
-      <Grommet>
+      <Hercules>
         <Accordion>
           <AccordionPanel>Panel body 1</AccordionPanel>
         </Accordion>
-      </Grommet>,
+      </Hercules>,
     );
 
     const results = await axe(container);
@@ -34,16 +34,16 @@ describe('Accordion', () => {
 
   test('no AccordionPanel', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Accordion />
-      </Grommet>,
+      </Hercules>,
     );
     expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('AccordionPanel', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Accordion>
           <AccordionPanel label="Panel 1">Panel body 1</AccordionPanel>
           <AccordionPanel label="Panel 2">Panel body 2</AccordionPanel>
@@ -51,14 +51,14 @@ describe('Accordion', () => {
             <AccordionPanel label="Panel 2">Panel body 2</AccordionPanel>
           )}
         </Accordion>
-      </Grommet>,
+      </Hercules>,
     );
     expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('complex title', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Box background="dark-1">
           <Accordion>
             <AccordionPanel label={<div>Panel 1 complex</div>}>
@@ -70,14 +70,14 @@ describe('Accordion', () => {
             </AccordionPanel>
           </Accordion>
         </Box>
-      </Grommet>,
+      </Hercules>,
     );
     expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('complex header', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Accordion activeIndex={1} animate={false}>
           <AccordionPanel header={<div>Panel 1 header</div>}>
             Panel body 1
@@ -87,7 +87,7 @@ describe('Accordion', () => {
             Panel body 2
           </AccordionPanel>
         </Accordion>
-      </Grommet>,
+      </Hercules>,
     );
     expect(component.toJSON()).toMatchSnapshot();
   });
@@ -96,12 +96,12 @@ describe('Accordion', () => {
     jest.useFakeTimers();
     const onActive = jest.fn();
     const { getByText, container } = render(
-      <Grommet>
+      <Hercules>
         <Accordion onActive={onActive}>
           <AccordionPanel label="Panel 1">Panel body 1</AccordionPanel>
           <AccordionPanel label="Panel 2">Panel body 2</AccordionPanel>
         </Accordion>
-      </Grommet>,
+      </Hercules>,
     );
     expect(container.firstChild).toMatchSnapshot();
 
@@ -118,12 +118,12 @@ describe('Accordion', () => {
 
   test('change to second Panel without onActive', () => {
     const { getByText, container } = render(
-      <Grommet>
+      <Hercules>
         <Accordion animate={false}>
           <AccordionPanel label="Panel 1">Panel body 1</AccordionPanel>
           <AccordionPanel label="Panel 2">Panel body 2</AccordionPanel>
         </Accordion>
-      </Grommet>,
+      </Hercules>,
     );
     expect(container.firstChild).toMatchSnapshot();
 
@@ -135,12 +135,12 @@ describe('Accordion', () => {
   test('multiple panels', () => {
     const onActive = jest.fn();
     const { getByText, container } = render(
-      <Grommet>
+      <Hercules>
         <Accordion animate={false} multiple onActive={onActive}>
           <AccordionPanel label="Panel 1">Panel body 1</AccordionPanel>
           <AccordionPanel label="Panel 2">Panel body 2</AccordionPanel>
         </Accordion>
-      </Grommet>,
+      </Hercules>,
     );
     expect(container.firstChild).toMatchSnapshot();
 
@@ -167,18 +167,18 @@ describe('Accordion', () => {
 
   test('custom accordion', () => {
     const component = renderer.create(
-      <Grommet theme={customTheme}>
+      <Hercules theme={customTheme}>
         <Accordion>
           <AccordionPanel label="Panel 1">Panel body 1</AccordionPanel>
         </Accordion>
-      </Grommet>,
+      </Hercules>,
     );
     expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('accordion border', () => {
     const component = renderer.create(
-      <Grommet
+      <Hercules
         theme={{
           accordion: {
             border: undefined,
@@ -193,7 +193,7 @@ describe('Accordion', () => {
         <Accordion>
           <AccordionPanel label="Panel 1">Panel body 1</AccordionPanel>
         </Accordion>
-      </Grommet>,
+      </Hercules>,
     );
     expect(component.toJSON()).toMatchSnapshot();
   });
@@ -201,12 +201,12 @@ describe('Accordion', () => {
   test('change active index', () => {
     const onActive = jest.fn();
     const { getByText, container } = render(
-      <Grommet>
+      <Hercules>
         <Accordion animate={false} activeIndex={1} onActive={onActive}>
           <AccordionPanel label="Panel 1">Panel body 1</AccordionPanel>
           <AccordionPanel label="Panel 2">Panel body 2</AccordionPanel>
         </Accordion>
-      </Grommet>,
+      </Hercules>,
     );
     expect(container.firstChild).toMatchSnapshot();
 
@@ -218,7 +218,7 @@ describe('Accordion', () => {
   test('focus and hover styles', () => {
     const warnSpy = jest.spyOn(console, 'warn').mockImplementation();
     const { getByText, container } = render(
-      <Grommet theme={{ accordion: { hover: { color: 'red' } } }}>
+      <Hercules theme={{ accordion: { hover: { color: 'red' } } }}>
         <Accordion>
           <AccordionPanel
             label="Panel 1"
@@ -230,7 +230,7 @@ describe('Accordion', () => {
             Panel body 1
           </AccordionPanel>
         </Accordion>
-      </Grommet>,
+      </Hercules>,
     );
 
     fireEvent.focus(getByText('Panel 1'));
@@ -242,7 +242,7 @@ describe('Accordion', () => {
   test('backward compatibility of hover.color = undefined', () => {
     const warnSpy = jest.spyOn(console, 'warn').mockImplementation();
     const { getByText, container } = render(
-      <Grommet
+      <Hercules
         theme={{
           accordion: {
             hover: { color: undefined },
@@ -260,7 +260,7 @@ describe('Accordion', () => {
             Panel body 1
           </AccordionPanel>
         </Accordion>
-      </Grommet>,
+      </Hercules>,
     );
 
     fireEvent.focus(getByText('Panel 1'));
@@ -272,7 +272,7 @@ describe('Accordion', () => {
 
   test('theme hover of hover.heading.color', () => {
     const { getByText, container } = render(
-      <Grommet
+      <Hercules
         theme={{
           accordion: {
             hover: { heading: { color: 'teal' } },
@@ -290,7 +290,7 @@ describe('Accordion', () => {
             Panel body 1
           </AccordionPanel>
         </Accordion>
-      </Grommet>,
+      </Hercules>,
     );
 
     fireEvent.focus(getByText('Panel 1'));
@@ -300,7 +300,7 @@ describe('Accordion', () => {
 
   test('set on hover', () => {
     const { getByText, container } = render(
-      <Grommet>
+      <Hercules>
         <Accordion>
           <AccordionPanel
             label="Panel 1"
@@ -321,7 +321,7 @@ describe('Accordion', () => {
             Panel body 2
           </AccordionPanel>
         </Accordion>
-      </Grommet>,
+      </Hercules>,
     );
     expect(container.firstChild).toMatchSnapshot();
 
@@ -346,13 +346,13 @@ describe('Accordion', () => {
       </AccordionPanel>
     );
     const { getByText, container } = render(
-      <Grommet>
+      <Hercules>
         <Accordion animate={false} onActive={onActive}>
           {[1, 2].map(index => (
             <Panel key={index} index={index} />
           ))}
         </Accordion>
-      </Grommet>,
+      </Hercules>,
     );
     expect(container.firstChild).toMatchSnapshot();
 

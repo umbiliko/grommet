@@ -6,15 +6,15 @@ import {
   Box,
   Button,
   CheckBox,
-  Grommet,
+  Hercules,
   Form,
   FormField,
   RadioButtonGroup,
   RangeInput,
   Select,
   TextArea,
-} from 'grommet';
-import { grommet } from 'grommet/themes';
+} from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 import { FormExtendedEvent } from '../../Form';
 
 // interface declarations can only be used in TypeScript files
@@ -30,7 +30,7 @@ interface FormState {
 }
 
 const Example = () => (
-  <Grommet full theme={grommet}>
+  <Hercules full theme={microfocus}>
     <Box fill align="center" justify="center">
       <Box width="medium">
         <Form
@@ -92,7 +92,7 @@ const Example = () => (
         </Form>
       </Box>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 if (!isChromatic()) {

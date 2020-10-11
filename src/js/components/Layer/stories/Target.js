@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Box, Button, CheckBox, Grid, Grommet, Layer, Select } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Button, CheckBox, Grid, Hercules, Layer, Select } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const positions = ['left', 'right', 'top', 'bottom', 'center'];
 
@@ -19,7 +19,7 @@ const TargetLayer = () => {
   const onClose = () => setOpen(undefined);
 
   return (
-    <Grommet theme={grommet} full>
+    <Hercules theme={microfocus} full>
       <Grid
         fill
         columns={[gutter, 'flex', gutter]}
@@ -66,7 +66,7 @@ const TargetLayer = () => {
           </Box>
         </Layer>
       )}
-    </Grommet>
+    </Hercules>
   );
 };
 

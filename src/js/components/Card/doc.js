@@ -11,7 +11,7 @@ export const doc = Card => {
       other custom component.`,
     )
     .usage(
-      `import { Card } from 'grommet';
+      `import { Card } from 'hercules-theme';
 <Card/>`,
     )
     .intrinsicElement('div');

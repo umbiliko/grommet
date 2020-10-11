@@ -8,7 +8,7 @@ export const doc = RangeInput => {
     .availableAt(getAvailableAtBadge('RangeInput'))
     .description('A slider control to input a value within a fixed range.')
     .usage(
-      `import { RangeInput } from 'grommet';
+      `import { RangeInput } from 'hercules-theme';
 <RangeInput />`,
     )
     .intrinsicElement('input');

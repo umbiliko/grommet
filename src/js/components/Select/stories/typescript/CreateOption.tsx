@@ -3,8 +3,8 @@ import { storiesOf } from '@storybook/react';
 import isChromatic from 'chromatic/isChromatic';
 import { FormDown, FormUp } from 'grommet-icons';
 
-import { Box, Grommet, Select } from 'grommet';
-import { ThemeType } from 'grommet/themes';
+import { Box, Hercules, Select } from 'hercules-theme';
+import { ThemeType } from 'hercules-theme/themes';
 
 // the prefix name of the Create option entry
 const prefix = 'Create';
@@ -61,7 +61,7 @@ const CreateOption = () => {
   const [searchValue, setSearchValue] = useState('');
 
   return (
-    <Grommet full theme={theme}>
+    <Hercules full theme={theme}>
       <Box fill align="center" justify="start" pad="large">
         <Select
           open
@@ -87,7 +87,7 @@ const CreateOption = () => {
           }}
         />
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

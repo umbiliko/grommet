@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Calendar, Grommet } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Calendar, Hercules } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const SimpleCalendar = () => {
   const [date, setDate] = useState();
@@ -12,7 +12,7 @@ const SimpleCalendar = () => {
   };
 
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box align="center" pad="large">
         <Calendar
           date={date}
@@ -30,7 +30,7 @@ const SimpleCalendar = () => {
           bounds={['2018-09-08', '2020-12-13']}
         />
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

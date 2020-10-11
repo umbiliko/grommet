@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Grommet, TextInput } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Hercules, TextInput } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const suggestions = Array(100)
   .fill()
@@ -27,7 +27,7 @@ const OnSelect = () => {
   };
 
   return (
-    <Grommet full theme={grommet}>
+    <Hercules full theme={microfocus}>
       <Box fill align="center" justify="start" pad="large">
         <Box width="medium">
           <TextInput
@@ -39,7 +39,7 @@ const OnSelect = () => {
           />
         </Box>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

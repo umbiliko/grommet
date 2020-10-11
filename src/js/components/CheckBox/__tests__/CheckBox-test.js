@@ -6,7 +6,7 @@ import { axe } from 'jest-axe';
 import 'jest-axe/extend-expect';
 import 'regenerator-runtime/runtime';
 
-import { Grommet } from '../../Grommet';
+import { Hercules } from '../../Hercules';
 import { CheckBox } from '..';
 
 describe('CheckBox', () => {
@@ -14,9 +14,9 @@ describe('CheckBox', () => {
 
   test('should not have accessibility violations', async () => {
     const { container } = render(
-      <Grommet>
+      <Hercules>
         <CheckBox a11yTitle="test" />
-      </Grommet>,
+      </Hercules>,
     );
     const results = await axe(container);
     expect(container.firstChild).toMatchSnapshot();
@@ -25,9 +25,9 @@ describe('CheckBox', () => {
 
   test('label should not have accessibility violations', async () => {
     const { container } = render(
-      <Grommet>
+      <Hercules>
         <CheckBox label="test" />
-      </Grommet>,
+      </Hercules>,
     );
     const results = await axe(container);
     expect(container.firstChild).toMatchSnapshot();
@@ -36,10 +36,10 @@ describe('CheckBox', () => {
 
   test('renders', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <CheckBox />
         <CheckBox id="test id" name="test name" />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -47,10 +47,10 @@ describe('CheckBox', () => {
 
   test('label renders', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <CheckBox label="test label" />
         <CheckBox label={<div>test label</div>} />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -58,9 +58,9 @@ describe('CheckBox', () => {
 
   test('checked renders', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <CheckBox checked />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -68,10 +68,10 @@ describe('CheckBox', () => {
 
   test('disabled renders', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <CheckBox disabled />
         <CheckBox disabled checked />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -79,9 +79,9 @@ describe('CheckBox', () => {
 
   test('reverse renders', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <CheckBox reverse label="test label" />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -89,11 +89,11 @@ describe('CheckBox', () => {
 
   test('toggle renders', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <CheckBox toggle />
         <CheckBox toggle checked />
         <CheckBox toggle label="test label" />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -101,10 +101,10 @@ describe('CheckBox', () => {
 
   test('indeterminate renders', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <CheckBox indeterminate />
         <CheckBox indeterminate label="test label" />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -114,9 +114,9 @@ describe('CheckBox', () => {
     console.warn = jest.fn();
     const warnSpy = jest.spyOn(console, 'warn');
     render(
-      <Grommet>
+      <Hercules>
         <CheckBox indeterminate checked />
-      </Grommet>,
+      </Hercules>,
     );
     expect(warnSpy).toBeCalledWith(
       'Checkbox cannot be "checked" and "indeterminate" at the same time.',
@@ -131,9 +131,9 @@ describe('CheckBox', () => {
     console.warn = jest.fn();
     const warnSpy = jest.spyOn(console, 'warn');
     render(
-      <Grommet>
+      <Hercules>
         <CheckBox indeterminate toggle />
-      </Grommet>,
+      </Hercules>,
     );
     expect(warnSpy).toBeCalledWith(
       'Checkbox of type toggle does not have "indeterminate" state.',
@@ -146,9 +146,9 @@ describe('CheckBox', () => {
 
   test('controlled', () => {
     const { container, getByText } = render(
-      <Grommet>
+      <Hercules>
         <CheckBox label="test-label" checked />
-      </Grommet>,
+      </Hercules>,
     );
     expect(container.firstChild).toMatchSnapshot();
     fireEvent.click(getByText('test-label'));

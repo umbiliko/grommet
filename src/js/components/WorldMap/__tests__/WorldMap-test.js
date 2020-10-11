@@ -2,15 +2,15 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 
-import { Grommet } from '../../Grommet';
+import { Hercules } from '../../Hercules';
 import { WorldMap } from '..';
 
 describe('WorldMap', () => {
   test('default', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <WorldMap />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -18,9 +18,9 @@ describe('WorldMap', () => {
 
   test('color', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <WorldMap color="brand" />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -28,7 +28,7 @@ describe('WorldMap', () => {
 
   test('continents', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <WorldMap
           continents={[
             {
@@ -38,7 +38,7 @@ describe('WorldMap', () => {
             },
           ]}
         />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -46,7 +46,7 @@ describe('WorldMap', () => {
 
   test('places', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <WorldMap
           places={[
             {
@@ -57,7 +57,7 @@ describe('WorldMap', () => {
             },
           ]}
         />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -65,9 +65,9 @@ describe('WorldMap', () => {
 
   test('onSelectPlace', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <WorldMap onSelectPlace={() => {}} />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -75,12 +75,12 @@ describe('WorldMap', () => {
 
   test('fill', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <WorldMap fill />
         <WorldMap fill={false} />
         <WorldMap fill="horizontal" />
         <WorldMap fill="vertical" />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();

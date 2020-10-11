@@ -1,6 +1,6 @@
 import { Box, BoxProps } from './Box';
 import { ThemeContext } from '../contexts';
-import { ElevationType } from 'grommet/utils';
+import { ElevationType } from 'hercules-theme/utils';
 import React, { useMemo } from 'react';
 import styled, { css, ThemeProps } from 'styled-components';
 import { ExtendedTheme } from '../themes/microfocus';

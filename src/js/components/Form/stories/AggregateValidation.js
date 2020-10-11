@@ -4,13 +4,13 @@ import { storiesOf } from '@storybook/react';
 import {
   Box,
   Button,
-  Grommet,
+  Hercules,
   Form,
   FormField,
   Text,
   TextInput,
-} from 'grommet';
-import { grommet } from 'grommet/themes';
+} from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 // This example shows a way to perform validation across multiple fields.
 const Example = () => {
@@ -20,7 +20,7 @@ const Example = () => {
       ? 'Mismatched first character'
       : undefined;
   return (
-    <Grommet full theme={grommet}>
+    <Hercules full theme={microfocus}>
       <Box fill align="center" justify="center">
         <Box width="medium">
           <Form
@@ -49,7 +49,7 @@ const Example = () => {
           </Form>
         </Box>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

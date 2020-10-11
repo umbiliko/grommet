@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 
-import { Grommet } from '../../Grommet';
+import { Hercules } from '../../Hercules';
 import { DataChart } from '..';
 
 const data = [
@@ -14,9 +14,9 @@ describe('DataChart', () => {
   test('default', () => {
     const warnSpy = jest.spyOn(console, 'warn').mockImplementation();
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <DataChart data={data} series="a" />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -26,11 +26,11 @@ describe('DataChart', () => {
   test('gap', () => {
     const warnSpy = jest.spyOn(console, 'warn').mockImplementation();
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         {['small', 'medium', 'large'].map(gap => (
           <DataChart key={gap} data={data} series="a" gap={gap} />
         ))}
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -40,11 +40,11 @@ describe('DataChart', () => {
   test('pad', () => {
     const warnSpy = jest.spyOn(console, 'warn').mockImplementation();
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         {['small', 'medium', 'large'].map(pad => (
           <DataChart key={pad} data={data} series="a" pad={pad} />
         ))}
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -54,12 +54,12 @@ describe('DataChart', () => {
   test('size', () => {
     const warnSpy = jest.spyOn(console, 'warn').mockImplementation();
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         {['fill', { width: 'fill' }, { width: 'auto' }].map((size, i) => (
           // eslint-disable-next-line react/no-array-index-key
           <DataChart key={i} data={data} series="a" size={size} />
         ))}
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -69,7 +69,7 @@ describe('DataChart', () => {
   test('axis', () => {
     const warnSpy = jest.spyOn(console, 'warn').mockImplementation();
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         {[
           true,
           false,
@@ -81,7 +81,7 @@ describe('DataChart', () => {
           // eslint-disable-next-line react/no-array-index-key
           <DataChart key={i} data={data} series="a" axis={axis} />
         ))}
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -105,7 +105,7 @@ describe('DataChart', () => {
       });
     }
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         {['second', 'minute', 'hour', 'day', 'month', 'year'].map(key => (
           <Fragment key={key}>
             <DataChart
@@ -116,7 +116,7 @@ describe('DataChart', () => {
             />
           </Fragment>
         ))}
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -126,7 +126,7 @@ describe('DataChart', () => {
   test('guide', () => {
     const warnSpy = jest.spyOn(console, 'warn').mockImplementation();
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         {[
           true,
           false,
@@ -136,7 +136,7 @@ describe('DataChart', () => {
           // eslint-disable-next-line react/no-array-index-key
           <DataChart key={i} data={data} series="a" guide={guide} />
         ))}
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -146,12 +146,12 @@ describe('DataChart', () => {
   test('legend', () => {
     const warnSpy = jest.spyOn(console, 'warn').mockImplementation();
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         {[true, false].map((legend, i) => (
           // eslint-disable-next-line react/no-array-index-key
           <DataChart key={i} data={data} series="a" legend={legend} />
         ))}
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -161,12 +161,12 @@ describe('DataChart', () => {
   test('detail', () => {
     const warnSpy = jest.spyOn(console, 'warn').mockImplementation();
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         {[true, false].map((detail, i) => (
           // eslint-disable-next-line react/no-array-index-key
           <DataChart key={i} data={data} series="a" detail={detail} />
         ))}
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();

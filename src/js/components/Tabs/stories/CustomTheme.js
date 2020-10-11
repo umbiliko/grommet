@@ -4,13 +4,13 @@ import { css } from 'styled-components';
 
 import { CircleInformation, Currency } from 'grommet-icons';
 
-import { Grommet, FormField, Tab, Tabs, TextInput } from 'grommet';
-import { grommet } from 'grommet/themes';
-import { deepMerge } from 'grommet/utils';
+import { Hercules, FormField, Tab, Tabs, TextInput } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
+import { deepMerge } from 'hercules-theme/utils';
 
 import { RichTabTitle } from './Rich';
 
-const customTheme = deepMerge(grommet, {
+const customTheme = deepMerge(microfocus, {
   global: {
     edgeSize: {
       small: '10px',
@@ -69,7 +69,7 @@ const customTheme = deepMerge(grommet, {
 });
 
 const CustomTabs = () => (
-  <Grommet theme={customTheme}>
+  <Hercules theme={customTheme}>
     <Tabs>
       <Tab
         title={
@@ -97,7 +97,7 @@ const CustomTabs = () => (
         tab.active.color)
       </Tab>
     </Tabs>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Tabs', module).add('Custom theme', () => <CustomTabs />);

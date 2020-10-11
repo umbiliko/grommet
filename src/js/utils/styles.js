@@ -359,7 +359,7 @@ export const unfocusStyle = ({
 `;
 
 // For backwards compatibility we need to add back the control border width.
-// Based on how grommet was functioning prior to https://github.com/grommet/grommet/pull/3939,
+// Based on how grommet was functioning prior to https://github.com/hercules/hercules-theme/pull/3939,
 // the padding was subtracting the border width from the theme value, but the
 // placeholder was not. Because we're now placing the subtraction into the
 // theme itself, we have to add back in the border width here.
@@ -536,7 +536,7 @@ export const plainInputStyle = css`
 export const kindPartStyles = (obj, theme, colorValue) => {
   const styles = [];
   if (obj.padding || obj.pad) {
-    // button uses `padding` but other components use Grommet `pad`
+    // button uses `padding` but other components use Hercules `pad`
     const pad = obj.padding || obj.pad;
     if (pad.vertical || pad.horizontal)
       styles.push(

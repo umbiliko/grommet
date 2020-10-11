@@ -1,16 +1,16 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Grommet, WorldMap } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Hercules, WorldMap } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const Example = () => {
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box align="center" pad="large">
         <WorldMap />
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

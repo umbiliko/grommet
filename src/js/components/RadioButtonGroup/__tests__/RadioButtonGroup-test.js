@@ -6,7 +6,7 @@ import 'regenerator-runtime/runtime';
 
 import { axe } from 'jest-axe';
 import { cleanup, render, fireEvent, wait } from '@testing-library/react';
-import { Grommet } from '../../Grommet';
+import { Hercules } from '../../Hercules
 import { Box } from '../../Box';
 import { RadioButtonGroup } from '..';
 
@@ -14,9 +14,9 @@ describe('RadioButtonGroup', () => {
   afterEach(cleanup);
   test('should have no accessibility violations', async () => {
     const { container } = render(
-      <Grommet>
+      <Hercules>
         <RadioButtonGroup name="test" options={[]} />
-      </Grommet>,
+      </Hercules>,
     );
 
     const results = await axe(container);
@@ -26,9 +26,9 @@ describe('RadioButtonGroup', () => {
 
   test('string options', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <RadioButtonGroup name="test" options={['one', 'two']} value="one" />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -36,9 +36,9 @@ describe('RadioButtonGroup', () => {
 
   test('number options', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <RadioButtonGroup name="test" options={[1, 2]} value={1} />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -46,9 +46,9 @@ describe('RadioButtonGroup', () => {
 
   test('boolean options', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <RadioButtonGroup name="test" options={[true, false]} value />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -56,13 +56,13 @@ describe('RadioButtonGroup', () => {
 
   test('object options just value', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <RadioButtonGroup
           name="test"
           options={[{ value: 'one' }, { value: 'two' }]}
           value="two"
         />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -70,7 +70,7 @@ describe('RadioButtonGroup', () => {
 
   test('object options', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <RadioButtonGroup
           name="test"
           options={[
@@ -78,7 +78,7 @@ describe('RadioButtonGroup', () => {
             { id: 'twO', label: 'Two', value: 'two' },
           ]}
         />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -86,12 +86,12 @@ describe('RadioButtonGroup', () => {
 
   test('object options disabled', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <RadioButtonGroup
           name="test"
           options={[{ value: 'one', disabled: true }, { value: 'two' }]}
         />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -102,11 +102,11 @@ describe('RadioButtonGroup', () => {
       <Box pad="small" background={checked ? 'accent-1' : 'control'} />
     );
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <RadioButtonGroup name="test" options={['one', 'two']} value="one">
           {child}
         </RadioButtonGroup>
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -114,7 +114,7 @@ describe('RadioButtonGroup', () => {
 
   test('adding additional props', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <RadioButtonGroup
           name="test"
           options={[
@@ -130,7 +130,7 @@ describe('RadioButtonGroup', () => {
             },
           ]}
         />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -164,13 +164,13 @@ describe('RadioButtonGroup', () => {
     });
 
     const { getByTestId } = render(
-      <Grommet>
+      <Hercules>
         <RadioButtonGroup
           name="test"
           options={radioGroupOptions}
           onChange={onChange}
         />
-      </Grommet>,
+      </Hercules>,
     );
 
     // Select first radio button
@@ -190,7 +190,7 @@ describe('RadioButtonGroup', () => {
     const onChange = jest.fn();
 
     const { getByTestId } = render(
-      <Grommet>
+      <Hercules>
         <RadioButtonGroup
           name="test"
           value="2"
@@ -213,7 +213,7 @@ describe('RadioButtonGroup', () => {
           ]}
           onChange={onChange}
         />
-      </Grommet>,
+      </Hercules>,
     );
 
     // Focus radio '2' button and simulate ArrowDown key

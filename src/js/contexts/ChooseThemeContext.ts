@@ -1,12 +1,12 @@
 import { createContext } from 'react';
-import { GrommetProps, ThemeType } from 'grommet';
+import { HerculesProps, ThemeType } from 'hercules-theme';
 
-export interface ThemeValueType extends Pick<GrommetProps, 'theme' | 'themeMode'> {
+export interface ThemeValueType extends Pick<HerculesProps, 'theme' | 'themeMode'> {
   baseSize?: number;
   canMode?: boolean;
   scale?: number;
-  setTheme: (value: GrommetProps['theme']) => void;
-  setThemeMode: (value: GrommetProps['themeMode']) => void;
+  setTheme: (value: HerculesProps['theme']) => void;
+  setThemeMode: (value: HerculesProps['themeMode']) => void;
   themes: Record<string, ThemeType>;
 }
 

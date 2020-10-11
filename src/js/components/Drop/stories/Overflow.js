@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Calendar, Drop, Heading, Grommet, TextInput } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Calendar, Drop, Heading, Hercules, TextInput } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const OverflowDrop = () => {
   const targetRef = useRef();
@@ -20,7 +20,7 @@ const OverflowDrop = () => {
   useEffect(() => setShowDrop(true), []);
 
   return (
-    <Grommet theme={grommet} full>
+    <Hercules theme={microfocus} full>
       <Box fill align="center" justify="center">
         <Box
           background="dark-3"
@@ -57,7 +57,7 @@ const OverflowDrop = () => {
           </Drop>
         )}
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

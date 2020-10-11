@@ -22,7 +22,7 @@ import text from '../quantum-ux/text';
 import tooltip from '../quantum-ux/tooltip';
 import tooltipArrow from '../quantum-ux/tooltip-arrow';
 
-export const grommet = {
+export const hercules = {
   extend: css`
     ::-webkit-scrollbar {
       height: ${scrollbar.height};
@@ -144,14 +144,14 @@ export const grommet = {
   `,
 };
 
-export type GrommetTheme = typeof grommet;
+export type HerculesTheme = typeof hercules;
 
-const generator: PartialThemeGenerator<'grommet'> = ({
+const generator: PartialThemeGenerator<'hercules'> = ({
   baseSpacing = 24,
   scale = 6,
 }) => {
   return {
-    grommet,
+    hercules,
   };
 };
 

@@ -1,14 +1,14 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Button, Form, FormField, Grommet, TextArea } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Button, Form, FormField, Hercules, TextArea } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const Example = () => {
   const [value, setValue] = React.useState({ name: '', email: '', value: '' });
 
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box align="center" pad="large">
         <Form
           value={value}
@@ -21,7 +21,7 @@ const Example = () => {
           <Button type="submit" label="submit" />
         </Form>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

@@ -1,14 +1,14 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Grommet, Text, Heading } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Hercules, Text, Heading } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const wordBreakValues = ['normal', 'break-all', 'keep-all', 'break-word'];
 
 /* eslint-disable max-len */
 const WordBreak = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     {wordBreakValues.map(value => (
       <Box key={value} margin="small" width="medium">
         <Heading level={4}>{`word-break: ${value};`}</Heading>
@@ -19,7 +19,7 @@ const WordBreak = () => (
         </Text>
       </Box>
     ))}
-  </Grommet>
+  </Hercules>
 );
 /* eslint-enable max-len */
 

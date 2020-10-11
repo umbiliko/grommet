@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, TextArea } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, TextArea } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const FillTextArea = () => {
   const [value, setValue] = React.useState('');
@@ -10,7 +10,7 @@ const FillTextArea = () => {
   const onChange = event => setValue(event.target.value);
 
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box
         width="large"
         height="medium"
@@ -18,7 +18,7 @@ const FillTextArea = () => {
       >
         <TextArea value={value} onChange={onChange} fill />
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

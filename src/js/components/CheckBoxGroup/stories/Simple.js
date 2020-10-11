@@ -1,16 +1,16 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, CheckBoxGroup, Grommet } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, CheckBoxGroup, Hercules } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const Simple = () => {
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box pad="medium">
         <CheckBoxGroup options={['First', 'Second', 'Third']} />
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

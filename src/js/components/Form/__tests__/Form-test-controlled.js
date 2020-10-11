@@ -3,7 +3,7 @@ import React from 'react';
 import 'jest-styled-components';
 
 import { cleanup, render, fireEvent } from '@testing-library/react';
-import { Grommet } from '../../Grommet';
+import { Hercules } from '../../Hercules';
 import { Form } from '..';
 import { FormField } from '../../FormField';
 import { Button } from '../../Button';
@@ -27,9 +27,9 @@ describe('Form controlled', () => {
       );
     };
     const { getByPlaceholderText, getByText, container } = render(
-      <Grommet>
+      <Hercules>
         <Test />
-      </Grommet>,
+      </Hercules>,
     );
     expect(container.firstChild).toMatchSnapshot();
     fireEvent.change(getByPlaceholderText('test input'), {
@@ -61,9 +61,9 @@ describe('Form controlled', () => {
       );
     };
     const { getByText, container } = render(
-      <Grommet>
+      <Hercules>
         <Test />
-      </Grommet>,
+      </Hercules>,
     );
 
     expect(container.firstChild).toMatchSnapshot();
@@ -99,9 +99,9 @@ describe('Form controlled', () => {
       );
     };
     const { getByText, container } = render(
-      <Grommet>
+      <Hercules>
         <Test />
-      </Grommet>,
+      </Hercules>,
     );
 
     expect(container.firstChild).toMatchSnapshot();
@@ -137,9 +137,9 @@ describe('Form controlled', () => {
       );
     };
     const { getByText, container } = render(
-      <Grommet>
+      <Hercules>
         <Test />
-      </Grommet>,
+      </Hercules>,
     );
 
     expect(container.firstChild).toMatchSnapshot();
@@ -169,9 +169,9 @@ describe('Form controlled', () => {
       );
     };
     const { getByPlaceholderText, getByText, container } = render(
-      <Grommet>
+      <Hercules>
         <Test />
-      </Grommet>,
+      </Hercules>,
     );
     expect(container.firstChild).toMatchSnapshot();
     fireEvent.change(getByPlaceholderText('test input'), {
@@ -211,9 +211,9 @@ describe('Form controlled', () => {
       );
     };
     const { getByPlaceholderText, getByText, container } = render(
-      <Grommet>
+      <Hercules>
         <Test />
-      </Grommet>,
+      </Hercules>,
     );
     expect(container.firstChild).toMatchSnapshot();
     fireEvent.change(getByPlaceholderText('test input'), {
@@ -254,9 +254,9 @@ describe('Form controlled', () => {
       );
     };
     const { getByPlaceholderText, getByText, container } = render(
-      <Grommet>
+      <Hercules>
         <Test />
-      </Grommet>,
+      </Hercules>,
     );
     expect(container.firstChild).toMatchSnapshot();
     fireEvent.change(getByPlaceholderText('test input'), {
@@ -286,9 +286,9 @@ describe('Form controlled', () => {
       );
     };
     const { container, getByText } = render(
-      <Grommet>
+      <Hercules>
         <Test />
-      </Grommet>,
+      </Hercules>,
     );
     expect(container.firstChild).toMatchSnapshot();
     fireEvent.click(getByText('set'));
@@ -314,9 +314,9 @@ describe('Form controlled', () => {
       );
     };
     const { getByLabelText, getByText, container } = render(
-      <Grommet>
+      <Hercules>
         <Test />
-      </Grommet>,
+      </Hercules>,
     );
     expect(container.firstChild).toMatchSnapshot();
     fireEvent.change(getByLabelText('test'), { target: { value: 'v' } });
@@ -338,7 +338,7 @@ describe('Form controlled', () => {
       const [value, setValue] = React.useState({ test: '' });
       const onChange = React.useCallback(nextValue => setValue(nextValue), []);
       return (
-        <Grommet>
+        <Hercules>
           <Form
             onReset={onReset}
             onChange={onChange}
@@ -353,7 +353,7 @@ describe('Form controlled', () => {
             />
             <Button type="reset" primary label="Reset" />
           </Form>
-        </Grommet>
+        </Hercules>
       );
     };
     const { getByPlaceholderText, getByText, queryByText } = render(<Test />);

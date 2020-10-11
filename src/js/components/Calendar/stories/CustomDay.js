@@ -5,13 +5,13 @@ import {
   Box,
   Calendar,
   DropButton,
-  Grommet,
+  Hercules,
   Heading,
   Stack,
   Text,
-} from 'grommet';
+} from 'hercules-theme';
 import { Notification } from 'grommet-icons';
-import { grommet } from 'grommet/themes';
+import { microfocus } from 'hercules-theme/themes';
 
 const CustomDayCalendar = () => {
   const calendarContent = [7, 8, 9];
@@ -21,7 +21,7 @@ const CustomDayCalendar = () => {
   };
 
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box align="center" pad="large">
         <Heading level={4}>Example without onSelect set</Heading>
         <Calendar date={selectedDay} fill>
@@ -70,7 +70,7 @@ const CustomDayCalendar = () => {
           }}
         </Calendar>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

@@ -3,11 +3,11 @@ import { storiesOf } from '@storybook/react';
 
 import { FormClose } from 'grommet-icons';
 
-import { Box, Button, Grommet, Layer, Text } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Button, Hercules, Layer, Text } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const ScrollBodyLayer = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Layer full="vertical" position="right">
       <Box fill style={{ minWidth: '378px' }}>
         <Box
@@ -97,7 +97,7 @@ const ScrollBodyLayer = () => (
         </Box>
       </Box>
     </Layer>
-  </Grommet>
+  </Hercules>
 );
 storiesOf('Layer', module).add('Fixed header, scroll body', () => (
   <ScrollBodyLayer />

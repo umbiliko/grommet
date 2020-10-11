@@ -1,11 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Grommet, Video } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Hercules, Video } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const SimpleVideo = props => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box align="center" pad="large">
       <Video {...props}>
         <source src="small.mp4" type="video/mp4" />
@@ -23,7 +23,7 @@ const SimpleVideo = props => (
         />
       </Video>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Video', module)

@@ -1,4 +1,4 @@
-import { HeadingProps } from 'grommet';
+import { HeadingProps } from 'hercules-theme/components/Heading';
 import { css } from 'styled-components';
 import { Extend, PartialThemeGenerator } from '.';
 import text from '../quantum-ux/text';

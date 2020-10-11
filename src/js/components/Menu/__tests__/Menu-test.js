@@ -10,7 +10,7 @@ import { getByText as getByTextDOM } from '@testing-library/dom';
 import '@testing-library/jest-dom/extend-expect';
 import { createPortal, expectPortal } from '../../../utils/portal';
 
-import { Grommet, Menu } from '../..';
+import { Hercules, Menu } from '../..';
 
 const customTheme = {
   menu: {
@@ -27,9 +27,9 @@ describe('Menu', () => {
 
   test('should have no accessibility violations', async () => {
     const { container } = render(
-      <Grommet>
+      <Hercules>
         <Menu />
-      </Grommet>,
+      </Hercules>,
     );
 
     const results = await axe(container);
@@ -39,40 +39,40 @@ describe('Menu', () => {
 
   test('basic', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Menu
           icon={<svg />}
           label="Test Menu"
           id="test-menu"
           items={[{ label: 'Item 1' }, { label: 'Item 2' }]}
         />
-      </Grommet>,
+      </Hercules>,
     );
     expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('custom message', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Menu
           label="Test Menu"
           messages={{ openMenu: 'Abrir Menu' }}
           items={[{ label: 'Item 1' }, { label: 'Item 2' }]}
         />
-      </Grommet>,
+      </Hercules>,
     );
     expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('custom a11yTitle', () => {
     const { container, getByLabelText } = render(
-      <Grommet>
+      <Hercules>
         <Menu
           a11yTitle="My Menu"
           label="Test Menu"
           items={[{ label: 'Item 1' }, { label: 'Item 2' }]}
         />
-      </Grommet>,
+      </Hercules>,
     );
     const menuWithLabel = getByLabelText('My Menu');
     expect(menuWithLabel).toBeTruthy();
@@ -81,7 +81,7 @@ describe('Menu', () => {
 
   test('justify content', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         {['start', 'center', 'end', 'between', 'around', 'stretch'].map(
           justifyContent => (
             <Menu
@@ -93,7 +93,7 @@ describe('Menu', () => {
             />
           ),
         )}
-      </Grommet>,
+      </Hercules>,
     );
     expect(component.toJSON()).toMatchSnapshot();
   });
@@ -101,7 +101,7 @@ describe('Menu', () => {
   test('gap between icon and label', () => {
     window.scrollTo = jest.fn();
     const { container, getByText } = render(
-      <Grommet>
+      <Hercules>
         <Menu
           open
           label="actions"
@@ -110,7 +110,7 @@ describe('Menu', () => {
             { label: 'Item 2' },
           ]}
         />
-      </Grommet>,
+      </Hercules>,
     );
 
     const firstItem = getByText('Item 1');
@@ -124,7 +124,7 @@ describe('Menu', () => {
   test('open and close on click', () => {
     window.scrollTo = jest.fn();
     const { getByLabelText, container } = render(
-      <Grommet>
+      <Hercules>
         <Menu
           id="test-menu"
           label="Test"
@@ -134,7 +134,7 @@ describe('Menu', () => {
             { label: 'Item 3', href: '/test' },
           ]}
         />
-      </Grommet>,
+      </Hercules>,
     );
     expect(container.firstChild).toMatchSnapshot();
     expect(document.getElementById('test-menu__drop')).toBeNull();
@@ -150,13 +150,13 @@ describe('Menu', () => {
 
   test('close by clicking outside', done => {
     const { getByText, container } = render(
-      <Grommet>
+      <Hercules>
         <Menu
           id="test-menu"
           label="Test"
           items={[{ label: 'Item 1' }, { label: 'Item 2' }]}
         />
-      </Grommet>,
+      </Hercules>,
     );
     expect(container.firstChild).toMatchSnapshot();
     expect(document.getElementById('test-menu__drop')).toBeNull();
@@ -177,13 +177,13 @@ describe('Menu', () => {
   test('select an item', () => {
     const onClick = jest.fn();
     const { getByText, container } = render(
-      <Grommet>
+      <Hercules>
         <Menu
           id="test-menu"
           label="Test"
           items={[{ label: 'Item 1', onClick }, { label: 'Item 2' }]}
         />
-      </Grommet>,
+      </Hercules>,
     );
     expect(container.firstChild).toMatchSnapshot();
 
@@ -198,13 +198,13 @@ describe('Menu', () => {
   test('navigate through suggestions and select', () => {
     const onClick = jest.fn();
     const { getByLabelText, container } = render(
-      <Grommet>
+      <Hercules>
         <Menu
           id="test-menu"
           label="Test"
           items={[{ label: 'Item 1' }, { label: 'Item 2', onClick }]}
         />
-      </Grommet>,
+      </Hercules>,
     );
     expect(container.firstChild).toMatchSnapshot();
 
@@ -239,13 +239,13 @@ describe('Menu', () => {
 
   test('tab through menu until it closes', () => {
     const { getByLabelText, container } = render(
-      <Grommet>
+      <Hercules>
         <Menu
           id="test-menu"
           label="Test"
           items={[{ label: 'Item 1' }, { label: 'Item 2' }]}
         />
-      </Grommet>,
+      </Hercules>,
     );
     expect(container.firstChild).toMatchSnapshot();
 
@@ -278,13 +278,13 @@ describe('Menu', () => {
 
   test('shift + tab through menu until it closes', () => {
     const { getByLabelText, getByText, container } = render(
-      <Grommet>
+      <Hercules>
         <Menu
           id="test-menu"
           label="Test"
           items={[{ label: 'Item 1' }, { label: 'Item 2' }]}
         />
-      </Grommet>,
+      </Hercules>,
     );
     expect(container.firstChild).toMatchSnapshot();
 
@@ -339,13 +339,13 @@ describe('Menu', () => {
 
   test('open on down close on esc', () => {
     const { getByLabelText, container } = render(
-      <Grommet>
+      <Hercules>
         <Menu
           id="test-menu"
           label="Test"
           items={[{ label: 'Item 1' }, { label: 'Item 2' }]}
         />
-      </Grommet>,
+      </Hercules>,
     );
     expect(container.firstChild).toMatchSnapshot();
 
@@ -365,13 +365,13 @@ describe('Menu', () => {
 
   test('open on up close on esc', () => {
     const { getByLabelText, container } = render(
-      <Grommet>
+      <Hercules>
         <Menu
           id="test-menu"
           label="Test"
           items={[{ label: 'Item 1' }, { label: 'Item 2' }]}
         />
-      </Grommet>,
+      </Hercules>,
     );
     expect(container.firstChild).toMatchSnapshot();
 
@@ -394,13 +394,13 @@ describe('Menu', () => {
 
   test('close on tab', () => {
     const { getByLabelText, container } = render(
-      <Grommet>
+      <Hercules>
         <Menu
           id="test-menu"
           label="Test"
           items={[{ label: 'Item 1' }, { label: 'Item 2' }]}
         />
-      </Grommet>,
+      </Hercules>,
     );
     expect(container.firstChild).toMatchSnapshot();
 
@@ -420,14 +420,14 @@ describe('Menu', () => {
 
   test('with dropAlign top renders', () => {
     const { getByText, container } = render(
-      <Grommet>
+      <Hercules>
         <Menu
           id="test-menu"
           dropAlign={{ top: 'top', right: 'right' }}
           label="Test"
           items={[{ label: 'Item 1' }, { label: 'Item 2' }]}
         />
-      </Grommet>,
+      </Hercules>,
     );
     expect(container.firstChild).toMatchSnapshot();
 
@@ -442,14 +442,14 @@ describe('Menu', () => {
 
   test('with dropAlign bottom renders', () => {
     const { getByText, container } = render(
-      <Grommet>
+      <Hercules>
         <Menu
           id="test-menu"
           dropAlign={{ bottom: 'bottom', left: 'left' }}
           label="Test"
           items={[{ label: 'Item 1' }, { label: 'Item 2' }]}
         />
-      </Grommet>,
+      </Hercules>,
     );
     expect(container.firstChild).toMatchSnapshot();
 
@@ -464,7 +464,7 @@ describe('Menu', () => {
 
   test('disabled', () => {
     const { getByText, container } = render(
-      <Grommet>
+      <Hercules>
         <Menu
           id="test-menu"
           disabled
@@ -475,7 +475,7 @@ describe('Menu', () => {
             { label: 'Item 3', href: '/test' },
           ]}
         />
-      </Grommet>,
+      </Hercules>,
       {
         attachTo: document.body.firstChild,
       },
@@ -492,7 +492,7 @@ describe('Menu', () => {
   test('reverse icon and label', () => {
     window.scrollTo = jest.fn();
     const { container, getByText } = render(
-      <Grommet>
+      <Hercules>
         <Menu
           open
           label="Test Menu"
@@ -501,7 +501,7 @@ describe('Menu', () => {
             { label: 'Item 2' },
           ]}
         />
-      </Grommet>,
+      </Hercules>,
     );
 
     // Label should come before icon
@@ -513,12 +513,12 @@ describe('Menu', () => {
 
   test('custom theme icon color', () => {
     const component = renderer.create(
-      <Grommet theme={customTheme}>
+      <Hercules theme={customTheme}>
         <Menu
           label="Test Menu"
           items={[{ label: 'Item 1' }, { label: 'Item 2' }]}
         />
-      </Grommet>,
+      </Hercules>,
     );
     expect(component.toJSON()).toMatchSnapshot();
   });

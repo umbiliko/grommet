@@ -1,11 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { TreeOption } from 'grommet-icons';
-import { Box, Heading, Grommet, Tab, Tabs } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Heading, Hercules, Tab, Tabs } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const ScrollableTabs = () => (
-  <Grommet theme={grommet} full>
+  <Hercules theme={microfocus} full>
     <Box fill>
       <Tabs flex>
         <Tab title="Tab 1">
@@ -45,7 +45,7 @@ const ScrollableTabs = () => (
         </Tab>
       </Tabs>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Tabs', module).add('Scrollable', () => <ScrollableTabs />);

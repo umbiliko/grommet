@@ -2,22 +2,22 @@ import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
 import {
-  grommet,
+  microfocus,
   Box,
   CheckBoxGroup,
   Form,
   FormField,
   Select,
   Grid,
-  Grommet,
+  Hercules,
   RadioButtonGroup,
   RangeInput,
   Text,
   TextArea,
   TextInput,
   ThemeContext,
-} from 'grommet';
-import { deepMerge } from 'grommet/utils';
+} from 'hercules-theme';
+import { deepMerge } from 'hercules-theme/utils';
 
 const allOptions = Array(3)
   .fill()
@@ -25,12 +25,12 @@ const allOptions = Array(3)
 
 const borderPositions = [
   {
-    name: 'Default Grommet Theme',
-    theme: grommet,
+    name: 'Default Hercules Theme',
+    theme: microfocus,
   },
   {
     name: 'Border Inner',
-    theme: deepMerge(grommet, {
+    theme: deepMerge(microfocus, {
       formField: {
         border: { position: 'inner', side: 'all' },
       },
@@ -38,7 +38,7 @@ const borderPositions = [
   },
   {
     name: 'Border Outer',
-    theme: deepMerge(grommet, {
+    theme: deepMerge(microfocus, {
       formField: {
         border: { position: 'outer', side: 'all' },
       },
@@ -46,7 +46,7 @@ const borderPositions = [
   },
   {
     name: 'Border None',
-    theme: deepMerge(grommet, {
+    theme: deepMerge(microfocus, {
       formField: {
         border: { position: 'none' },
       },
@@ -54,7 +54,7 @@ const borderPositions = [
   },
   {
     name: 'Border Undefined',
-    theme: deepMerge(grommet, {
+    theme: deepMerge(microfocus, {
       formField: {
         border: undefined,
         content: { pad: 'large' },
@@ -127,7 +127,7 @@ const FormExample = ({ index, borderPosition, theme }) => {
 };
 
 const FormFieldBorderPosition = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box pad="large">
       <Grid columns={{ count: 'fit', size: ['auto', 'medium'] }} gap="medium">
         {borderPositions &&
@@ -142,7 +142,7 @@ const FormFieldBorderPosition = () => (
           })}
       </Grid>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Form', module).add('Field border positions', () => (

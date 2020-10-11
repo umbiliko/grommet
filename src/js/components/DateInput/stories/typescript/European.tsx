@@ -2,8 +2,8 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import isChromatic from 'chromatic/isChromatic';
 
-import { Box, DateInput, Grommet } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, DateInput, Hercules } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const Example = () => {
   const [value, setValue] = React.useState();
@@ -13,13 +13,13 @@ const Example = () => {
     setValue(nextValue);
   };
   return (
-    <Grommet full theme={grommet}>
+    <Hercules full theme={microfocus}>
       <Box fill align="center" justify="start" pad="large">
         <Box width="medium" gap="medium">
           <DateInput format="dd/mm/yyyy" value={value} onChange={onChange} />
         </Box>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

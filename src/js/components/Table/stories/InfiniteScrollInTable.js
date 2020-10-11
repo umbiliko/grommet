@@ -4,8 +4,8 @@ import { storiesOf } from '@storybook/react';
 import {
   Box,
   Heading,
-  grommet,
-  Grommet,
+  microfocus,
+  Hercules,
   InfiniteScroll,
   Table,
   TableRow,
@@ -13,7 +13,7 @@ import {
   TableCell,
   TableHeader,
   Text,
-} from 'grommet';
+} from 'hercules-theme';
 
 const InfiniteScrollInTable = () => {
   const step = 25;
@@ -29,7 +29,7 @@ const InfiniteScrollInTable = () => {
   };
 
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box pad="small" basis="small">
         <Heading level={3}>
           <Box gap="small">
@@ -80,7 +80,7 @@ const InfiniteScrollInTable = () => {
           </TableBody>
         </Table>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

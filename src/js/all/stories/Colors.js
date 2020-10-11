@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Anchor, Box, Grommet, Paragraph, Text } from 'grommet';
+import { Anchor, Box, Hercules, Paragraph, Text } from 'hercules-theme';
 
 const customTheme = {
   global: {
@@ -39,21 +39,21 @@ const customTheme = {
 };
 
 const Example = () => (
-  <Grommet theme={customTheme}>
+  <Hercules theme={customTheme}>
     <Box background="yellow" gap="medium" pad="small">
       <Text>Custom color purple</Text>
       <Text color="deepGreen">Inline custom color of deepGreen</Text>
       <Paragraph color="red">
-        Wrapping your application with the Grommet component that is pointing to
+        Wrapping your application with the Hercules component that is pointing to
         your customTheme object as shown on the example, will allow you full
         access to your custom colors across your application. You can override
-        any Grommet color that is mentioned in the docs in a similar fashion.
+        any Hercules color that is mentioned in the docs in a similar fashion.
       </Paragraph>
-      <Anchor href="https://github.com/grommet/grommet/wiki/Color-Properties">
-        Click here to read more about Grommet Colors
+      <Anchor href="https://github.com/hercules/hercules-theme/wiki/Color-Properties">
+        Click here to read more about Hercules Colors
       </Anchor>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Theme', module).add('Colors', () => <Example />);

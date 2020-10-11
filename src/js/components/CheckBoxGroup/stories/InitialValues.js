@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, CheckBoxGroup, Grommet } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, CheckBoxGroup, Hercules } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const Example = () => {
   const [value, setValue] = useState(['First', 'Second']);
   const [value2, setValue2] = useState(['M']);
 
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box pad="medium" gap="large">
         Initial value via options object:
         <CheckBoxGroup
@@ -38,7 +38,7 @@ const Example = () => {
           ]}
         />
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

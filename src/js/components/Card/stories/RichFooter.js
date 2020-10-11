@@ -10,10 +10,10 @@ import {
   CardFooter,
   Collapsible,
   Heading,
-  Grommet,
+  Hercules,
   Image,
   Paragraph,
-} from 'grommet';
+} from 'hercules-theme';
 
 import { FormDown, FormUp, Favorite, ShareOption } from 'grommet-icons';
 
@@ -50,7 +50,7 @@ const Example = () => {
     );
   };
   return (
-    <Grommet theme={theme}>
+    <Hercules theme={theme}>
       <Box pad="medium" align="start">
         <Card elevation="large" width="medium">
           <CardBody height="small">
@@ -96,7 +96,7 @@ const Example = () => {
           </Collapsible>
         </Card>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

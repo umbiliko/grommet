@@ -2,11 +2,11 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { Attraction, Car, TreeOption } from 'grommet-icons';
 
-import { Grommet, Box, Carousel } from 'grommet';
+import { Hercules, Box, Carousel } from 'hercules-theme';
 
 const SimpleCarousel = ({ initialChild, ...props }) => {
   return (
-    <Grommet>
+    <Hercules>
       <Box align="center" pad="large">
         <Carousel initialChild={initialChild} {...props}>
           <Box pad="xlarge" background="accent-1">
@@ -20,7 +20,7 @@ const SimpleCarousel = ({ initialChild, ...props }) => {
           </Box>
         </Carousel>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

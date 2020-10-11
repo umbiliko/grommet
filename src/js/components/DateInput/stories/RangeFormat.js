@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, DateInput } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, DateInput } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const dateFormat = new Intl.DateTimeFormat(undefined, {
   month: 'short',
@@ -20,7 +20,7 @@ const Example = () => {
     setValue(nextValue);
   };
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box align="center" pad="large">
         <Box width="medium">
           <DateInput
@@ -35,7 +35,7 @@ const Example = () => {
           />
         </Box>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

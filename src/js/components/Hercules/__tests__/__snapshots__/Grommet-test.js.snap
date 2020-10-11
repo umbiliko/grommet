@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Grommet announce 1`] = `
+exports[`Hercules announce 1`] = `
 .c0 {
   font-size: 18px;
   line-height: 24px;
@@ -20,7 +20,7 @@ exports[`Grommet announce 1`] = `
 </div>
 `;
 
-exports[`Grommet announce 2`] = `
+exports[`Hercules announce 2`] = `
 <div
   aria-live="assertive"
   style="left: -100%; right: 100%; position: fixed; z-index: -1;"
@@ -29,14 +29,14 @@ exports[`Grommet announce 2`] = `
 </div>
 `;
 
-exports[`Grommet announce 3`] = `
+exports[`Hercules announce 3`] = `
 <div
   aria-live="assertive"
   style="left: -100%; right: 100%; position: fixed; z-index: -1;"
 />
 `;
 
-exports[`Grommet background 1`] = `
+exports[`Hercules background 1`] = `
 .c0 {
   font-size: 18px;
   line-height: 24px;
@@ -55,11 +55,11 @@ exports[`Grommet background 1`] = `
 <div
   className="c0"
 >
-  Grommet App
+  Hercules App
 </div>
 `;
 
-exports[`Grommet basic 1`] = `
+exports[`Hercules basic 1`] = `
 .c0 {
   font-size: 18px;
   line-height: 24px;
@@ -75,7 +75,7 @@ exports[`Grommet basic 1`] = `
 />
 `;
 
-exports[`Grommet cssVars 1`] = `
+exports[`Hercules cssVars 1`] = `
 .c0 {
   font-size: 18px;
   line-height: 24px;
@@ -131,11 +131,11 @@ exports[`Grommet cssVars 1`] = `
 <div
   className="c0"
 >
-  Grommet App
+  Hercules App
 </div>
 `;
 
-exports[`Grommet full 1`] = `
+exports[`Hercules full 1`] = `
 .c0 {
   font-size: 18px;
   line-height: 24px;
@@ -152,11 +152,11 @@ exports[`Grommet full 1`] = `
 <div
   className="c0"
 >
-  Grommet App
+  Hercules App
 </div>
 `;
 
-exports[`Grommet grommet theme 1`] = `
+exports[`Hercules grommet theme 1`] = `
 .c0 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial,sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 18px;
@@ -175,7 +175,7 @@ exports[`Grommet grommet theme 1`] = `
 />
 `;
 
-exports[`Grommet hpe theme 1`] = `
+exports[`Hercules hpe theme 1`] = `
 .c0 {
   font-family: 'Metric',Arial,sans-serif;
   font-size: 18px;
@@ -192,11 +192,11 @@ exports[`Grommet hpe theme 1`] = `
 <div
   className="c0"
 >
-  Grommet App
+  Hercules App
 </div>
 `;
 
-exports[`Grommet ssr rendering Mozilla/5.0 (X11; Linux x 1`] = `
+exports[`Hercules ssr rendering Mozilla/5.0 (X11; Linux x 1`] = `
 .c0 {
   font-size: 18px;
   line-height: 24px;
@@ -233,7 +233,7 @@ exports[`Grommet ssr rendering Mozilla/5.0 (X11; Linux x 1`] = `
 </div>
 `;
 
-exports[`Grommet ssr rendering Mozilla/5.0 (iPad; CPU OS 1`] = `
+exports[`Hercules ssr rendering Mozilla/5.0 (iPad; CPU OS 1`] = `
 .c0 {
   font-size: 18px;
   line-height: 24px;
@@ -270,7 +270,7 @@ exports[`Grommet ssr rendering Mozilla/5.0 (iPad; CPU OS 1`] = `
 </div>
 `;
 
-exports[`Grommet ssr rendering Mozilla/5.0 (iPhone; CPU  1`] = `
+exports[`Hercules ssr rendering Mozilla/5.0 (iPhone; CPU  1`] = `
 .c0 {
   font-size: 18px;
   line-height: 24px;
@@ -307,7 +307,7 @@ exports[`Grommet ssr rendering Mozilla/5.0 (iPhone; CPU  1`] = `
 </div>
 `;
 
-exports[`Grommet themeMode 1`] = `
+exports[`Hercules themeMode 1`] = `
 .c0 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial,sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 18px;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { ThemeType } from 'grommet/themes';
-import { grommet, Box, Button, Grommet } from 'grommet';
+import { ThemeType } from 'hercules-theme/themes';
+import { microfocus, Box, Button, Hercules } from 'hercules-theme';
 
 // Type annotations can only be used in TypeScript files.
 // Remove ': ThemeType' if you are not using Typescript.
@@ -51,21 +51,21 @@ const customTheme: ThemeType = {
 
 const CustomTheme = () => (
   <>
-    <Grommet theme={customTheme}>
+    <Hercules theme={customTheme}>
       <Box align="center" pad="large">
         <Button label="custom theme" onClick={() => {}} primary />
       </Box>
-    </Grommet>
-    <Grommet theme={customTheme}>
+    </Hercules>
+    <Hercules theme={customTheme}>
       <Box align="center" pad="large">
         <Button label="custom theme disabled" disabled primary />
       </Box>
-    </Grommet>
-    <Grommet theme={grommet}>
+    </Hercules>
+    <Hercules theme={microfocus}>
       <Box align="center" pad="large">
         <Button as="span" label="Custom as=span" />
       </Box>
-    </Grommet>
+    </Hercules>
   </>
 );
 

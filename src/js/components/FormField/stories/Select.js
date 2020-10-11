@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { grommet, Box, FormField, Select, Grommet } from 'grommet';
+import { microfocus, Box, FormField, Select, Hercules } from 'hercules-theme';
 
 const allOptions = Array(100)
   .fill()
@@ -11,7 +11,7 @@ const FormFieldSelect = props => {
   const [value, setValue] = useState('');
 
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box align="center" pad="large">
         <FormField label="Label" htmlFor="select" {...props}>
           <Select
@@ -23,7 +23,7 @@ const FormFieldSelect = props => {
           />
         </FormField>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

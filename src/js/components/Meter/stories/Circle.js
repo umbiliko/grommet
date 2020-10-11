@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, Meter } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, Meter } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const CircleMeter = () => {
   const [ value, setValue ] = useState(20);
@@ -20,7 +20,7 @@ const CircleMeter = () => {
   }, []);
 
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box align="center" pad="large">
         <Meter
           type="circle"
@@ -28,7 +28,7 @@ const CircleMeter = () => {
           values={[{ value, color: value > 50 ? 'accent-2' : 'accent-1' }]}
         />
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

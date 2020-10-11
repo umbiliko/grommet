@@ -2,14 +2,14 @@ import React, { useCallback, useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
 import {
-  grommet,
+  microfocus,
   Box,
   Button,
   Form,
   FormField,
   Select,
-  Grommet,
-} from 'grommet';
+  Hercules,
+} from 'hercules-theme';
 
 const options = [
   { label: 'option 1', value: 1 },
@@ -22,7 +22,7 @@ const FormFieldSelect = () => {
   const onChange = useCallback(nextValue => setValue(nextValue), []);
 
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box align="center" pad="large">
         <Form
           value={value}
@@ -41,7 +41,7 @@ const FormFieldSelect = () => {
           <Button type="submit" label="Update" primary />
         </Form>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

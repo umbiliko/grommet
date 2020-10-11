@@ -3,8 +3,8 @@ import { storiesOf } from '@storybook/react';
 import { FormDown } from 'grommet-icons';
 import isChromatic from 'chromatic/isChromatic';
 
-import { Grommet, Box, Calendar, DropButton, Text } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, Calendar, DropButton, Text } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const CalendarDropButton = () => {
   const [date, setDate] = useState('');
@@ -16,7 +16,7 @@ const CalendarDropButton = () => {
   };
 
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box align="center" pad="large">
         <DropButton
           open={open}
@@ -32,7 +32,7 @@ const CalendarDropButton = () => {
           </Box>
         </DropButton>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

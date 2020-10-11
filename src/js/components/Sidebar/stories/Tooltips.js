@@ -6,11 +6,11 @@ import {
   Button,
   Box,
   Drop,
-  grommet,
-  Grommet,
+  microfocus,
+  Hercules,
   Nav,
   Stack,
-} from 'grommet';
+} from 'hercules-theme';
 
 import {
   Analytics,
@@ -125,7 +125,7 @@ const SidebarButton = ({ iconName, index }) => {
 };
 
 export const TooltipsSidebar = () => (
-  <Grommet theme={grommet} full>
+  <Hercules theme={microfocus} full>
     <Box direction="row" height={{ min: '100%' }}>
       <Sidebar
         overflow="auto"
@@ -141,7 +141,7 @@ export const TooltipsSidebar = () => (
         </Nav>
       </Sidebar>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Sidebar', module).add('Tooltips', () => <TooltipsSidebar />);

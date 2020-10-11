@@ -26,7 +26,7 @@ import font from './font';
 import form, { FormTheme } from './form';
 import formField from './formField';
 import grid, { GridTheme } from './grid';
-import grommet from './grommet';
+import hercules from './hercules';
 import heading from './heading';
 import icon from './icon';
 import layer from './layer';
@@ -157,7 +157,7 @@ export const generator = (
       form,
       formField,
       grid,
-      grommet,
+      hercules,
       heading,
       icon,
       layer,

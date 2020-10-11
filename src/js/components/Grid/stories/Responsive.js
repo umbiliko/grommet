@@ -1,17 +1,17 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, Grid, Heading, ResponsiveContext } from 'grommet';
+import { Hercules, Box, Grid, Heading, ResponsiveContext } from 'hercules-theme';
 
-import { grommet } from 'grommet/themes';
-import { deepMerge } from 'grommet/utils';
+import { microfocus } from 'hercules-theme/themes';
+import { deepMerge } from 'hercules-theme/utils';
 
 // Two responsive grids
 //    - First one with a known number of elements
 //    - Second one with an unknown number of elements
 
 // set custom breakpoints so we can see the changes
-const customBreakpoints = deepMerge(grommet, {
+const customBreakpoints = deepMerge(microfocus, {
   global: {
     breakpoints: {
       small: {
@@ -147,7 +147,7 @@ const Responsive = ({
 );
 
 const ResponsiveGrid = () => (
-  <Grommet theme={customBreakpoints}>
+  <Hercules theme={customBreakpoints}>
     <Box>
       <Heading level={2}>Resize me.</Heading>
       <Responsive
@@ -186,7 +186,7 @@ const ResponsiveGrid = () => (
         {listAnimalsBoxes}
       </Responsive>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Grid', module).add('Responsive grid', () => <ResponsiveGrid />);

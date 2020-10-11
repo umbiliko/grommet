@@ -1,5 +1,5 @@
 import { Box, BoxProps } from './Box';
-import { deepMerge } from 'grommet/utils';
+import { deepMerge } from 'hercules-theme/utils';
 import React from 'react';
 import styled, { css, ThemeProps } from 'styled-components';
 import pick from '../themes/utils/pick';

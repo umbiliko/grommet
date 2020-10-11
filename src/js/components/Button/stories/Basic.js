@@ -1,10 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { grommet, Box, Button, Grommet } from 'grommet';
+import { microfocus, Box, Button, Herculesom 'hercules-theme';
 
 const BasicButtons = props => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box align="center" pad="medium">
       <Button label="Default" onClick={() => {}} {...props} />
     </Box>
@@ -26,7 +26,7 @@ const BasicButtons = props => (
         {...props}
       />
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Button', module).add('Basic', () => <BasicButtons />);

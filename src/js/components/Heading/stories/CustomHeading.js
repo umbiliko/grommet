@@ -1,10 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Grommet, Heading } from 'grommet';
-import { grommet } from 'grommet/themes';
-import { deepMerge } from 'grommet/utils';
+import { Hercules, Heading } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
+import { deepMerge } from 'hercules-theme/utils';
 
-const customlevel = deepMerge(grommet, {
+const customlevel = deepMerge(microfocus, {
   heading: {
     level: {
       5: {
@@ -26,7 +26,7 @@ const customlevel = deepMerge(grommet, {
   },
 });
 const CustomHeading = () => (
-  <Grommet theme={customlevel}>
+  <Hercules theme={customlevel}>
     <Heading level={5} size="small">
       Heading level 5 small
     </Heading>
@@ -36,7 +36,7 @@ const CustomHeading = () => (
     <Heading level={5} size="large">
       Heading level 5 small
     </Heading>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Heading', module).add('Custom', () => <CustomHeading />);

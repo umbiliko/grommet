@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { grommet, Box, FormField, Form, Text, Button, Grommet } from 'grommet';
+import { microfocus, Box, FormField, Form, Text, Button, Hercules } from 'hercules-theme';
 
 const FormFieldLabel = props => {
   const { required, label, ...rest } = props;
@@ -24,7 +24,7 @@ const FormFieldLabel = props => {
 };
 
 const LabelFormField = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box align="center" pad="large">
       <Form>
         <FormFieldLabel name="firstName" label="FirstName" required />
@@ -36,7 +36,7 @@ const LabelFormField = () => (
         </Text>
       </Form>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Form', module).add('Required label', () => <LabelFormField />);

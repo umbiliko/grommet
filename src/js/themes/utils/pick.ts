@@ -1,4 +1,4 @@
-import { ColorType } from 'grommet/utils';
+import { ColorType } from 'hercules-theme/utils';
 import { undefinedColor } from '../microfocus/colors';
 import { StyledProps } from 'styled-components';
 

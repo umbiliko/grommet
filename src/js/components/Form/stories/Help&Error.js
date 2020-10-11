@@ -1,10 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { grommet, Box, Form, FormField, TextInput, Grommet } from 'grommet';
+import { microfocus, Box, Form, FormField, TextInput, Hercules } from 'hercules-theme';
 
 const FormFieldHelpError = props => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box align="center" pad="large">
       <Form>
         <FormField
@@ -23,7 +23,7 @@ const FormFieldHelpError = props => (
         </FormField>
       </Form>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Form', module).add('Help and error', () => <FormFieldHelpError />);

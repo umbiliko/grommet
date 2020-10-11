@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 
 import { Favorite } from 'grommet-icons';
 
-import { Avatar, Box, Grommet } from 'grommet';
+import { Avatar, Box, Hercules } from 'hercules-theme';
 
 const theme = {
   avatar: {
@@ -26,7 +26,7 @@ const Themed = () => {
   const src = '//s.gravatar.com/avatar/b7fb138d53ba0f573212ccce38a7c43b?s=80';
 
   return (
-    <Grommet theme={theme}>
+    <Hercules theme={theme}>
       <Box
         align="center"
         justify="center"
@@ -46,7 +46,7 @@ const Themed = () => {
           SY
         </Avatar>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

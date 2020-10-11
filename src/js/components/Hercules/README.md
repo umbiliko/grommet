@@ -1,12 +1,12 @@
-## Grommet
-The top level Grommet container.
+## Hercules
+The top level Hercules container.
 
-[![](https://cdn-images-1.medium.com/fit/c/120/120/1*TD1P0HtIH9zF0UEH28zYtw.png)](https://storybook.grommet.io/?selectedKind=Grommet&full=0&addons=0&stories=1&panelRight=0) [![](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/grommet&module=%2Fsrc%2FGrommet.js)
+[![](https://cdn-images-1.medium.com/fit/c/120/120/1*TD1P0HtIH9zF0UEH28zYtw.png)](https://storybook.grommet.io/?selectedKind=Hercules&full=0&addons=0&stories=1&panelRight=0) [![](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/grommet&module=%2Fsrc%2FGrommet.js)
 ## Usage
 
 ```javascript
-import { Grommet } from 'grommet';
-<Grommet>...</Grommet>
+import { Hercules } from 'hercules-theme';
+<Hercules>...</Hercules>
 ```
 
 ## Properties
@@ -68,7 +68,7 @@ boolean
 
 **plain**
 
-Whether or not Grommet should apply a global font-family, font-size,
+Whether or not Hercules should apply a global font-family, font-size,
         and line-height.
 
 ```
@@ -85,7 +85,7 @@ boolean
 
 **theme**
 
-Custom styles for Grommet app component.
+Custom styles for Hercules app component.
 
 ```
 object
@@ -130,7 +130,7 @@ div
   
 **grommet.extend**
 
-Any additional style for Grommet. Expects `string | (props) => {}`.
+Any additional style for Hercules. Expects `string | (props) => {}`.
 
 Defaults to
 

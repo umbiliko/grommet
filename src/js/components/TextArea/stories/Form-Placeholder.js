@@ -1,10 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { grommet, Box, FormField, Form, TextArea, Grommet } from 'grommet';
+import { microfocus, Box, FormField, Form, TextArea, Hercules } from 'hercules-theme';
 
 const FormFieldTextArea = props => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box align="center" pad="large">
       <Form>
         <FormField
@@ -16,7 +16,7 @@ const FormFieldTextArea = props => (
         />
       </Form>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('TextArea', module).add('Form with placeholder', () => (

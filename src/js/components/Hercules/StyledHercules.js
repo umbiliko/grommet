@@ -9,7 +9,7 @@ const fullStyle = css`
   overflow: auto;
 `;
 
-const StyledGrommet = styled.div`
+const StyledHercules = styled.div`
   ${props => !props.plain && baseStyle}
   ${props => props.full && fullStyle}
   ${props => props.theme.global.font.face}
@@ -22,7 +22,7 @@ const StyledGrommet = styled.div`
       .join('\n')}
 `;
 
-StyledGrommet.defaultProps = {};
-Object.setPrototypeOf(StyledGrommet.defaultProps, defaultProps);
+StyledHercules.defaultProps = {};
+Object.setPrototypeOf(StyledHercules.defaultProps, defaultProps);
 
-export { StyledGrommet };
+export { StyledHercules as StyledGrommet };

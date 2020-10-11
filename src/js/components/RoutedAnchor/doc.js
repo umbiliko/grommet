@@ -8,7 +8,7 @@ export const doc = RoutedAnchor => {
     .availableAt(getAvailableAtBadge('RoutedAnchor'))
     .description('An Anchor with support for React Router.')
     .usage(
-      "import { RoutedAnchor } from 'grommet';\n" +
+      "import { RoutedAnchor } from 'hercules-theme';\n" +
         "<RoutedAnchor primary path='/documentation' />",
     )
     .intrinsicElement('a');

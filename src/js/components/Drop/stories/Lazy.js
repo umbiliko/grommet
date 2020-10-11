@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Drop, Grommet } from 'grommet';
-import { grommet } from 'grommet/themes';
-import { deepMerge } from 'grommet/utils';
+import { Box, Drop, Hercules } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
+import { deepMerge } from 'hercules-theme/utils';
 
-const lazyTheme = deepMerge(grommet, {
+const lazyTheme = deepMerge(microfocus, {
   global: {
     drop: {
       background: 'rgba(255, 255, 255, 0.7)',
@@ -31,7 +31,7 @@ const LazyDrop = () => {
   }, []);
 
   return (
-    <Grommet theme={lazyTheme} full>
+    <Hercules theme={lazyTheme} full>
       <Box fill justify="between" pad="large" gap="small">
         <Box direction="row" justify="between" pad={{ horizontal: 'small' }}>
           <Box
@@ -117,7 +117,7 @@ const LazyDrop = () => {
           )}
         </Box>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

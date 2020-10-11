@@ -1,8 +1,8 @@
 import React, { useMemo, useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, Chart, RangeSelector, Stack, Text } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, Chart, RangeSelector, Stack, Text } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 import { calcs } from '../calcs';
 import { generateData } from './data';
@@ -63,7 +63,7 @@ const WindowChart = ({ data, max }) => {
   );
 
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box pad="large">
         {/* className="chromatic-ignore" is used for the story testing.
             grommet doesn't reccomend the usage of className */}
@@ -145,7 +145,7 @@ const WindowChart = ({ data, max }) => {
           />
         </Stack>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

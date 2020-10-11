@@ -7,14 +7,14 @@ import {
   Box,
   Button,
   FormField,
-  Grommet,
+  Hercules,
   Heading,
   Layer,
   Select,
   TextArea,
   TextInput,
-} from 'grommet';
-import { grommet } from 'grommet/themes';
+} from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const FormLayer = () => {
   const [open, setOpen] = React.useState(false);
@@ -25,7 +25,7 @@ const FormLayer = () => {
   const onClose = () => setOpen(undefined);
 
   return (
-    <Grommet theme={grommet} full>
+    <Hercules theme={microfocus} full>
       <Box fill align="center" justify="center">
         <Button icon={<Add />} label="Add" onClick={onOpen} />
         {open && (
@@ -87,7 +87,7 @@ const FormLayer = () => {
           </Layer>
         )}
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

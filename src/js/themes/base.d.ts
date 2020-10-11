@@ -717,7 +717,7 @@ export interface ThemeType {
     margin?: MarginType;
     round?: RoundType;
   };
-  grommet?: {
+  hercules?: {
     extend?: ExtendType;
   };
   heading?: {

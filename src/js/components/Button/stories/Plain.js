@@ -2,13 +2,13 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { Add } from 'grommet-icons';
 
-import { Box, Button, Grommet, Text } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Button, Hercules, Text } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const PlainButtons = props => (
   <Box pad="large" gap="large">
     {/* Out of the Box Button */}
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box align="center">
         <Button hoverIndicator="light-1" onClick={() => {}} {...props}>
           {/*  When Button include children, it is treated as plain */}
@@ -18,9 +18,9 @@ const PlainButtons = props => (
           </Box>
         </Button>
       </Box>
-    </Grommet>
+    </Hercules>
     {/* Kind Button */}
-    <Grommet
+    <Hercules
       theme={{
         global: {
           font: {
@@ -39,7 +39,7 @@ const PlainButtons = props => (
           </Box>
         </Button>
       </Box>
-    </Grommet>
+    </Hercules>
   </Box>
 );
 

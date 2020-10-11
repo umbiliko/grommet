@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, Chart } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, Chart } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const gradient = [
   { value: 0, color: 'status-ok' },
@@ -12,7 +12,7 @@ const gradient = [
 ];
 
 const GradientCharts = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box align="center" pad="large" gap="medium">
       <Chart
         id="bar"
@@ -43,7 +43,7 @@ const GradientCharts = () => (
         round
       />
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Chart', module).add('Gradient', () => <GradientCharts />);

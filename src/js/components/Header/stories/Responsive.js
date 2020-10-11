@@ -1,17 +1,17 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Header, Anchor, Box, ResponsiveContext, Menu } from 'grommet';
-import { Grommet as GrommetIcon, Menu as MenuIcon } from 'grommet-icons';
-import { grommet } from 'grommet/themes';
+import { Hercules, Header, Anchor, Box, ResponsiveContext, Menu } from 'hercules-theme';
+import { Hercules as GrommetIcon, Menu as MenuIcon } from 'grommet-icons';
+import { microfocus } from 'hercules-theme/themes';
 
 const Responsive = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Header background="light-4" pad="medium" height="xsmall">
       <Anchor
         href="https://tools.grommet.io/"
         icon={<GrommetIcon color="brand" />}
-        label="Grommet Tools"
+        label="Hercules Tools"
       />
       <ResponsiveContext.Consumer>
         {size =>
@@ -23,21 +23,21 @@ const Responsive = () => (
                 icon={<MenuIcon color="brand" />}
                 items={[
                   {
-                    label: <Box pad="small">Grommet.io</Box>,
+                    label: <Box pad="small">Hercules.io</Box>,
                     href: 'https://v2.grommet.io/',
                   },
                   {
                     label: <Box pad="small">Feedback</Box>,
-                    href: 'https://github.com/grommet/grommet/issues',
+                    href: 'https://github.com/hercules/hercules-theme/issues',
                   },
                 ]}
               />
             </Box>
           ) : (
             <Box justify="end" direction="row" gap="medium">
-              <Anchor href="https://v2.grommet.io/" label="Grommet.io" />
+              <Anchor href="https://v2.grommet.io/" label="Hercules.io" />
               <Anchor
-                href="https://github.com/grommet/grommet/issues"
+                href="https://github.com/hercules/hercules-theme/issues"
                 label="Feedback"
               />
             </Box>
@@ -45,7 +45,7 @@ const Responsive = () => (
         }
       </ResponsiveContext.Consumer>
     </Header>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Header', module).add('Responsive', () => <Responsive />);

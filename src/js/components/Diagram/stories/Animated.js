@@ -1,13 +1,13 @@
 import React, { useReducer, useEffect } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Diagram, Grommet, grommet, Stack, Text } from 'grommet';
+import { Box, Diagram, Hercules, microfocus, Stack, Text } from 'hercules-theme';
 import { Diamond } from 'grommet-icons';
-import { deepMerge } from 'grommet/utils';
+import { deepMerge } from 'hercules-theme/utils';
 
 import { data } from './data';
 
-const customTheme = deepMerge(grommet, {
+const customTheme = deepMerge(microfocus, {
   diagram: {
     extend: `@keyframes 
   example {
@@ -87,7 +87,7 @@ const Animated = () => {
   }
 
   return (
-    <Grommet theme={customTheme}>
+    <Hercules theme={customTheme}>
       <Box align="center">
         <Box pad="large">
           <Stack>
@@ -111,7 +111,7 @@ const Animated = () => {
           </Stack>
         </Box>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

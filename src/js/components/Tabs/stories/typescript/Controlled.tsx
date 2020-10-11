@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { Attraction, Car, TreeOption } from 'grommet-icons';
-import { Box, Grommet, Tab, Tabs } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Hercules, Tab, Tabs } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const ControlledTabs = () => {
   const [index, setIndex] = React.useState(0);
@@ -12,7 +12,7 @@ const ControlledTabs = () => {
   const onActive = (nextIndex: number) => setIndex(nextIndex);
 
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Tabs activeIndex={index} onActive={onActive}>
         <Tab title="Tab 1">
           <Box margin="small" pad="large" align="center" background="accent-1">
@@ -30,7 +30,7 @@ const ControlledTabs = () => {
           </Box>
         </Tab>
       </Tabs>
-    </Grommet>
+    </Hercules>
   );
 };
 

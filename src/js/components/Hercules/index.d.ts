@@ -2,7 +2,7 @@ import * as React from 'react';
 import { ThemeType } from '../../themes';
 import { BackgroundType } from '../../utils';
 
-export interface GrommetProps {
+export interface HerculesProps {
   background?: BackgroundType;
   containerTarget?: HTMLElement;
   cssVars?: boolean;
@@ -14,7 +14,7 @@ export interface GrommetProps {
   userAgent?: string;
 }
 
-declare const Grommet: React.ComponentClass<GrommetProps &
+declare const Hercules: React.ComponentClass<HerculesProps &
   JSX.IntrinsicElements['div']>;
 
-export { Grommet };
+export { Hercules };

@@ -21,6 +21,6 @@ export default create({
   inputBorderRadius: 4,
 
   brandTitle: 'Everything UX',
-  brandImage: 'grommet-logo.svg',
+  brandImage: 'hercules-theme-logo.svg',
   brandUrl: 'https://v2.grommet.io/',
 });

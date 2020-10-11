@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 
-import { grommet, Box, Heading, Grommet, Paragraph } from 'grommet';
+import { microfocus, Box, Heading, Hercules, Paragraph } from 'hercules-theme';
 
 class App extends Component {
   render() {
     return (
-      <Grommet theme={grommet}>
+      <Hercules theme={microfocus}>
         <Box pad="small">
           <Heading level={3}>
             <strong>Hello World</strong>
           </Heading>
-          <Paragraph>Hello from a Grommet page!</Paragraph>
+          <Paragraph>Hello from a Hercules Theme page!</Paragraph>
         </Box>
-      </Grommet>
+      </Hercules>
     );
   }
 }

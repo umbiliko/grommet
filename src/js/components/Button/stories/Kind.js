@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { User } from 'grommet-icons';
-import { Box, Button, grommet, Grommet, Heading, Text } from 'grommet';
+import { Box, Button, microfocus, Hercules, Heading, Text } from 'hercules-theme';
 
 const darks = [false, true];
 const kinds = [
@@ -34,7 +34,7 @@ const contents = [
 
 const Example = () => (
   <Box pad="large" gap="large">
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box gap="medium">
         {kinds.map(kind => (
           <Box key={kind.name} flex={false}>
@@ -69,7 +69,7 @@ const Example = () => (
           </Box>
         ))}
       </Box>
-    </Grommet>
+    </Hercules>
   </Box>
 );
 

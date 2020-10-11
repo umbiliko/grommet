@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { RadioButtonGroup } from 'grommet';
+import { RadioButtonGroup } from 'hercules-theme';
 
 export const App = () => {
   const postMethods = [

@@ -1,11 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Grommet, Layer } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Hercules, Layer } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const RTLLayer = () => (
-  <Grommet theme={grommet} dir="rtl">
+  <Hercules theme={microfocus} dir="rtl">
     <Layer
       position="start"
       margin={{ vertical: 'small', start: 'xlarge', end: 'medium' }}
@@ -19,7 +19,7 @@ const RTLLayer = () => (
         <Box pad="xlarge">text</Box>
       </Box>
     </Layer>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Layer', module).add('RTL', () => <RTLLayer />);

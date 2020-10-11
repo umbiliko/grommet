@@ -2,8 +2,8 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import isChromatic from 'chromatic/isChromatic';
 
-import { Box, Grommet, RangeInput } from 'grommet';
-import { ThemeType } from 'grommet/themes';
+import { Box, Hercules, RangeInput } from 'hercules-theme';
+import { ThemeType } from 'hercules-theme/themes';
 
 import { Volume } from 'grommet-icons';
 
@@ -39,7 +39,7 @@ const CustomRangeInput = () => {
   const onChange = event => setValue(event.target.value);
 
   return (
-    <Grommet theme={customThemeRangeInput}>
+    <Hercules theme={customThemeRangeInput}>
       <Box direction="row" align="center" pad="large" gap="small">
         <Volume color="neutral-2" />
         <Box align="center" width="small">
@@ -52,7 +52,7 @@ const CustomRangeInput = () => {
           />
         </Box>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

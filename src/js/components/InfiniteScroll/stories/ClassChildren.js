@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, InfiniteScroll, Text } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, InfiniteScroll, Text } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 import { allItems } from './Basics';
 
@@ -16,13 +16,13 @@ const MyItem = ({ item }) => {
 };
 
 const ClassChildrenInfiniteScroll = props => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box>
       <InfiniteScroll items={allItems} {...props}>
         {item => <MyItem key={item} item={item} />}
       </InfiniteScroll>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('InfiniteScroll', module).add('Class children', () => (

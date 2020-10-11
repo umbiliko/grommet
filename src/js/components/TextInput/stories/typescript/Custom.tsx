@@ -3,13 +3,13 @@ import { storiesOf } from '@storybook/react';
 import isChromatic from 'chromatic/isChromatic';
 
 import { Search } from 'grommet-icons';
-import { Box, Image, Grommet, Text, TextInput } from 'grommet';
-import { grommet, ThemeType } from 'grommet/themes';
-import { deepMerge } from 'grommet/utils';
+import { Box, Image, Hercules, Text, TextInput } from 'hercules-theme';
+import { microfocus, ThemeType } from 'hercules-theme/themes';
+import { deepMerge } from 'hercules-theme/utils';
 
 // Type annotations can only be used in TypeScript files.
 // Remove ': ThemeType' if you are not using Typescript.
-const myCustomTheme: ThemeType = deepMerge(grommet, {
+const myCustomTheme: ThemeType = deepMerge(microfocus, {
   global: {
     drop: {
       background: '#444444',
@@ -133,7 +133,7 @@ const CustomSuggestionsTextInput = () => {
   };
 
   return (
-    <Grommet theme={myCustomTheme} full>
+    <Hercules theme={myCustomTheme} full>
       <Box background="dark-1" fill align="center" pad={{ top: 'large' }}>
         <Box
           ref={boxRef}
@@ -171,7 +171,7 @@ const CustomSuggestionsTextInput = () => {
           />
         </Box>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

@@ -22,8 +22,8 @@ yarn-error.log*
 report*
 
 #licenses 
-grommet-*-licenses.json
-grommet-*-src-with-dependecies.tgz
+hercules-theme-*-licenses.json
+hercules-theme-*-src-with-dependecies.tgz
 
 # misc
 .cache

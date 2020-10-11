@@ -3,12 +3,12 @@ import { storiesOf } from '@storybook/react';
 
 import { Add } from 'grommet-icons';
 
-import { Anchor, Box, Grommet } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Anchor, Box, Hercules } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const Colors = () => {
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box pad="medium" gap="medium">
         <Anchor icon={<Add />} href="#" />
         <Anchor icon={<Add />} label="Add" href="#" />
@@ -20,7 +20,7 @@ const Colors = () => {
         <Anchor icon={<Add />} label="Add" href="#" />
         <Anchor label="Add" href="#" />
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

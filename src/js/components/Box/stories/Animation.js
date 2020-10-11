@@ -1,11 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, Grid } from 'grommet';
-import { grommet } from '../../../themes';
+import { Hercules, Box, Grid } from 'hercules-theme';
+import { microfocus } from '../../../themes';
 
 const Example = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box pad="medium">
       <Grid columns="small" gap="medium">
         {[
@@ -34,7 +34,7 @@ const Example = () => (
         ))}
       </Grid>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Box', module).add('Animation', () => <Example />);

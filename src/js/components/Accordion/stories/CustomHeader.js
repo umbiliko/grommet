@@ -5,11 +5,11 @@ import {
   Accordion,
   AccordionPanel,
   Box,
-  Grommet,
+  Hercules,
   Text,
   TextInput,
-} from 'grommet';
-import { grommet } from 'grommet/themes';
+} from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const renderPanelHeader = (title, active) => (
   <Box direction="row" align="center" pad="medium" gap="small">
@@ -24,7 +24,7 @@ const CustomHeaderAccordion = () => {
   const [activeIndex, setActiveIndex] = useState([0]);
 
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Accordion
         activeIndex={activeIndex}
         onActive={newActiveIndex => setActiveIndex(newActiveIndex)}
@@ -52,7 +52,7 @@ const CustomHeaderAccordion = () => {
           </Box>
         </AccordionPanel>
       </Accordion>
-    </Grommet>
+    </Hercules>
   );
 };
 

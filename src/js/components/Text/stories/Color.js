@@ -1,13 +1,13 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Text } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Text } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const Color = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Text color="accent-1">Colored Text</Text>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Text', module).add('Color', () => <Color />);

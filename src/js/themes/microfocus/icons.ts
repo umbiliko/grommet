@@ -1,4 +1,4 @@
-import { deepMerge } from 'grommet/utils';
+import { deepMerge } from 'hercules-theme/utils';
 import iconAppOperationsManagerWindows24 from '../quantum-ux/icon-app-operations-manager-windows24';
 import iconUrl from '../quantum-ux/icon-url';
 

@@ -1,4 +1,4 @@
-import { ColorType } from 'grommet/utils';
+import { ColorType } from 'hercules-theme/utils';
 import { PartialThemeGenerator } from '.';
 import _alert from '../quantum-ux/alert';
 import _alertClose from '../quantum-ux/alert-close';

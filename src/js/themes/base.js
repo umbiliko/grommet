@@ -802,7 +802,7 @@ export const generate = (baseSpacing = 24, scale = 6) => {
       margin: { bottom: 'small' },
       // round: undefined,
     },
-    grommet: {
+    herculest: {
       // extend: undefined
     },
     heading: {

@@ -4,16 +4,16 @@ import { storiesOf } from '@storybook/react';
 import {
   Anchor,
   Box,
-  Grommet,
+  Hercules,
   Header,
   Nav,
   Menu,
   ResponsiveContext,
-} from 'grommet';
-import { grommet } from 'grommet/themes';
+} from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const CollapsableNav = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Header background="dark-1" pad="medium">
       <Box direction="row" align="center" gap="small">
         Resize the page to collapse the Nav into a Menu
@@ -39,7 +39,7 @@ const CollapsableNav = () => (
         }
       </ResponsiveContext.Consumer>
     </Header>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Nav', module).add('Collapsable nav', () => <CollapsableNav />);

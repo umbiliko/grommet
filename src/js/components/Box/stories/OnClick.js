@@ -2,11 +2,11 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { Attraction } from 'grommet-icons';
 
-import { Grommet, Box, Text } from 'grommet';
-import { grommet } from '../../../themes';
+import { Hercules, Box, Text } from 'hercules-theme';
+import { microfocus } from '../../../themes';
 
 const OnClickBox = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box justify="center" align="center" pad="large">
       {/* eslint-disable no-alert */}
       <Box
@@ -24,7 +24,7 @@ const OnClickBox = () => (
         <Text>Party</Text>
       </Box>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Box', module).add('onClick', () => <OnClickBox />);

@@ -1,14 +1,14 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, Button, RadioButton } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, Button, RadioButton } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const SimpleRadioButton = () => {
   const [selected, setSelected] = React.useState();
 
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box align="center" pad="large" gap="large">
         <RadioButton
           label="option 1"
@@ -20,7 +20,7 @@ const SimpleRadioButton = () => {
 
         <Button label="clear" onClick={() => setSelected(undefined)} />
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

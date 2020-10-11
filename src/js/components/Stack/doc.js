@@ -14,7 +14,7 @@ export const doc = Stack => {
       or icons.`,
     )
     .usage(
-      `import { Stack } from 'grommet';
+      `import { Stack } from 'hercules-theme';
 <Stack />`,
     )
     .intrinsicElement('div');

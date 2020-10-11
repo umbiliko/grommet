@@ -1,13 +1,13 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grid, Grommet, Box, Image, InfiniteScroll, Text } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Grid, Hercules, Box, Image, InfiniteScroll, Text } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 import { allItems } from './Basics';
 
 const GridInfiniteScroll = ({ ...rest }) => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Grid columns="xsmall" rows="small">
       <InfiniteScroll items={allItems} step={12} {...rest}>
         {item => (
@@ -18,7 +18,7 @@ const GridInfiniteScroll = ({ ...rest }) => (
         )}
       </InfiniteScroll>
     </Grid>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('InfiniteScroll', module)

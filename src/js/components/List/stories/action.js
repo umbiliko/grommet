@@ -1,9 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, List, Menu } from 'grommet';
+import { Hercules, Box, List, Menu } from 'hercules-theme';
 import { More } from 'grommet-icons';
-import { grommet } from 'grommet/themes';
+import { microfocus } from 'hercules-theme/themes';
 
 const data = [];
 
@@ -14,7 +14,7 @@ for (let i = 0; i < 40; i += 1) {
 }
 
 const ActionList = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box pad="large">
       <List
         data={data.slice(0, 10)}
@@ -31,7 +31,7 @@ const ActionList = () => (
         }}
       />
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('List', module).add('Action', () => <ActionList />);

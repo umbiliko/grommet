@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, Chart } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, Chart } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const values = [
   {
@@ -36,12 +36,12 @@ const values = [
 ];
 
 const Example = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box align="center" pad="large" gap="large">
       <Chart type="point" point="circle" values={values} />
       <Chart type="bar" values={values} />
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Chart', module).add('Value style', () => <Example />);

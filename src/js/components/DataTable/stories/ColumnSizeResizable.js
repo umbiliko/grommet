@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, DataTable, Heading } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, DataTable, Heading } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 export const DATA = [
   {
@@ -63,7 +63,7 @@ const columnsResize = [
 ];
 
 const ExampleResizable = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box align="center" pad="large">
       <Heading level="3">Table with resizeable & column sizes</Heading>
       <DataTable
@@ -73,7 +73,7 @@ const ExampleResizable = () => (
         resizeable
       />
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('DataTable', module).add('Column sizes resizeable', () => (

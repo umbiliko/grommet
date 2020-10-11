@@ -9,7 +9,7 @@ import {
   User,
   Wifi,
 } from 'grommet-icons';
-import { Box, Card, CardBody, CardFooter, Grid, Grommet, Text } from 'grommet';
+import { Box, Card, CardBody, CardFooter, Grid, Hercules, Text } from 'hercules-theme';
 
 const data = [
   {
@@ -94,7 +94,7 @@ const Identifier = ({ children, title, subTitle, size, ...rest }) => (
 );
 
 export const Example = () => (
-  <Grommet theme={theme} full>
+  <Hercules theme={theme} full>
     <Box pad="large">
       {/* Responsive Grid */}
       <Grid gap="medium" rows="small" columns={{ count: 'fit', size: 'small' }}>
@@ -118,7 +118,7 @@ export const Example = () => (
         ))}
       </Grid>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Card', module).add('Themed', () => <Example />);

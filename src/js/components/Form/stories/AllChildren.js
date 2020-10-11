@@ -5,7 +5,7 @@ import {
   Box,
   Button,
   CheckBoxGroup,
-  Grommet,
+  Hercules,
   Form,
   FormField,
   MaskedInput,
@@ -14,8 +14,8 @@ import {
   Select,
   TextArea,
   TextInput,
-} from 'grommet';
-import { grommet } from 'grommet/themes';
+} from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const passwordRulesStrong = [
   {
@@ -41,7 +41,7 @@ const passwordRulesStrong = [
 ];
 
 const Example = () => (
-  <Grommet full theme={grommet}>
+  <Hercules full theme={microfocus}>
     <Box fill align="center" justify="center">
       <Box width="medium">
         <Form
@@ -104,7 +104,7 @@ const Example = () => (
         </Form>
       </Box>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Form', module).add('FormField children', () => <Example />);

@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { grommet, Box, Button, Grommet, Heading } from 'grommet';
+import { microfocus, Box, Button, Hercules, Heading } from 'hercules-theme';
 
 const kindButtonTheme = {
   global: {
@@ -126,7 +126,7 @@ const coloredButton = {
 
 const CustomTheme = () => (
   <>
-    <Grommet theme={kindButtonTheme}>
+    <Hercules theme={kindButtonTheme}>
       <Box gap="small" pad="large">
         <Heading level={2} size="small">
           new custom theme
@@ -162,8 +162,8 @@ const CustomTheme = () => (
           />
         </Box>
       </Box>
-    </Grommet>
-    <Grommet theme={customTheme}>
+    </Hercules>
+    <Hercules theme={customTheme}>
       <Box
         align="center"
         justify="center"
@@ -182,17 +182,17 @@ const CustomTheme = () => (
         <Button label="Disabled" onClick={() => {}} disabled />
         <Button label="Plain Disabled" onClick={() => {}} plain disabled />
       </Box>
-    </Grommet>
-    <Grommet theme={coloredButton}>
+    </Hercules>
+    <Hercules theme={coloredButton}>
       <Box align="center" pad="large">
         <Button as="span" label="theme on dark background" primary />
       </Box>
-    </Grommet>
-    <Grommet theme={grommet}>
+    </Hercules>
+    <Hercules theme={microfocus}>
       <Box align="center" pad="large">
         <Button as="span" label="Custom as=span" />
       </Box>
-    </Grommet>
+    </Hercules>
   </>
 );
 

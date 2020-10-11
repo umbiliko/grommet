@@ -3,12 +3,12 @@ import { storiesOf } from '@storybook/react';
 
 import { Gremlin } from 'grommet-icons';
 
-import { Box, Grommet, grommet, List, Text } from 'grommet';
+import { Box, Hercules, microfocus, List, Text } from 'hercules-theme';
 
 export const data = ['Boise', 'Fort Collins', 'Bay Area', 'North Carolina'];
 
 export const ChildrenExample = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box pad="large" height="100%" background="light-2">
       <List data={data} pad="medium">
         {(datum, index) => (
@@ -25,7 +25,7 @@ export const ChildrenExample = () => (
         )}
       </List>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('List', module).add('Children', () => <ChildrenExample />);

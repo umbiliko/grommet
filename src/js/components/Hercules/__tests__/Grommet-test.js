@@ -3,12 +3,12 @@ import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 import { cleanup, render } from '@testing-library/react';
 
-import { hpe as hpeTheme } from 'grommet-theme-hpe';
+import { hpe as hpeTheme } from 'hercules-theme-theme-hpe';
 
-import { Grommet } from '..';
+import { Hercules } from '..';
 import { Heading } from '../../Heading';
 import { AnnounceContext, ResponsiveContext } from '../../../contexts';
-import { grommet } from '../../../themes/grommet';
+import { microfocus } from '../../../themes/grommet';
 
 const TestAnnouncer = ({ announce }) => {
   React.useEffect(() => announce('hello', 'assertive'));
@@ -38,67 +38,67 @@ const customBreakpointsTheme = {
 
 const SSRTester = ({ ua }) => {
   return (
-    <Grommet theme={customBreakpointsTheme} userAgent={ua}>
+    <Hercules theme={customBreakpointsTheme} userAgent={ua}>
       <ResponsiveContext.Consumer>
         {size => <Heading>{`Received size ${size} for ${ua}`}</Heading>}
       </ResponsiveContext.Consumer>
-    </Grommet>
+    </Hercules>
   );
 };
 
-describe('Grommet', () => {
+describe('Hercules', () => {
   afterEach(cleanup);
 
   test('basic', () => {
-    const component = renderer.create(<Grommet />);
+    const component = renderer.create(<Hercules />);
     expect(component.toJSON()).toMatchSnapshot();
   });
 
-  test('grommet theme', () => {
-    const component = renderer.create(<Grommet theme={grommet} />);
+  test('hercules-theme theme', () => {
+    const component = renderer.create(<Hercules theme={microfocus} />);
     expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('hpe theme', () => {
     const component = renderer.create(
-      <Grommet theme={hpeTheme}>Grommet App</Grommet>,
+      <Hercules theme={hpeTheme}>Hercules App</Hercules>,
     );
     expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('themeMode', () => {
     const component = renderer.create(
-      <Grommet theme={grommet} themeMode="dark" />,
+      <Hercules theme={microfocus} themeMode="dark" />,
     );
     expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('cssVars', () => {
-    const component = renderer.create(<Grommet cssVars>Grommet App</Grommet>);
+    const component = renderer.create(<Hercules cssVars>Hercules App</Hercules>);
     expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('full', () => {
-    const component = renderer.create(<Grommet full>Grommet App</Grommet>);
+    const component = renderer.create(<Hercules full>Hercules App</Hercules>);
     expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('background', () => {
     const component = renderer.create(
-      <Grommet full background="#0000ff">
-        Grommet App
-      </Grommet>,
+      <Hercules full background="#0000ff">
+        Hercules App
+      </Hercules>,
     );
     expect(component.toJSON()).toMatchSnapshot();
   });
 
   test('announce', done => {
     const { container } = render(
-      <Grommet>
+      <Hercules>
         <AnnounceContext.Consumer>
           {announce => <TestAnnouncer announce={announce} />}
         </AnnounceContext.Consumer>
-      </Grommet>,
+      </Hercules>,
     );
     expect(container.firstChild).toMatchSnapshot();
 

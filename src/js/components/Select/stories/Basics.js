@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Grommet, Select, Text } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Hercules, Select, Text } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const SimpleSelect = ({ ...rest }) => {
   const options = ['one', 'two'];
   const [value, setValue] = useState('');
   return (
-    <Grommet full theme={grommet}>
+    <Hercules full theme={microfocus}>
       <Box fill align="center" justify="start" pad="large" gap="medium">
         <Text weight="bold">Enabled</Text>
         <Select
@@ -32,7 +32,7 @@ const SimpleSelect = ({ ...rest }) => {
           {...rest}
         />
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

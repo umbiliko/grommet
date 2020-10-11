@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, DataTable, Heading } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, DataTable, Heading } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 export const DATA = [
   {
@@ -94,7 +94,7 @@ const columnsDefault = [
 ];
 
 const Example = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box fill="horizontal" pad="medium">
       <Heading level="3"> Default DataTable</Heading>
       <DataTable
@@ -150,7 +150,7 @@ const Example = () => (
         }}
       />
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('DataTable', module).add('Column sizes', () => <Example />);

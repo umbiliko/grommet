@@ -1,11 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, TextArea } from 'grommet';
-import { grommet } from 'grommet/themes';
-import { deepMerge } from 'grommet/utils';
+import { Hercules, Box, TextArea } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
+import { deepMerge } from 'hercules-theme/utils';
 
-const customTheme = deepMerge(grommet, {
+const customTheme = deepMerge(microfocus, {
   textArea: {
     extend: () => `
       font-size: 40px;
@@ -20,7 +20,7 @@ const ThemedTextArea = () => {
   const onChange = event => setValue(event.target.value);
 
   return (
-    <Grommet theme={customTheme}>
+    <Hercules theme={customTheme}>
       <Box
         width="large"
         height="medium"
@@ -28,7 +28,7 @@ const ThemedTextArea = () => {
       >
         <TextArea value={value} onChange={onChange} fill />
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

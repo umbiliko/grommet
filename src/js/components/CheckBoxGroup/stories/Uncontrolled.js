@@ -7,14 +7,14 @@ import {
   CheckBoxGroup,
   Form,
   FormField,
-  Grommet,
+  Hercules,
   Heading,
-} from 'grommet';
-import { grommet } from 'grommet/themes';
+} from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const CheckBoxGroupForm = () => {
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box pad="medium">
         <Heading level="3">Form with string options</Heading>
         <Form
@@ -51,7 +51,7 @@ const CheckBoxGroupForm = () => {
           <Button type="submit" label="Submit" />
         </Form>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

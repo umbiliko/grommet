@@ -7,7 +7,7 @@ export const doc = CheckBox => {
     .availableAt(getAvailableAtBadge('CheckBox'))
     .description('A checkbox toggle control.')
     .usage(
-      `import { CheckBox } from 'grommet';
+      `import { CheckBox } from 'hercules-theme';
 <CheckBox />`,
     )
     .intrinsicElement('input');

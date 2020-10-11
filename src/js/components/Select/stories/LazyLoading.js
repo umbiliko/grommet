@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, CheckBox, Grommet, Select } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, CheckBox, Hercules, Select } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const dummyOptions = Array(2000)
   .fill()
@@ -54,7 +54,7 @@ const LazyLoading = () => {
   const onChange = ({ selected: nextSelected }) => setSelected(nextSelected);
 
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box fill align="center" justify="start" pad="large">
         <Select
           multiple
@@ -72,7 +72,7 @@ const LazyLoading = () => {
           )}
         </Select>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, Chart, Heading } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, Chart, Heading } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const type = 'bar';
 let value = 10;
@@ -15,7 +15,7 @@ const values = Array(14)
   });
 
 const LayoutChart = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box margin="medium">
       <Heading level={2}>full</Heading>
       <Box pad="medium" border>
@@ -38,7 +38,7 @@ const LayoutChart = () => (
         <Chart type={type} values={values} round />
       </Box>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Chart', module).add('Layout', () => <LayoutChart />);

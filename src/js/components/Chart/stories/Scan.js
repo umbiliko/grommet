@@ -1,8 +1,8 @@
 import React, { useMemo, useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, Chart, Keyboard, Stack, Text } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, Chart, Keyboard, Stack, Text } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 import { calcs } from '../calcs';
 import { generateData } from './data';
@@ -19,7 +19,7 @@ const ScanChart = props => {
   );
 
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Keyboard
         onLeft={() => setActive(Math.max(0, active - 1))}
         onRight={() => setActive(Math.min(data.length - 1, active + 1))}
@@ -118,7 +118,7 @@ const ScanChart = props => {
           </Box>
         </Box>
       </Keyboard>
-    </Grommet>
+    </Hercules>
   );
 };
 

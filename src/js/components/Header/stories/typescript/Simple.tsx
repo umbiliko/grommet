@@ -1,14 +1,14 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Avatar, Anchor, Nav, Grommet, Header } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Avatar, Anchor, Nav, Hercules, Header } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const gravatarLink =
   '//s.gravatar.com/avatar/b7fb138d53ba0f573212ccce38a7c43b?s=80';
 
 const Simple = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Header background="light-4" pad="small">
       <Avatar src={gravatarLink} />
       <Nav direction="row">
@@ -16,7 +16,7 @@ const Simple = () => (
         <Anchor label="Profile" href="#" />
       </Nav>
     </Header>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Header', module).add('Simple', () => <Simple />);

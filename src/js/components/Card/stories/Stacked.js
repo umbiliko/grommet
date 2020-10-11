@@ -9,11 +9,11 @@ import {
   CardBody,
   CardHeader,
   Grid,
-  Grommet,
+  Hercules,
   Text,
   Image,
   Stack,
-} from 'grommet';
+} from 'hercules-theme';
 
 const theme = {
   global: {
@@ -58,7 +58,7 @@ const Example = () => {
     '//s.gravatar.com/avatar/b7fb138d53ba0f573212ccce38a7c43b?s=80';
 
   return (
-    <Grommet theme={theme}>
+    <Hercules theme={theme}>
       <Box pad="large">
         <Grid
           gap="large"
@@ -97,7 +97,7 @@ const Example = () => {
           ))}
         </Grid>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

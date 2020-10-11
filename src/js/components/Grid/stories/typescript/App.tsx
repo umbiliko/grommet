@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, Button, Grid, Text } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, Button, Grid, Text } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const AppGrid = () => {
   const [sidebar, setSidebar] = useState(true);
 
   return (
-    <Grommet full theme={grommet}>
+    <Hercules full theme={microfocus}>
       <Grid
         fill
         rows={['auto', 'flex']}
@@ -55,7 +55,7 @@ const AppGrid = () => {
           <Text>main</Text>
         </Box>
       </Grid>
-    </Grommet>
+    </Hercules>
   );
 };
 

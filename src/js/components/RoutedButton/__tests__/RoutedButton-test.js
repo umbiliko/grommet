@@ -5,7 +5,7 @@ import 'jest-styled-components';
 
 import { findAllByType } from '../../../utils';
 
-import { Grommet, RoutedButton } from '../..';
+import { Hercules, RoutedButton } from '../..';
 
 class FakeRouter extends Component {
   static propTypes = {
@@ -40,17 +40,17 @@ describe('RoutedButton', () => {
   const push = jest.fn();
   const replace = jest.fn();
   const warning = `This component will be deprecated in the upcoming releases.
-         Please refer to https://github.com/grommet/grommet/issues/2855 
+         Please refer to https://github.com/hercules/hercules-theme/issues/2855 
          for more information.`;
   test('renders', () => {
     console.warn = jest.fn();
     const warnSpy = jest.spyOn(console, 'warn');
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <FakeRouter replace={replace} push={push}>
           <RoutedButton label="Test" path="/" />
         </FakeRouter>
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -68,11 +68,11 @@ describe('RoutedButton', () => {
     const preventDefault = jest.fn();
     const onClick = jest.fn();
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <FakeRouter replace={replace} push={push}>
           <RoutedButton label="Test" onClick={onClick} path="/" />
         </FakeRouter>
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     const anchor = findAllByType(tree, 'a');
@@ -93,11 +93,11 @@ describe('RoutedButton', () => {
     const warnSpy = jest.spyOn(console, 'warn');
     const onClick = jest.fn();
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <FakeRouter replace={replace} push={push}>
           <RoutedButton label="Test" onClick={onClick} path="/" />
         </FakeRouter>
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
 
@@ -122,11 +122,11 @@ describe('RoutedButton', () => {
     const warnSpy = jest.spyOn(console, 'warn');
     const preventDefault = jest.fn();
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <FakeRouter replace={replace} push={push}>
           <RoutedButton label="Test" path="/" />
         </FakeRouter>
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
 
@@ -149,11 +149,11 @@ describe('RoutedButton', () => {
     const warnSpy = jest.spyOn(console, 'warn');
     const preventDefault = jest.fn();
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <FakeRouter replace={replace} push={push}>
           <RoutedButton label="Test" path="/" method="replace" />
         </FakeRouter>
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
 

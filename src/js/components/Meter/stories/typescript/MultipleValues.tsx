@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, Meter, Stack, Text } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, Meter, Stack, Text } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const MultipleValues = () => {
   const total = 100;
@@ -11,7 +11,7 @@ const MultipleValues = () => {
   const [highlight, setHighlight] = useState(false);
 
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box align="center" pad="large">
         <Stack anchor="center">
           <Meter
@@ -52,7 +52,7 @@ const MultipleValues = () => {
           </Box>
         </Stack>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

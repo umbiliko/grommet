@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, CheckBoxGroup, Grommet } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, CheckBoxGroup, Hercules } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const objectOptions = [];
 for (let i = 1; i <= 5; i += 1) {
@@ -17,7 +17,7 @@ const Example = () => {
   const [value, setValue] = useState([]);
   const [value2, setValue2] = useState([]);
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box pad="medium" gap="large">
         <CheckBoxGroup
           labelKey="lab"
@@ -39,7 +39,7 @@ const Example = () => {
           ]}
         />
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

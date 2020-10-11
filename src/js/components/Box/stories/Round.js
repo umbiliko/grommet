@@ -1,11 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, Grid } from 'grommet';
-import { grommet } from '../../../themes';
+import { Hercules, Box, Grid } from 'hercules-theme';
+import { microfocus } from '../../../themes';
 
 const RoundBox = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box pad="small" gap="small">
       <Box pad="small" background="brand" round alignSelf="start">
         true
@@ -54,7 +54,7 @@ const RoundBox = () => (
         </Box>
       </Grid>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Box', module).add('Round', () => <RoundBox />);

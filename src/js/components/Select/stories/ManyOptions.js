@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, CheckBox, Grommet, Select } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, CheckBox, Hercules, Select } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const Option = React.memo(({ value, selected }) => (
   <Box direction="row" gap="small" align="center" pad="xsmall">
@@ -23,7 +23,7 @@ const ManyOptions = () => {
   const [options, setOptions] = React.useState(dummyOptions);
 
   return (
-    <Grommet full theme={grommet}>
+    <Hercules full theme={microfocus}>
       <Box fill align="center" justify="start" pad="large">
         <Select
           multiple
@@ -60,7 +60,7 @@ const ManyOptions = () => {
           )}
         </Select>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

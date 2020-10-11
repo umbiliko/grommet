@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, DateInput, Text } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, DateInput, Text } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const Example = () => {
   const [value, setValue] = React.useState('');
@@ -12,14 +12,14 @@ const Example = () => {
     setValue(nextValue);
   };
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box direction="row" align="center" justify="center" pad="large">
         <Text weight="bold">
           {value && new Date(value).toLocaleDateString()}
         </Text>
         <DateInput value={value} onChange={onChange} />
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

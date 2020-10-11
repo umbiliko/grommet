@@ -1,11 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box } from 'grommet';
-import { grommet } from '../../../themes';
+import { Hercules } from 'hercules-theme';
+import { microfocus } from '../../../themes';
 
 const RTLBox = () => (
-  <Grommet theme={grommet} dir="rtl">
+  <Hercules theme={microfocus} dir="rtl">
     <Box direction="row" align="center" pad="small" gap="small" border>
       <Box direction="row" align="center" pad="small" border="start">
         border start
@@ -27,7 +27,7 @@ const RTLBox = () => (
         margin start
       </Box>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Box', module).add('RTL', () => <RTLBox />);

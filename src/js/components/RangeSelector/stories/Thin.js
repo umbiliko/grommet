@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { render } from 'react-dom';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, RangeSelector, Stack, Text } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, RangeSelector, Stack, Text } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const RANGE_MIN = 0;
 const RANGE_MAX = 100;
@@ -36,11 +36,11 @@ function Thin({ initialRange = [0, 100], label }) {
 
 function App() {
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box pad="small">
         <Thin label="My Range Selector" />
       </Box>
-    </Grommet>
+    </Hercules>
   );
 }
 

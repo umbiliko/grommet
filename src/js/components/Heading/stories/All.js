@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react';
-import { Grommet, Grid, Heading } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Grid, Heading } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const H = ({ level, size }) => (
   <Heading level={level} size={size}>
@@ -28,14 +28,14 @@ Set.propTypes = {
 };
 
 const All = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Grid columns="large" gap="medium">
       <Set size="medium" />
       <Set size="small" />
       <Set size="large" />
       <Set size="xlarge" />
     </Grid>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Heading', module).add('All', () => <All />);

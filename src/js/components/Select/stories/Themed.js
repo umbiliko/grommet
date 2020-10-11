@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Grommet, Select } from 'grommet';
-import { grommet } from 'grommet/themes';
-import { deepMerge } from 'grommet/utils';
+import { Box, Hercules, Select } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
+import { deepMerge } from 'hercules-theme/utils';
 import { FormDown, FormUp } from 'grommet-icons';
 
-const customRoundedTheme = deepMerge(grommet, {
+const customRoundedTheme = deepMerge(microfocus, {
   global: {
     colors: {
       selected: 'neutral-3',
@@ -50,7 +50,7 @@ const SimpleSelect = ({ ...rest }) => {
   const options = ['one', 'two'];
   const [value, setValue] = useState('');
   return (
-    <Grommet full theme={customRoundedTheme}>
+    <Hercules full theme={customRoundedTheme}>
       <Box fill align="center" justify="start" pad="large">
         <Select
           id="select"
@@ -62,7 +62,7 @@ const SimpleSelect = ({ ...rest }) => {
           {...rest}
         />
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

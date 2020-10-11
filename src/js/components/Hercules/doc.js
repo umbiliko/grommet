@@ -3,13 +3,13 @@ import { describe, PropTypes } from 'react-desc';
 import { backgroundDoc } from '../../utils/prop-types';
 import { getAvailableAtBadge } from '../../utils/mixins';
 
-export const doc = Grommet => {
-  const DocumentedGrommet = describe(Grommet)
-    .availableAt(getAvailableAtBadge('Grommet'))
-    .description('The top level Grommet container.')
+export const doc = Hercules => {
+  const DocumentedGrommet = describe(Hercules)
+    .availableAt(getAvailableAtBadge('Hercules'))
+    .description('The top level Hercules container.')
     .usage(
-      `import { Grommet } from 'grommet';
-<Grommet>...</Grommet>`,
+      `import { Hercules } from 'hercules-theme';
+<Hercules>...</Hercules>`,
     )
     .intrinsicElement('div');
 
@@ -23,7 +23,7 @@ export const doc = Grommet => {
       .defaultValue(false),
     plain: PropTypes.bool
       .description(
-        `Whether or not Grommet should apply a global font-family, font-size,
+        `Whether or not Hercules should apply a global font-family, font-size,
         and line-height.`,
       )
       .defaultValue(false),
@@ -31,7 +31,7 @@ export const doc = Grommet => {
       .description('Whether to expose the css variables.')
       .defaultValue(false),
     theme: PropTypes.object.description(
-      'Custom styles for Grommet app component.',
+      'Custom styles for Hercules app component.',
     ),
     themeMode: PropTypes.oneOf(['dark', 'light']).description(
       `Dark vs. light theme variation. Default is unspecified and left to
@@ -53,8 +53,8 @@ export const doc = Grommet => {
 };
 
 export const themeDoc = {
-  'grommet.extend': {
-    description: 'Any additional style for Grommet.',
+  'hercules-theme.extend': {
+    description: 'Any additional style for Hercules.',
     type: 'string | (props) => {}',
     defaultValue: undefined,
   },

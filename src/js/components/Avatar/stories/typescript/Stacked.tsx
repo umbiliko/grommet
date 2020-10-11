@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 
 import { Favorite, UserFemale, UserNew } from 'grommet-icons';
 
-import { Avatar, Box, Grommet, Stack } from 'grommet';
+import { Avatar, Box, Hercules, Stack } from 'hercules-theme';
 import theme from '../../../../themes/microfocus';
 
 const Stacked = () => {
@@ -51,7 +51,7 @@ const Stacked = () => {
   );
 
   return (
-    <Grommet theme={theme}>
+    <Hercules theme={theme}>
       <Box align="center" gap="medium" pad="large" background="dark-1">
         {/* Nested Avatars */}
         <Stack anchor="bottom-right">
@@ -77,7 +77,7 @@ const Stacked = () => {
         <GroupedGravatarCentered />
         <GroupedGravatarRTL />
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

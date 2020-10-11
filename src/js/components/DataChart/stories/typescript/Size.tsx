@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, DataChart, Grommet, Text } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, DataChart, Hercules, Text } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const data = [];
 for (let i = 1; i < 8; i += 1) {
@@ -14,7 +14,7 @@ for (let i = 1; i < 8; i += 1) {
 }
 
 const Example = () => (
-  <Grommet full theme={grommet}>
+  <Hercules full theme={microfocus}>
     <Box fill="horizontal" align="center" justify="center" pad="large">
       <DataChart
         axis
@@ -37,7 +37,7 @@ const Example = () => (
         pad={{ horizontal: 'medium', vertical: 'small' }}
       />
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('DataChart', module).add('Size', () => <Example />);

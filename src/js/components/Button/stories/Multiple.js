@@ -1,13 +1,13 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, Button } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, Button } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 import { Add } from 'grommet-icons';
 
 const MultipleButton = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box align="center" pad="large">
       <Box direction="row" align="center" gap="small" pad="xsmall">
         <Button label="Cancel" onClick={() => {}} />
@@ -44,7 +44,7 @@ const MultipleButton = () => (
         />
       </Box>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Button', module).add('Multiple', () => <MultipleButton />);

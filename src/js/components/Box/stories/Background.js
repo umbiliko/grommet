@@ -1,11 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, Text } from 'grommet';
-import { grommet } from '../../../themes';
+import { Hercules, Box, Text } from 'hercules-theme';
+import { microfocus } from '../../../themes';
 
 const BackgroundBox = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box pad="small" gap="small" align="start">
       <Box
         pad="small"
@@ -79,7 +79,7 @@ const BackgroundBox = () => (
         </Box>
       </Box>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Box', module).add('Background', () => <BackgroundBox />);

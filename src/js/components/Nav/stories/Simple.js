@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Anchor, Grommet, Nav } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Anchor, Hercules, Nav } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const items = [
   { label: 'Item A', href: '#' },
@@ -12,13 +12,13 @@ const items = [
 ];
 
 const Simple = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Nav pad="large">
       {items.map(item => (
         <Anchor href={item.href} label={item.label} key={item.label} />
       ))}
     </Nav>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Nav', module).add('Simple', () => <Simple />);

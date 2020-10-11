@@ -8,7 +8,7 @@ export const doc = Clock => {
     .availableAt(getAvailableAtBadge('Clock'))
     .description('A clock with timezone awareness.')
     .usage(
-      `import { Clock } from 'grommet';
+      `import { Clock } from 'hercules-theme';
 <Clock />`,
     )
     .intrinsicElement(['div', 'svg']);

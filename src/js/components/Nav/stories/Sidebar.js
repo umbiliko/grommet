@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { grommet, Box, Button, Grommet, Nav, Text } from 'grommet';
+import { microfocus, Box, Button, Hercules, Nav, Text } from 'hercules-theme';
 
 const SidebarButton = ({ label, ...rest }) => (
   <Button plain {...rest}>
@@ -19,7 +19,7 @@ const SidebarButton = ({ label, ...rest }) => (
 const SidebarNav = () => {
   const [active, setActive] = useState();
   return (
-    <Grommet full theme={grommet}>
+    <Hercules full theme={microfocus}>
       <Box fill direction="row">
         <Nav background="neutral-1">
           {['Dashboard', 'Devices', 'Settings'].map(label => (
@@ -32,7 +32,7 @@ const SidebarNav = () => {
           ))}
         </Nav>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

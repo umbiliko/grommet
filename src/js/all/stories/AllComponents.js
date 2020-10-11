@@ -2,7 +2,7 @@ import React, { useMemo, useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
 import {
-  Grommet,
+  Hercules,
   Accordion,
   AccordionPanel,
   Anchor,
@@ -33,16 +33,16 @@ import {
   TextArea,
   TextInput,
   Video,
-} from 'grommet';
+} from 'hercules-theme';
 import { FormNext } from 'grommet-icons';
-import { grommet, microfocus } from 'grommet/themes';
-import { generate } from 'grommet/themes/base';
-import { deepMerge } from 'grommet/utils';
-import { hpe } from 'grommet-theme-hpe';
-import { aruba } from 'grommet-theme-aruba';
-import { hp } from 'grommet-theme-hp';
-import { dxc } from 'grommet-theme-dxc';
-import { v1 } from 'grommet-theme-v1';
+import { microfocus, microfocus } from 'hercules-theme/themes';
+import { generate } from 'hercules-theme/themes/base';
+import { deepMerge } from 'hercules-theme/utils';
+import { hpe } from 'hercules-theme-theme-hpe';
+import { aruba } from 'hercules-theme-theme-aruba';
+import { hp } from 'hercules-theme-theme-hp';
+import { dxc } from 'hercules-theme-theme-dxc';
+import { v1 } from 'hercules-theme-theme-v1';
 
 const Node = ({ id, ...rest }) => (
   <Box
@@ -68,7 +68,7 @@ const connection = (fromTarget, toTarget, { color, ...rest } = {}) => ({
 
 const themes = {
   microfocus,
-  grommet,
+  microfocus,
   hpe,
   aruba,
   hp,
@@ -84,7 +84,7 @@ const Components = () => {
   const [radioButton, setRadioButton] = useState('RadioButton 1');
   const [rangeSelector, setRangeSelector] = useState([1, 2]);
   const [themeMode, setThemeMode] = useState();
-  const [themeName, setThemeName] = useState('grommet');
+  const [themeName, setThemeName] = useState('hercules-theme');
   const [background, setBackground] = useState(undefined);
   const [tabIndex, setTabIndex] = useState(0);
 
@@ -317,7 +317,7 @@ const Components = () => {
 
   return (
     <div style={{ height: '100vh', display: 'flex', flexDirection: 'column' }}>
-      <Grommet theme={grommet} style={{ flex: '0 0 auto' }}>
+      <Hercules theme={microfocus} style={{ flex: '0 0 auto' }}>
         <Box
           direction="row-responsive"
           gap="medium"
@@ -366,8 +366,8 @@ const Components = () => {
           </Box>
           <Text size="small">{`${baseSize}px base spacing`}</Text>
         </Box>
-      </Grommet>
-      <Grommet theme={theme} themeMode={themeMode} style={{ flex: '1 1' }}>
+      </Hercules>
+      <Hercules theme={theme} themeMode={themeMode} style={{ flex: '1 1' }}>
         <Box
           fill
           pad="medium"
@@ -384,7 +384,7 @@ const Components = () => {
             </Box>
           )}
         </Box>
-      </Grommet>
+      </Hercules>
     </div>
   );
 };

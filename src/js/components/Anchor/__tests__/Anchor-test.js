@@ -8,7 +8,7 @@ import 'regenerator-runtime/runtime';
 import { axe } from 'jest-axe';
 import { findAllByType } from '../../../utils';
 
-import { Grommet } from '../../Grommet';
+import { Hercules } from '../../Hercules';
 import { Anchor } from '..';
 
 describe('Anchor', () => {
@@ -16,9 +16,9 @@ describe('Anchor', () => {
 
   test('should have no accessibility violations', async () => {
     const { container } = render(
-      <Grommet>
+      <Hercules>
         <Anchor>Link</Anchor>
-      </Grommet>,
+      </Hercules>,
     );
 
     const results = await axe(container);
@@ -28,9 +28,9 @@ describe('Anchor', () => {
 
   test('renders', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Anchor />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -38,9 +38,9 @@ describe('Anchor', () => {
 
   test('renders with children', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Anchor href="#">children</Anchor>
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -50,11 +50,11 @@ describe('Anchor', () => {
     console.warn = jest.fn();
     const warnSpy = jest.spyOn(console, 'warn');
     const { container } = render(
-      <Grommet>
+      <Hercules>
         <Anchor href="#" label="Test">
           invalid
         </Anchor>
-      </Grommet>,
+      </Hercules>,
     );
     expect(container.firstChild).toMatchSnapshot();
     expect(warnSpy).toHaveBeenCalledWith(
@@ -70,11 +70,11 @@ describe('Anchor', () => {
     console.warn = jest.fn();
     const warnSpy = jest.spyOn(console, 'warn');
     const { container } = render(
-      <Grommet>
+      <Hercules>
         <Anchor href="#" icon={<svg />}>
           invalid
         </Anchor>
-      </Grommet>,
+      </Hercules>,
     );
     expect(container.firstChild).toMatchSnapshot();
     expect(warnSpy).toHaveBeenCalledWith(
@@ -88,9 +88,9 @@ describe('Anchor', () => {
 
   test('primary renders', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Anchor href="#" primary label="Test" />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -99,9 +99,9 @@ describe('Anchor', () => {
   test('focus renders', () => {
     const onFocus = jest.fn();
     const { container, getByText } = render(
-      <Grommet>
+      <Hercules>
         <Anchor href="#" label="Test" onFocus={onFocus} />
-      </Grommet>,
+      </Hercules>,
     );
     fireEvent.focus(getByText('Test'));
     expect(container.firstChild).toMatchSnapshot();
@@ -111,9 +111,9 @@ describe('Anchor', () => {
   test('blur renders', () => {
     const onBlur = jest.fn();
     const { container, getByText } = render(
-      <Grommet>
+      <Hercules>
         <Anchor href="#" label="Test" onBlur={onBlur} />
-      </Grommet>,
+      </Hercules>,
     );
     fireEvent.blur(getByText('Test'));
     expect(container.firstChild).toMatchSnapshot();
@@ -122,9 +122,9 @@ describe('Anchor', () => {
 
   test('disabled renders', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Anchor disabled />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -132,9 +132,9 @@ describe('Anchor', () => {
 
   test('icon label renders', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Anchor icon={<svg />} label="Test" onClick={() => {}} />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -142,9 +142,9 @@ describe('Anchor', () => {
 
   test('reverse icon label renders', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Anchor reverse icon={<svg />} label="Test" onClick={() => {}} />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -152,14 +152,14 @@ describe('Anchor', () => {
 
   test('size renders', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Anchor size="xsmall" />
         <Anchor size="small" />
         <Anchor size="medium" />
         <Anchor size="large" />
         <Anchor size="xlarge" />
         <Anchor size="xxlarge" />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -168,9 +168,9 @@ describe('Anchor', () => {
   test('is clickable', () => {
     const onClick = jest.fn();
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Anchor href="#" label="Test" onClick={onClick} />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
 
@@ -181,9 +181,9 @@ describe('Anchor', () => {
 
   test('renders tag', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Anchor href="#" label="Test" as="span" />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();

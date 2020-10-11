@@ -1,11 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { grommet } from 'grommet/themes';
-import { Box, Text, ThemeContext, Grommet } from 'grommet';
+import { microfocus } from 'hercules-theme/themes';
+import { Box, Text, ThemeContext, Hercules } from 'hercules-theme';
 
 const ExternalComponentWithTheme = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box background="neutral-3">
       <Text color="light-1">This is a grommet component</Text>
     </Box>
@@ -19,7 +19,7 @@ const ExternalComponentWithTheme = () => (
         </div>
       )}
     </ThemeContext.Consumer>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Theme', module).add('External components', () => (

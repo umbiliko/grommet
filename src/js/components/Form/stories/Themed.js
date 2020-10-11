@@ -3,19 +3,19 @@ import { css } from 'styled-components';
 import { storiesOf } from '@storybook/react';
 
 import {
-  grommet,
+  microfocus,
   Box,
   Form,
   FormField,
-  Grommet,
+  Hercules,
   Heading,
   Text,
   TextInput,
-} from 'grommet';
+} from 'hercules-theme';
 import { Alert, StatusInfo } from 'grommet-icons';
 import { deepMerge } from '../../../utils';
 
-const customTheme = deepMerge(grommet, {
+const customTheme = deepMerge(microfocus, {
   formField: {
     border: {
       side: 'all',
@@ -61,7 +61,7 @@ const customTheme = deepMerge(grommet, {
 
 const Themed = () => {
   return (
-    <Grommet theme={customTheme}>
+    <Hercules theme={customTheme}>
       <Box gap="medium">
         <Box border pad={{ horizontal: 'medium' }} width="medium">
           <Form>
@@ -122,7 +122,7 @@ const Themed = () => {
           </Form>
         </Box>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

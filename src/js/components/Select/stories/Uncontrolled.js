@@ -1,12 +1,12 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Grommet, Select } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Hercules, Select } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const Example = () => {
   return (
-    <Grommet full theme={grommet}>
+    <Hercules full theme={microfocus}>
       <Box fill align="center" justify="start" pad="large">
         <Select
           id="select"
@@ -16,7 +16,7 @@ const Example = () => {
           onChange={({ option }) => console.log(option)}
         />
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

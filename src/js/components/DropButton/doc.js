@@ -14,7 +14,7 @@ export const doc = DropButton => {
       `,
     )
     .usage(
-      `import { DropButton } from 'grommet';
+      `import { DropButton } from 'hercules-theme';
 <DropButton dropContent={...} />`,
     )
     .intrinsicElement('button');

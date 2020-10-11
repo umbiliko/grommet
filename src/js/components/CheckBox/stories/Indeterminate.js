@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Grommet, CheckBox } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Hercules, CheckBox } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const IndeterminateCheckBox = () => {
   const [checked, setChecked] = useState([]);
@@ -25,7 +25,7 @@ const IndeterminateCheckBox = () => {
   };
 
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box align="center" pad="large">
         <Box direction="row" gap="medium">
           <CheckBox
@@ -44,7 +44,7 @@ const IndeterminateCheckBox = () => {
           ))}
         </Box>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

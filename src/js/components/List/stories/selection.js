@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, List } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, List } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const data = [];
 
@@ -16,7 +16,7 @@ const SelectionList = () => {
   const [selected, setSelected] = React.useState();
 
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box align="center" pad="large" gap="large">
         <List
           data={data.slice(0, 10)}
@@ -28,7 +28,7 @@ const SelectionList = () => {
           }
         />
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

@@ -1,10 +1,10 @@
 import React, { useRef, useEffect } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { grommet, Box, Form, FormField, TextInput, Grommet } from 'grommet';
-import { deepMerge } from 'grommet/utils';
+import { microfocus, Box, Form, FormField, TextInput, Hercules } from 'hercules-theme';
+import { deepMerge } from 'hercules-theme/utils';
 
-const customTheme = deepMerge(grommet, {
+const customTheme = deepMerge(microfocus, {
   formField: {
     border: {
       error: {
@@ -68,7 +68,7 @@ const CustomFormFieldStates = () => {
   }, []);
 
   return (
-    <Grommet theme={customTheme}>
+    <Hercules theme={customTheme}>
       <Box align="center" pad="large">
         <Form>
           <Box border gap="medium" pad="large" width="medium">
@@ -129,7 +129,7 @@ const CustomFormFieldStates = () => {
           </Box>
         </Form>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

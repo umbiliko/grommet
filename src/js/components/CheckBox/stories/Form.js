@@ -2,18 +2,18 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 
 import {
-  grommet,
+  microfocus,
   Box,
   Button,
   CheckBox,
   CheckBoxGroup,
   Form,
   FormField,
-  Grommet,
-} from 'grommet';
+  Hercules,
+} from 'hercules-theme';
 
 const FormFieldCheckBox = props => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box align="center" pad="large">
       <Form
         onSubmit={({ value, touched }) => console.log('Submit', value, touched)}
@@ -55,7 +55,7 @@ const FormFieldCheckBox = props => (
         <Button type="submit" label="Submit" />
       </Form>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('CheckBox', module).add('Form', () => <FormFieldCheckBox />);

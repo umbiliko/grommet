@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { Hide, View } from 'grommet-icons';
 
-import { Box, TextInput, Button } from 'grommet';
+import { Box, TextInput, Button } from 'hercules-theme';
 
 const PasswordInput = () => {
   const [value, setValue] = React.useState('');

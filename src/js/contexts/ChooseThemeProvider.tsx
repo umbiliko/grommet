@@ -1,4 +1,4 @@
-import { ThemeType } from 'grommet';
+import { ThemeType } from 'hercules-theme';
 import React, { ReactNode, ReactNodeArray, useMemo, useState } from 'react';
 import ChooseThemeContext, { ThemeValueType } from './ChooseThemeContext';
 

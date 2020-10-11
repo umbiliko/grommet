@@ -1,12 +1,12 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, Grid } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, Grid } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const GridAreasAlternative = () => {
   return (
-    <Grommet full theme={grommet}>
+    <Hercules full theme={microfocus}>
       <Grid
         rows={['xxsmall', 'medium', 'xsmall']}
         columns={['1/4', '3/4']}
@@ -33,7 +33,7 @@ const GridAreasAlternative = () => {
           Footer
         </Box>
       </Grid>
-    </Grommet>
+    </Hercules>
   );
 };
 

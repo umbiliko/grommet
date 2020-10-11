@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 
 import { SubtractCircle, AddCircle } from 'grommet-icons';
 
-import { Accordion, AccordionPanel, Box, Grommet, Text } from 'grommet';
+import { Accordion, AccordionPanel, Box, Hercules, Text } from 'hercules-theme';
 
 const customAccordionTheme = {
   global: {
@@ -40,7 +40,7 @@ const customAccordionTheme = {
 };
 
 const CustomAccordion = ({ animate, multiple, ...rest }) => (
-  <Grommet theme={customAccordionTheme}>
+  <Hercules theme={customAccordionTheme}>
     <Box {...rest} pad="large" align="center" justify="center">
       <Accordion animate={animate} multiple>
         <AccordionPanel
@@ -69,7 +69,7 @@ const CustomAccordion = ({ animate, multiple, ...rest }) => (
         </AccordionPanel>
       </Accordion>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Accordion', module).add('Custom', () => <CustomAccordion />);

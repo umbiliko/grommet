@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { grommet, Box, Form, FormField, TextInput, Grommet } from 'grommet';
+import { microfocus, Box, Form, FormField, TextInput, Hercules } from 'hercules-theme';
 
 const FormFieldStates = () => {
   const inputRef = useRef();
@@ -11,7 +11,7 @@ const FormFieldStates = () => {
   }, []);
 
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box align="center" pad="large">
         <Form>
           <Box border gap="medium" pad="large" width="medium">
@@ -72,7 +72,7 @@ const FormFieldStates = () => {
           </Box>
         </Form>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

@@ -14,7 +14,7 @@ export const doc = Layer => {
       control for the user to close the layer.`,
     )
     .usage(
-      `import { Layer } from 'grommet';
+      `import { Layer } from 'hercules-theme';
 <Layer />`,
     )
     .intrinsicElement('div');

@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { Attraction, Car, TreeOption } from 'grommet-icons';
 
-import { Grommet, Box, Carousel } from 'grommet';
+import { Hercules, Box, Carousel } from 'hercules-theme';
 
 const customTheme = {
   carousel: {
@@ -21,7 +21,7 @@ const customTheme = {
 };
 
 const CustomCarousel = ({ controls, ...rest }) => (
-  <Grommet theme={customTheme}>
+  <Hercules theme={customTheme}>
     <Box align="center" pad="large">
       <Carousel controls={controls} {...rest}>
         <Box pad="xlarge" background="accent-1">
@@ -35,7 +35,7 @@ const CustomCarousel = ({ controls, ...rest }) => (
         </Box>
       </Carousel>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Carousel', module).add('Custom controls', () => <CustomCarousel />);

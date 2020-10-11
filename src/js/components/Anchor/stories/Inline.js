@@ -1,19 +1,19 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Anchor, Box, Grommet, Paragraph } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Anchor, Box, Hercules, Paragraph } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const Inline = () => {
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box align="center" pad="large">
         <Paragraph>
           This is <Anchor label="an inline link" href="#" /> with surrounding
           text.
         </Paragraph>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, List } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, List } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const locations = [
   'Boise',
@@ -13,11 +13,11 @@ const locations = [
 ];
 
 const BasicList = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box align="center" pad="large">
       <List data={locations} />
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('List', module).add('Basic', () => <BasicList />);

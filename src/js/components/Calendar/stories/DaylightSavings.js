@@ -1,13 +1,13 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Calendar, Grommet, Text } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Calendar, Hercules, Text } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 // DSTCalendar has dates specifically chosen to identify issues with
 // crossing the daylight savings time boundary (from California).
 const DSTCalendar = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box align="center" pad="large" direction="row" justify="center">
       <Box align="center" pad="large" border="right">
         <Text size="xlarge">Daylight MST</Text>
@@ -40,7 +40,7 @@ const DSTCalendar = () => (
         </Box>
       </Box>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Calendar', module).add('Daylight savings time', () => (

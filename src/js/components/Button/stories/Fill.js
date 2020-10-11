@@ -1,10 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { grommet, Box, Button, Grommet } from 'grommet';
+import { microfocus, Box, Button, Hercules } from 'hercules-theme';
 
 const FillButtons = props => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box pad="medium" justify="center" direction="row">
       <Box justify="center" align="center" pad="medium" gap="medium">
         <Box
@@ -79,7 +79,7 @@ const FillButtons = props => (
         />
       </Box>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Button', module).add('Fill', () => <FillButtons />);

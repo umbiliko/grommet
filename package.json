@@ -1,5 +1,5 @@
 {
-  "name": "everything-ux",
+  "name": "hercules-theme",
   "version": "20.15.2",
   "main": "index.js",
   "module": "es6/index.js",
@@ -16,12 +16,12 @@
     "Eric Soderberg",
     "Shimrit Yacobi"
   ],
-  "homepage": "http://grommet.io",
-  "bugs": "https://github.com/grommet/grommet/issues",
+  "homepage": "http://hercules.io",
+  "bugs": "https://github.com/hercules/hercules-theme/issues",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/grommet/grommet.git"
+    "url": "https://github.com/hercules/hercules-theme.git"
   },
   "engine-strict": true,
   "engines": {
@@ -115,11 +115,6 @@
     "eslint-plugin-react": "^7.9.1",
     "eslint-plugin-react-hooks": "^2.2.0",
     "fs-extra": "^8.1.0",
-    "grommet-theme-aruba": "^0.1.1",
-    "grommet-theme-dxc": "^0.1.1",
-    "grommet-theme-hp": "^0.1.1",
-    "grommet-theme-hpe": "^2.0.0",
-    "grommet-theme-v1": "^0.1.1",
     "javascript-stringify": "^2.0.1",
     "jest": "^25.1.0",
     "jest-axe": "^3.4.0",
@@ -184,14 +179,15 @@
   ],
   "bundlesize": [
     {
-      "path": "./dist/grommet.min.js",
+      "path": "./dist/hercules-theme.min.js",
       "maxSize": "120 kB"
     }
   ],
   "keywords": [
-    "grommet",
-    "grommet.io",
-    "grommetux",
+    "hercules",
+    "hercules-theme",
+    "hercules-ui",
+    "hercules-ux",
     "component",
     "library",
     "design system",

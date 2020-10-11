@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import isChromatic from 'chromatic/isChromatic';
 
-import { Box, Grommet, Clock } from 'grommet';
+import { Box, Hercules, Clock } from 'hercules-theme';
 
 const analogClockTheme = {
   clock: {
@@ -31,11 +31,11 @@ const analogClockTheme = {
 };
 
 const CustomAnalog = () => (
-  <Grommet theme={analogClockTheme}>
+  <Hercules theme={analogClockTheme}>
     <Box align="center" justify="start" pad="large">
       <Clock type="analog" />
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 if (!isChromatic()) {

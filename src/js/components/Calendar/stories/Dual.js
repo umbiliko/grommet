@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Button, Calendar, Grommet, Heading } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Button, Calendar, Hercules, Heading } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 import { Blank, Previous, Next } from 'grommet-icons';
 
@@ -22,7 +22,7 @@ const DualCalendar = () => {
   };
 
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box justify="center" pad="large" direction="row" gap="small">
         <Calendar
           animate={false}
@@ -96,7 +96,7 @@ const DualCalendar = () => {
           )}
         />
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

@@ -3,8 +3,8 @@ import { storiesOf } from '@storybook/react';
 
 import { FormClose } from 'grommet-icons';
 
-import { Box, Button, Grommet, Select, Text } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Button, Hercules, Select, Text } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const allSeasons = [
   'S01',
@@ -70,7 +70,7 @@ const SeasonsSelect = () => {
   );
 
   return (
-    <Grommet full theme={grommet}>
+    <Hercules full theme={microfocus}>
       <Box fill align="center" justify="center">
         <Select
           closeOnChange={false}
@@ -99,7 +99,7 @@ const SeasonsSelect = () => {
           {renderOption}
         </Select>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

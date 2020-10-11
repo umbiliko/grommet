@@ -2,11 +2,11 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { Add } from 'grommet-icons';
 
-import { Box, Button, Grommet } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Button, Hercules } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const IconLabel = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box align="center" pad="large">
       <Box round="full" overflow="hidden" background="neutral-1">
         <Button icon={<Add />} hoverIndicator onClick={() => {}} />
@@ -23,7 +23,7 @@ const IconLabel = () => (
         />
       </Box>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Button', module).add('Icon label', () => <IconLabel />);

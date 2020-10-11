@@ -1,9 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Anchor, Box, Grommet, Main, Nav } from 'grommet';
-import { grommet } from 'grommet/themes';
-import { deepMerge } from 'grommet/utils';
+import { Anchor, Box, Hercules, Main, Nav } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
+import { deepMerge } from 'hercules-theme/utils';
 
 const navItems = [
   { label: 'HTML', href: '#' },
@@ -12,7 +12,7 @@ const navItems = [
   { label: 'REACT', href: '#' },
 ];
 
-const customTheme = deepMerge(grommet, {
+const customTheme = deepMerge(microfocus, {
   anchor: {
     textDecoration: 'none',
     fontWeight: 500,
@@ -28,7 +28,7 @@ const customTheme = deepMerge(grommet, {
 });
 
 const CustomAnchor = () => (
-  <Grommet full theme={customTheme}>
+  <Hercules full theme={customTheme}>
     <Box background="dark-1" pad="large" fill>
       <Box direction="row" pad={{ vertical: 'medium' }}>
         <Nav width="small" margin={{ right: 'large' }}>
@@ -39,7 +39,7 @@ const CustomAnchor = () => (
         <Main>Place main content here</Main>
       </Box>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Nav', module).add('Custom anchor', () => <CustomAnchor />);

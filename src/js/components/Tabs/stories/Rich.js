@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react';
 import { CircleInformation, Currency } from 'grommet-icons';
-import { Box, Grommet, FormField, Tab, Tabs, Text, TextInput } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Hercules, FormField, Tab, Tabs, Text, TextInput } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const RichTabs = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Tabs>
       <Tab
         title={
@@ -30,7 +30,7 @@ const RichTabs = () => (
         </FormField>
       </Tab>
     </Tabs>
-  </Grommet>
+  </Hercules>
 );
 
 const RichTabTitle = ({ icon, label }) => (

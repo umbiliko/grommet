@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Grommet, TextInput } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Hercules, TextInput } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const SimpleTextInput = () => {
   const [value, setValue] = React.useState('');
@@ -10,13 +10,13 @@ const SimpleTextInput = () => {
   const onChange = event => setValue(event.target.value);
 
   return (
-    <Grommet full theme={grommet}>
+    <Hercules full theme={microfocus}>
       <Box fill align="center" justify="start" pad="large">
         <Box width="medium">
           <TextInput value={value} onChange={onChange} />
         </Box>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

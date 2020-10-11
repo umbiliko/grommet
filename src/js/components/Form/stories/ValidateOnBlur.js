@@ -1,12 +1,12 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Button, Grommet, Form, FormField, TextInput } from 'grommet';
+import { Box, Button, Hercules, Form, FormField, TextInput } from 'hercules-theme';
 import { StatusGood } from 'grommet-icons';
-import { grommet } from 'grommet/themes';
+import { microfocus } from 'hercules-theme/themes';
 
 const Example = () => (
-  <Grommet full theme={grommet}>
+  <Hercules full theme={microfocus}>
     <Box fill align="center" justify="center">
       <Box width="medium">
         <Form
@@ -51,7 +51,7 @@ const Example = () => (
         </Form>
       </Box>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Form', module).add('Validate on blur', () => <Example />);

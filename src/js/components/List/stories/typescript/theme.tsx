@@ -1,9 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, List } from 'grommet';
-import { grommet, ThemeType } from 'grommet/themes';
-import { deepMerge } from 'grommet/utils';
+import { Hercules, Box, List } from 'hercules-theme';
+import { microfocus, ThemeType } from 'hercules-theme/themes';
+import { deepMerge } from 'hercules-theme/utils';
 
 export const locations = [
   'Boise',
@@ -15,7 +15,7 @@ export const locations = [
 
 // Type annotations can only be used in TypeScript files.
 // Remove ': ThemeType' if you are not using Typescript.
-const theme: ThemeType = deepMerge(grommet, {
+const theme: ThemeType = deepMerge(microfocus, {
   list: {
     item: {
       pad: { horizontal: 'large', vertical: 'xsmall' },
@@ -26,11 +26,11 @@ const theme: ThemeType = deepMerge(grommet, {
 });
 
 const ThemedList = () => (
-  <Grommet theme={theme}>
+  <Hercules theme={theme}>
     <Box align="center" pad="large">
       <List data={locations} />
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('List', module).add('Themed', () => <ThemedList />);

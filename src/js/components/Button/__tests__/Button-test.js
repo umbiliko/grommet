@@ -9,16 +9,16 @@ import { axe } from 'jest-axe';
 import { Add, Next } from 'grommet-icons';
 import { cleanup, fireEvent, render } from '@testing-library/react';
 import { findAllByType } from '../../../utils';
-import { Grommet, Button, Text } from '../..';
+import { Hercules, Button, Text } from '../..';
 
 describe('Button', () => {
   afterEach(cleanup);
 
   test('should have no accessibility violations', async () => {
     const { container, getByText } = render(
-      <Grommet>
+      <Hercules>
         <Button a11yTitle="Test button" label="Test" onClick={() => {}} />
-      </Grommet>,
+      </Hercules>,
     );
 
     fireEvent.click(getByText('Test'));
@@ -28,9 +28,9 @@ describe('Button', () => {
 
   test('basic', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Button label="Test" onClick={() => {}} />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -38,9 +38,9 @@ describe('Button', () => {
 
   test('children function', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Button onClick={() => {}}>{() => <Text>Test</Text>}</Button>
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -50,11 +50,11 @@ describe('Button', () => {
     console.warn = jest.fn();
     const warnSpy = jest.spyOn(console, 'warn');
     const { container } = render(
-      <Grommet>
+      <Hercules>
         <Button label="Test" onClick={() => {}}>
           invalid
         </Button>
-      </Grommet>,
+      </Hercules>,
     );
     expect(container.firstChild).toMatchSnapshot();
     expect(warnSpy).toHaveBeenCalledWith(
@@ -69,11 +69,11 @@ describe('Button', () => {
     console.warn = jest.fn();
     const warnSpy = jest.spyOn(console, 'warn');
     const { container } = render(
-      <Grommet>
+      <Hercules>
         <Button icon={<svg />} onClick={() => {}}>
           invalid
         </Button>
-      </Grommet>,
+      </Hercules>,
     );
     expect(container.firstChild).toMatchSnapshot();
     expect(warnSpy).toHaveBeenCalledWith(
@@ -86,9 +86,9 @@ describe('Button', () => {
 
   test('primary', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Button primary label="Test" onClick={() => {}} />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -96,12 +96,12 @@ describe('Button', () => {
 
   test('color', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Button color="accent-1" label="Test" onClick={() => {}} />
         <Button color="accent-1" primary label="Test" onClick={() => {}} />
         <Button color="#111111" primary label="Test" onClick={() => {}} />
         <Button color="#123" primary label="Test" onClick={() => {}} />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -109,14 +109,14 @@ describe('Button', () => {
 
   test('fill', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Button>
           <Button fill />
           <Button fill={false} />
           <Button fill="horizontal" />
           <Button fill="vertical" />
         </Button>
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -124,9 +124,9 @@ describe('Button', () => {
 
   test('focus', () => {
     const { container, getByText } = render(
-      <Grommet>
+      <Hercules>
         <Button label="Test" onClick={() => {}} />
-      </Grommet>,
+      </Hercules>,
     );
 
     fireEvent.focus(getByText('Test'));
@@ -135,7 +135,7 @@ describe('Button', () => {
 
   test('disabled', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Button disabled />
         <Button disabled primary label="Button" />
         <Button disabled label="Button" />
@@ -147,7 +147,7 @@ describe('Button', () => {
         <Button disabled icon={<svg />} label="Button" />
         <Button disabled icon={<svg />} label="Button" plain />
         <Button disabled icon={<svg />} label="Button" primary />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -155,9 +155,9 @@ describe('Button', () => {
 
   test('active', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Button active label="Button" />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -165,9 +165,9 @@ describe('Button', () => {
 
   test('active + primary', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Button active primary label="Button" />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -175,9 +175,9 @@ describe('Button', () => {
 
   test('icon label', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Button icon={<svg />} label="Test" onClick={() => {}} />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -185,9 +185,9 @@ describe('Button', () => {
 
   test('reverse icon label', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Button reverse icon={<svg />} label="Test" onClick={() => {}} />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -195,9 +195,9 @@ describe('Button', () => {
 
   test('href', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Button href="test" />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -205,11 +205,11 @@ describe('Button', () => {
 
   test('hoverIndicator background', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Button onClick={() => {}} hoverIndicator="background">
           hoverIndicator
         </Button>
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -217,11 +217,11 @@ describe('Button', () => {
 
   test('hoverIndicator as object with color', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Button onClick={() => {}} hoverIndicator={{ color: 'brand' }}>
           hoverIndicator
         </Button>
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -229,11 +229,11 @@ describe('Button', () => {
 
   test('hoverIndicator as object with invalid color', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Button onClick={() => {}} hoverIndicator={{ color: 'invalid' }}>
           hoverIndicator
         </Button>
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -241,11 +241,11 @@ describe('Button', () => {
 
   test('hoverIndicator color', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Button onClick={() => {}} hoverIndicator="dark-3">
           hoverIndicator
         </Button>
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -254,9 +254,9 @@ describe('Button', () => {
   test('onClick', () => {
     const onClick = jest.fn();
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Button label="Test" onClick={onClick} />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
 
@@ -267,7 +267,7 @@ describe('Button', () => {
 
   test('size', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Button size="small" label="Small" />
         <Button size="medium" label="Medium" />
         <Button label="Default" />
@@ -284,7 +284,7 @@ describe('Button', () => {
         <Button size="medium" label="Medium" icon={<Next />} reverse />
         <Button label="Default" icon={<Next />} reverse />
         <Button size="large" label="Large" icon={<Next />} reverse />
-      </Grommet>,
+      </Hercules>,
     );
 
     const tree = component.toJSON();
@@ -293,9 +293,9 @@ describe('Button', () => {
 
   test('as', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Button as="span" />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -304,9 +304,9 @@ describe('Button', () => {
   test(`disabled state cursor should indicate the button cannot be 
   clicked`, () => {
     const { getByText } = render(
-      <Grommet>
+      <Hercules>
         <Button disabled label="Button" />
-      </Grommet>,
+      </Hercules>,
     );
 
     const button = getByText('Button');

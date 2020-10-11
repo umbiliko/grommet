@@ -1,15 +1,15 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Grommet, Clock } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Hercules, Clock } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const DigitalClock = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box align="center" justify="start" pad="large">
       <Clock type="digital" />
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Clock', module).add('Digital', () => <DigitalClock />, {

@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Drop, Grommet } from 'grommet';
-import { grommet } from 'grommet/themes';
-import { deepMerge } from 'grommet/utils';
+import { Box, Drop, Hercules } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
+import { deepMerge } from 'hercules-theme/utils';
 
-const customTheme = deepMerge(grommet, {
+const customTheme = deepMerge(microfocus, {
   global: {
     drop: {
       background: { dark: 'neutral-2', light: 'neutral-2' },
@@ -21,7 +21,7 @@ const Custom = () => {
 
   useEffect(() => setShowDrop(true), []);
   return (
-    <Grommet theme={customTheme} full>
+    <Hercules theme={customTheme} full>
       <Box fill align="center" justify="center">
         <Box
           background="dark-3"
@@ -41,7 +41,7 @@ const Custom = () => {
           </Drop>
         )}
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

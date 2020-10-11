@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Grommet, CheckBox } from 'grommet';
-import { grommet } from 'grommet/themes';
-import { normalizeColor, deepMerge } from 'grommet/utils';
+import { Box, Hercules, CheckBox } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
+import { normalizeColor, deepMerge } from 'hercules-theme/utils';
 
 import { FormCheckmark } from 'grommet-icons';
 
@@ -49,7 +49,7 @@ const ThemedCheckBox = props => {
   const [checked, setChecked] = useState(false);
 
   return (
-    <Grommet theme={deepMerge(grommet, customCheckBoxTheme)}>
+    <Hercules theme={deepMerge(microfocus, customCheckBoxTheme)}>
       <Box align="center" pad="large">
         <CheckBox
           {...props}
@@ -58,7 +58,7 @@ const ThemedCheckBox = props => {
           onChange={event => setChecked(event.target.checked)}
         />
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

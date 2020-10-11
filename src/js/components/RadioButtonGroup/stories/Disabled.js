@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Grommet, RadioButtonGroup } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Hercules, RadioButtonGroup } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const DisabledRadioButtonGroup = ({ value: initialValue, ...props }) => {
   const [value, setValue] = useState(initialValue);
 
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box align="center" pad="large">
         <RadioButtonGroup
           name="radio"
@@ -23,7 +23,7 @@ const DisabledRadioButtonGroup = ({ value: initialValue, ...props }) => {
           {...props}
         />
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

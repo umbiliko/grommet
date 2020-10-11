@@ -12,7 +12,7 @@ Object {
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/accordion&module=%2Fsrc%2FAccordion.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/accordion&module=%2Fsrc%2FAccordion.js",
       },
     ],
     "description": "An accordion containing collapsible panels.",
@@ -163,7 +163,7 @@ It will always send an array with currently active panel indexes.",
         "name": "messages",
       },
     ],
-    "usage": "import { Accordion, AccordionPanel } from 'grommet';
+    "usage": "import { Accordion, AccordionPanel } from 'hercules-theme';
 <Accordion>
   <AccordionPanel label='Panel 1'>...</AccordionPanel>
   <AccordionPanel label='Panel 2'>...</AccordionPanel>
@@ -197,7 +197,7 @@ node",
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/anchor&module=%2Fsrc%2FAnchor.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/anchor&module=%2Fsrc%2FAnchor.js",
       },
     ],
     "description": "A text link.",
@@ -370,7 +370,7 @@ function",
         "name": "as",
       },
     ],
-    "usage": "import { Anchor } from 'grommet';
+    "usage": "import { Anchor } from 'hercules-theme';
 <Anchor href={location} label='Label' />",
   },
   "Avatar": [Function],
@@ -384,7 +384,7 @@ function",
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/box&module=%2Fsrc%2FBox.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/box&module=%2Fsrc%2FBox.js",
       },
     ],
     "description": "A container that lays out its contents in one direction. Box
@@ -1078,7 +1078,7 @@ reverse",
         "name": "wrap",
       },
     ],
-    "usage": "import { Box } from 'grommet';
+    "usage": "import { Box } from 'hercules-theme';
 <Box />",
   },
   "Button": Object {
@@ -1091,7 +1091,7 @@ reverse",
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/button&module=%2Fsrc%2FButton.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/button&module=%2Fsrc%2FButton.js",
       },
     ],
     "description": "A button.",
@@ -1384,7 +1384,7 @@ submit",
         "name": "type",
       },
     ],
-    "usage": "import { Button } from 'grommet';
+    "usage": "import { Button } from 'hercules-theme';
 <Button primary label='Label' />",
   },
   "Calendar": Object {
@@ -1397,7 +1397,7 @@ submit",
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/calendar&module=%2Fsrc%2FCalendar.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/calendar&module=%2Fsrc%2FCalendar.js",
       },
     ],
     "description": "A calendar of days displayed by month.
@@ -1647,7 +1647,7 @@ string",
         "name": "size",
       },
     ],
-    "usage": "import { Calendar } from 'grommet';
+    "usage": "import { Calendar } from 'hercules-theme';
 <Calendar />",
   },
   "Card": Object {
@@ -1660,7 +1660,7 @@ string",
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/card&module=%2Fsrc%2FCard.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/card&module=%2Fsrc%2FCard.js",
       },
     ],
     "description": "A Card is a container of information that provides access to more 
@@ -1668,7 +1668,7 @@ string",
       other custom component.",
     "intrinsicElement": "div",
     "name": "Card",
-    "usage": "import { Card } from 'grommet';
+    "usage": "import { Card } from 'hercules-theme';
 <Card/>",
   },
   "CardBody": [Function],
@@ -1685,7 +1685,7 @@ string",
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/chart&module=%2Fsrc%2FChart.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/chart&module=%2Fsrc%2FChart.js",
       },
     ],
     "description": "A graphical chart.",
@@ -2107,7 +2107,7 @@ point",
         "required": true,
       },
     ],
-    "usage": "import { Chart } from 'grommet';
+    "usage": "import { Chart } from 'hercules-theme';
 <Chart />",
   },
   "CheckBox": Object {
@@ -2120,7 +2120,7 @@ point",
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/checkbox&module=%2Fsrc%2FCheckBox.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/checkbox&module=%2Fsrc%2FCheckBox.js",
       },
     ],
     "description": "A checkbox toggle control.",
@@ -2190,7 +2190,7 @@ NOTE: This can only be used with non-toggle components",
         "name": "indeterminate",
       },
     ],
-    "usage": "import { CheckBox } from 'grommet';
+    "usage": "import { CheckBox } from 'hercules-theme';
 <CheckBox />",
   },
   "CheckBoxGroup": Object {
@@ -2203,7 +2203,7 @@ NOTE: This can only be used with non-toggle components",
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/checkboxgroup&module=%2Fsrc%2FCheckBoxGroup.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/checkboxgroup&module=%2Fsrc%2FCheckBoxGroup.js",
       },
     ],
     "description": "A group of CheckBoxes.",
@@ -2264,7 +2264,7 @@ NOTE: This can only be used with non-toggle components",
         "name": "valueKey",
       },
     ],
-    "usage": "import { CheckBoxGroup } from 'grommet';
+    "usage": "import { CheckBoxGroup } from 'hercules-theme';
         <CheckBoxGroup />",
   },
   "Clock": Object {
@@ -2277,7 +2277,7 @@ NOTE: This can only be used with non-toggle components",
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/clock&module=%2Fsrc%2FClock.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/clock&module=%2Fsrc%2FClock.js",
       },
     ],
     "description": "A clock with timezone awareness.",
@@ -2446,7 +2446,7 @@ digital",
         "name": "type",
       },
     ],
-    "usage": "import { Clock } from 'grommet';
+    "usage": "import { Clock } from 'hercules-theme';
 <Clock />",
   },
   "Collapsible": Object {
@@ -2467,7 +2467,7 @@ vertical",
         "name": "direction",
       },
     ],
-    "usage": "import { Collapsible } from 'grommet';
+    "usage": "import { Collapsible } from 'hercules-theme';
 <Collapsible open>test</Collapsible>",
   },
   "DataChart": Object {
@@ -2480,7 +2480,7 @@ vertical",
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/datachart&module=%2Fsrc%2FDataChart.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/datachart&module=%2Fsrc%2FDataChart.js",
       },
     ],
     "description": "Takes a data set and visualizes it. While Chart renders a
@@ -2982,7 +2982,7 @@ string",
         "name": "size",
       },
     ],
-    "usage": "import { DataChart } from 'grommet';
+    "usage": "import { DataChart } from 'hercules-theme';
 <DataChart data={data} property={} />",
   },
   "DataTable": [Function],
@@ -2996,7 +2996,7 @@ string",
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/dateinput&module=%2Fsrc%2FDateInput.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/dateinput&module=%2Fsrc%2FDateInput.js",
       },
     ],
     "description": "A control to input a single date or a date range.",
@@ -3084,7 +3084,7 @@ string",
         "name": "value",
       },
     ],
-    "usage": "import { DateInput } from 'grommet';
+    "usage": "import { DateInput } from 'hercules-theme';
 <DateInput id='item' name='item' />",
   },
   "Diagram": Object {
@@ -3097,7 +3097,7 @@ string",
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/diagram&module=%2Fsrc%2FDiagram.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/diagram&module=%2Fsrc%2FDiagram.js",
       },
     ],
     "description": "Graphical connection lines. Diagram is meant to be used with Stack.
@@ -3154,7 +3154,7 @@ string",
         "required": true,
       },
     ],
-    "usage": "import { Diagram } from 'grommet';
+    "usage": "import { Diagram } from 'hercules-theme';
 <Diagram />",
   },
   "Distribution": [Function],
@@ -3168,7 +3168,7 @@ string",
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/drop&module=%2Fsrc%2FDrop.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/drop&module=%2Fsrc%2FDrop.js",
       },
     ],
     "description": "A container that is overlaid next to a target.",
@@ -3286,7 +3286,7 @@ string",
         "name": "trapFocus",
       },
     ],
-    "usage": "import { Drop } from 'grommet';
+    "usage": "import { Drop } from 'hercules-theme';
 <Drop target={reference}>...</Drop>",
   },
   "DropButton": Object {
@@ -3299,7 +3299,7 @@ string",
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/dropbutton&module=%2Fsrc%2FDropButton.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/dropbutton&module=%2Fsrc%2FDropButton.js",
       },
     ],
     "description": "A Button that controls a Drop. When opened, the Drop will contain
@@ -3475,7 +3475,7 @@ string",
         "name": "open",
       },
     ],
-    "usage": "import { DropButton } from 'grommet';
+    "usage": "import { DropButton } from 'hercules-theme';
 <DropButton dropContent={...} />",
   },
   "Footer": [Function],
@@ -3489,7 +3489,7 @@ string",
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/form&module=%2Fsrc%2FForm.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/form&module=%2Fsrc%2FForm.js",
       },
     ],
     "description": "A form that manages state for its fields.",
@@ -3570,7 +3570,7 @@ submit",
         "name": "value",
       },
     ],
-    "usage": "import { Form } from 'grommet';
+    "usage": "import { Form } from 'hercules-theme';
 <Form />",
   },
   "FormContext": Object {
@@ -3607,7 +3607,7 @@ submit",
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/formfield&module=%2Fsrc%2FFormField.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/formfield&module=%2Fsrc%2FFormField.js",
       },
     ],
     "description": "A single field in a form. FormField wraps an input component with
@@ -3625,7 +3625,7 @@ submit",
         "name": "a11yTitle",
       },
       Object {
-        "description": "The component to insert in the FormField. Grommet will add update the
+        "description": "The component to insert in the FormField. Hercules will add update the
       form values when this field changes. Any additional properties
       (such as initial value) you pass to FormField will be forwarded to this
       component. The component may be custom as long it supports the properties
@@ -3805,7 +3805,7 @@ function
         "name": "validate",
       },
     ],
-    "usage": "import { FormField } from 'grommet';
+    "usage": "import { FormField } from 'hercules-theme';
 <FormField />",
   },
   "Grid": Object {
@@ -3818,7 +3818,7 @@ function
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/grid&module=%2Fsrc%2FGrid.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/grid&module=%2Fsrc%2FGrid.js",
       },
     ],
     "description": "A grid system for laying out content. To use, define the
@@ -4249,10 +4249,10 @@ function",
         "name": "as",
       },
     ],
-    "usage": "import { Grid } from 'grommet';
+    "usage": "import { Grid } from 'hercules-theme';
 <Grid />",
   },
-  "Grommet": [Function],
+  "Hercules": [Function],
   "Header": [Function],
   "Heading": Object {
     "availableAt": Array [
@@ -4264,7 +4264,7 @@ function",
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/heading&module=%2Fsrc%2FHeading.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/heading&module=%2Fsrc%2FHeading.js",
       },
     ],
     "description": "Heading text structured in levels.",
@@ -4441,7 +4441,7 @@ is too long to all fit.",
         "name": "truncate",
       },
     ],
-    "usage": "import { Heading } from 'grommet';
+    "usage": "import { Heading } from 'hercules-theme';
 <Heading />",
   },
   "Image": Object {
@@ -4454,7 +4454,7 @@ is too long to all fit.",
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/image&module=%2Fsrc%2FImage.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/image&module=%2Fsrc%2FImage.js",
       },
     ],
     "description": "An image.",
@@ -4591,7 +4591,7 @@ boolean",
         "name": "opacity",
       },
     ],
-    "usage": "import { Image } from 'grommet';
+    "usage": "import { Image } from 'hercules-theme';
 <Image/>",
   },
   "InfiniteScroll": [Function],
@@ -4606,7 +4606,7 @@ boolean",
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/layer&module=%2Fsrc%2FLayer.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/layer&module=%2Fsrc%2FLayer.js",
       },
     ],
     "description": "An overlay. Layer is typically modal and anchored to an edge, corner, or
@@ -4767,7 +4767,7 @@ top-right",
         "name": "target",
       },
     ],
-    "usage": "import { Layer } from 'grommet';
+    "usage": "import { Layer } from 'hercules-theme';
 <Layer />",
   },
   "List": Object {
@@ -4780,7 +4780,7 @@ top-right",
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/list&module=%2Fsrc%2FList.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/list&module=%2Fsrc%2FList.js",
       },
     ],
     "description": "An ordered list of items.",
@@ -5093,7 +5093,7 @@ function",
         "name": "step",
       },
     ],
-    "usage": "import { List } from 'grommet';
+    "usage": "import { List } from 'hercules-theme';
 <List data={[...]} />",
   },
   "Main": [Function],
@@ -5108,7 +5108,7 @@ function",
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/maskedinput&module=%2Fsrc%2FMaskedInput.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/maskedinput&module=%2Fsrc%2FMaskedInput.js",
       },
     ],
     "description": "An input field with formalized syntax.",
@@ -5190,7 +5190,7 @@ number",
         "name": "value",
       },
     ],
-    "usage": "import { MaskedInput } from 'grommet';
+    "usage": "import { MaskedInput } from 'hercules-theme';
 <MaskedInput id='item' name='item' />",
   },
   "Menu": Object {
@@ -5203,7 +5203,7 @@ number",
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/menu&module=%2Fsrc%2FMenu.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/menu&module=%2Fsrc%2FMenu.js",
       },
     ],
     "description": "A control that opens a Drop containing plain Buttons.",
@@ -5448,7 +5448,7 @@ string",
         "name": "size",
       },
     ],
-    "usage": "import { Menu } from 'grommet';
+    "usage": "import { Menu } from 'hercules-theme';
 <Menu />",
   },
   "Meter": Object {
@@ -5461,7 +5461,7 @@ string",
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/meter&module=%2Fsrc%2FMeter.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/meter&module=%2Fsrc%2FMeter.js",
       },
     ],
     "description": "A graphical meter.",
@@ -5649,7 +5649,7 @@ circle",
         "name": "values",
       },
     ],
-    "usage": "import { Meter } from 'grommet';
+    "usage": "import { Meter } from 'hercules-theme';
 <Meter />",
   },
   "Nav": [Function],
@@ -5663,7 +5663,7 @@ circle",
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/paragraph&module=%2Fsrc%2FParagraph.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/paragraph&module=%2Fsrc%2FParagraph.js",
       },
     ],
     "description": "A paragraph of text.",
@@ -5812,7 +5812,7 @@ end",
         "name": "textAlign",
       },
     ],
-    "usage": "import { Paragraph } from 'grommet';
+    "usage": "import { Paragraph } from 'hercules-theme';
 <Paragraph />",
   },
   "RadioButton": Object {
@@ -5825,7 +5825,7 @@ end",
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/radiobutton&module=%2Fsrc%2FRadioButton.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/radiobutton&module=%2Fsrc%2FRadioButton.js",
       },
     ],
     "description": "A radio button control.",
@@ -5886,7 +5886,7 @@ with the same name so form submissions work.",
         "name": "onChange",
       },
     ],
-    "usage": "import { RadioButton } from 'grommet';
+    "usage": "import { RadioButton } from 'hercules-theme';
 <RadioButton />",
   },
   "RadioButtonGroup": Object {
@@ -5899,7 +5899,7 @@ with the same name so form submissions work.",
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/radiobuttongroup&module=%2Fsrc%2FRadioButtonGroup.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/radiobuttongroup&module=%2Fsrc%2FRadioButtonGroup.js",
       },
     ],
     "description": "A group of radio buttons.",
@@ -5964,7 +5964,7 @@ object",
         "name": "value",
       },
     ],
-    "usage": "import { RadioButtonGroup } from 'grommet';
+    "usage": "import { RadioButtonGroup } from 'hercules-theme';
 <RadioButtonGroup />",
   },
   "RangeInput": Object {
@@ -5977,7 +5977,7 @@ object",
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/rangeinput&module=%2Fsrc%2FRangeInput.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/rangeinput&module=%2Fsrc%2FRangeInput.js",
       },
     ],
     "description": "A slider control to input a value within a fixed range.",
@@ -6031,7 +6031,7 @@ string",
         "name": "value",
       },
     ],
-    "usage": "import { RangeInput } from 'grommet';
+    "usage": "import { RangeInput } from 'hercules-theme';
 <RangeInput />",
   },
   "RangeSelector": Object {
@@ -6044,7 +6044,7 @@ string",
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/rangeselector&module=%2Fsrc%2FRangeSelector.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/rangeselector&module=%2Fsrc%2FRangeSelector.js",
       },
     ],
     "description": "A control to input a range of values.",
@@ -6145,7 +6145,7 @@ string",
         "required": true,
       },
     ],
-    "usage": "import { RangeSelector } from 'grommet';
+    "usage": "import { RangeSelector } from 'hercules-theme';
 <RangeSelector />",
   },
   "RoutedAnchor": [Function],
@@ -6160,7 +6160,7 @@ string",
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/select&module=%2Fsrc%2FSelect.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/select&module=%2Fsrc%2FSelect.js",
       },
     ],
     "description": "A control to select a value, with optional search.",
@@ -6529,7 +6529,7 @@ function
         "name": "emptySearchMessage",
       },
     ],
-    "usage": "import { Select } from 'grommet';
+    "usage": "import { Select } from 'hercules-theme';
 <Select />",
   },
   "Sidebar": [Function],
@@ -6575,7 +6575,7 @@ function
         "name": "title",
       },
     ],
-    "usage": "import { Tab } from 'grommet';
+    "usage": "import { Tab } from 'hercules-theme';
 <Tab />",
   },
   "Table": [Function],
@@ -6583,7 +6583,7 @@ function
     "description": "The body of a table.",
     "intrinsicElement": "tbody",
     "name": "TableBody",
-    "usage": "import { TableBody } from 'grommet';
+    "usage": "import { TableBody } from 'hercules-theme';
 <TableBody />",
   },
   "TableCell": Object {
@@ -6631,7 +6631,7 @@ bottom",
         "name": "verticalAlign",
       },
     ],
-    "usage": "import { TableCell } from 'grommet';
+    "usage": "import { TableCell } from 'hercules-theme';
 <TableCell />",
   },
   "TableFooter": [Function],
@@ -6640,7 +6640,7 @@ bottom",
     "description": "A row of cells in a table.",
     "intrinsicElement": "tr",
     "name": "TableRow",
-    "usage": "import { TableRow } from 'grommet';
+    "usage": "import { TableRow } from 'hercules-theme';
 <TableRow />",
   },
   "Tabs": Object {
@@ -6653,7 +6653,7 @@ bottom",
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/tabs&module=%2Fsrc%2FTabs.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/tabs&module=%2Fsrc%2FTabs.js",
       },
     ],
     "description": "A container with controls to show one Tab at a time.",
@@ -6814,7 +6814,7 @@ currently active tab changes.",
         "name": "onActive",
       },
     ],
-    "usage": "import { Tabs, Tab } from 'grommet';
+    "usage": "import { Tabs, Tab } from 'hercules-theme';
 <Tabs>
   <Tab title='Tab 1'>...</Tab>
   <Tab title='Tab 2'>...</Tab>
@@ -6830,7 +6830,7 @@ currently active tab changes.",
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/text&module=%2Fsrc%2FText.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/text&module=%2Fsrc%2FText.js",
       },
     ],
     "description": "Arbitrary text.",
@@ -7013,7 +7013,7 @@ break-word",
         "name": "wordBreak",
       },
     ],
-    "usage": "import { Text } from 'grommet';
+    "usage": "import { Text } from 'hercules-theme';
 <Text />",
   },
   "TextArea": Object {
@@ -7026,7 +7026,7 @@ break-word",
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/textarea&module=%2Fsrc%2FTextArea.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/textarea&module=%2Fsrc%2FTextArea.js",
       },
     ],
     "description": "A control to input multiple lines of text.",
@@ -7099,7 +7099,7 @@ string",
         "name": "size",
       },
     ],
-    "usage": "import { TextArea } from 'grommet';
+    "usage": "import { TextArea } from 'hercules-theme';
 <TextArea id='item' name='item' />",
   },
   "TextInput": Object {
@@ -7112,7 +7112,7 @@ string",
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/textinput&module=%2Fsrc%2FTextInput.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/textinput&module=%2Fsrc%2FTextInput.js",
       },
     ],
     "description": "A control to input a single line of text, with optional suggestions.",
@@ -7285,7 +7285,7 @@ number",
         "name": "value",
       },
     ],
-    "usage": "import { TextInput } from 'grommet';
+    "usage": "import { TextInput } from 'hercules-theme';
 <TextInput id='item' name='item' />",
   },
   "Video": Object {
@@ -7298,7 +7298,7 @@ number",
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/video&module=%2Fsrc%2FVideo.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/video&module=%2Fsrc%2FVideo.js",
       },
     ],
     "description": "A video player.",
@@ -7462,7 +7462,7 @@ contain",
         "name": "messages",
       },
     ],
-    "usage": "import { Video } from 'grommet';
+    "usage": "import { Video } from 'hercules-theme';
 <Video />",
   },
   "WorldMap": Object {
@@ -7475,7 +7475,7 @@ contain",
       Object {
         "badge": "https://codesandbox.io/static/img/play-codesandbox.svg",
         "label": "CodeSandbox",
-        "url": "https://codesandbox.io/s/github/grommet/grommet-sandbox?initialpath=/worldmap&module=%2Fsrc%2FWorldMap.js",
+        "url": "https://codesandbox.io/s/github/hercules/hercules-sandbox?initialpath=/worldmap&module=%2Fsrc%2FWorldMap.js",
       },
     ],
     "description": "A map of the world, or a continent.",
@@ -7652,7 +7652,7 @@ boolean",
         "name": "hoverColor",
       },
     ],
-    "usage": "import { WorldMap } from 'grommet';
+    "usage": "import { WorldMap } from 'hercules-theme';
 <WorldMap />",
   },
   "__esModule": true,

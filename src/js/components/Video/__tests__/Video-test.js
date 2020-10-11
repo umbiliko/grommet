@@ -5,7 +5,7 @@ import { axe } from 'jest-axe';
 import 'jest-axe/extend-expect';
 import 'regenerator-runtime/runtime';
 
-import { Grommet, Video } from '../..';
+import { Hercules, Video } from '../..';
 
 describe('Video', () => {
   let App;
@@ -13,12 +13,12 @@ describe('Video', () => {
   beforeEach(() => {
     App = ({ ...props }) => {
       return (
-        <Grommet>
+        <Hercules>
           <Video {...props}>
             <source key="source" src="small.mp4" type="video/mp4" />
             <track key="track" />
           </Video>
-        </Grommet>
+        </Hercules>
       );
     };
   });

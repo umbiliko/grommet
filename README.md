@@ -1,4 +1,4 @@
-# Grommet: focus on the essential experience
+# Hercules: focus on the essential experience
 
 [![PRs Welcome](https://img.shields.io/badge/pr's-welcome-7d4cdb.svg)][contributing]
 [![slack](https://img.shields.io/badge/join%20the%20community-slack-fd6fff.svg)][slack]
@@ -12,7 +12,7 @@
 
 ## Documentation
 
-Visit the [Grommet] website for more information.
+Visit the [Hercules] website for more information.
 
 ## Support / Contributing
 
@@ -20,22 +20,22 @@ Before opening an issue or pull request, please read the [Contributing] guide.
 
 ## Install
 
-You can install Grommet using either of the methods given below.
+You can install Hercules using either of the methods given below.
 
 For npm users:
 
 ```shell
-  $ npm install grommet styled-components --save
+  $ npm install hercules-theme styled-components --save
 ```
 
 For Yarn users:
 
 ```shell
-  $ yarn add grommet styled-components
+  $ yarn add hercules-theme styled-components
 ```
 
-There are more detailed instructions in the [Grommet Starter] app tutorial for
-new apps. For incorporating Grommet into an existing app, see the [Existing App]
+There are more detailed instructions in the [Hercules Starter] app tutorial for
+new apps. For incorporating Hercules into an existing app, see the [Existing App]
 version.
 
 ## Explore
@@ -57,42 +57,42 @@ version.
    more pattern ideas on [Slack].
 1. End-to-end project examples from our community in the
    [#i-made-this Slack channel][slack].
-1. Read more from the Grommet team on [Medium].
+1. Read more from the Hercules team on [Medium].
 
 ## Stable
 
-grommet is also available on a stable branch that is built with the content of the 'master' branch.
+hercules-theme is also available on a stable branch that is built with the content of the 'master' branch.
 From your package.json point to stable.
 
 ```
-"grommet": "https://github.com/grommet/grommet/tarball/stable",
+"hercules-theme": "https://github.com/hercules/hercules-theme/tarball/stable",
 ```
 
-For more info, read the [stable wiki](https://github.com/grommet/grommet/wiki/What-is-grommet-stable-and-how-to-use-it%3F).
+For more info, read the [stable wiki](https://github.com/hercules/hercules-theme/wiki/What-is-hercules-theme-stable-and-how-to-use-it%3F).
 
 ## Release History
 
 See the [Change Log].
 
-## Tools Behind Grommet
+## Tools Behind Hercules
 
-Grommet is produced using this great tool:
+Hercules is produced using this great tool:
 
 - [BrowserStack] for browser emulators and simulators.
 - [Circle CI] for continuous integration.
 
 [browserstack]: https://www.browserstack.com/
-[change log]: https://github.com/grommet/grommet/wiki/Change-Log
-[circle ci]: https://circleci.com/gh/grommet/grommet/
+[change log]: https://github.com/hercules/hercules-theme/wiki/Change-Log
+[circle ci]: https://circleci.com/gh/hercules/hercules-theme/
 [contributing]: CONTRIBUTING.md
-[existing app]: https://github.com/grommet/grommet-starter-existing-app
-[grommet starter]: https://github.com/grommet/grommet-starter-new-app
-[grommet]: https://grommet.io/
-[medium]: https://medium.com/grommet-io
-[npm]: https://www.npmjs.com/package/grommet
-[playground]: https://codesandbox.io/s/github/grommet/grommet-sandbox
+[existing app]: https://github.com/hercules/hercules-theme-starter-existing-app
+[hercules-theme starter]: https://github.com/hercules/hercules-theme-starter-new-app
+[hercules-theme]: https://hercules.io/
+[medium]: https://medium.com/hercules-io
+[npm]: https://www.npmjs.com/package/hercules
+[playground]: https://codesandbox.io/s/github/hercules/hercules-theme-sandbox
 [prettier]: https://github.com/prettier/prettier
 [sandboxes]: https://codesandbox.io/u/grommetux/sandboxes
-[slack]: http://slackin.grommet.io
-[storybook]: https://storybook.grommet.io
-[twitter]: https://twitter.com/grommet_io
+[slack]: http://slackin.hercules.io
+[storybook]: https://storybook.hercules.io
+[twitter]: https://twitter.com/hercules_io

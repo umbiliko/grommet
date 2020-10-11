@@ -41,7 +41,7 @@ export const doc = List => {
     .availableAt(getAvailableAtBadge('List'))
     .description('An ordered list of items.')
     .usage(
-      `import { List } from 'grommet';
+      `import { List } from 'hercules-theme';
 <List data={[...]} />`,
     )
     .intrinsicElement('ol');

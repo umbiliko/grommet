@@ -18,7 +18,7 @@ export const doc = Menu => {
       the rendering of the Menu button in those cases.`,
     )
     .usage(
-      `import { Menu } from 'grommet';
+      `import { Menu } from 'hercules-theme';
 <Menu />`,
     )
     .intrinsicElement('button');

@@ -15,9 +15,11 @@
     "strict": false,
     "baseUrl": "./",
     "paths": {
-      "grommet": ["src/js"],
-      "grommet/themes": ["src/js/themes"],
-      "grommet/utils": ["src/js/utils"]
+      "hercules-theme": ["src/js"],
+      "hercules-theme/components": ["src/js/components"],
+      "hercules-theme/contexts": ["src/js/contexts"],
+      "hercules-theme/themes": ["src/js/themes"],
+      "hercules-theme/utils": ["src/js/utils"]
     },
     "lib": ["dom", "es2017"],
     "types": [],

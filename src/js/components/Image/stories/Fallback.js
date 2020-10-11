@@ -1,16 +1,16 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Image } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Image } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const Fallback = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Image
       fallback="//v2.grommet.io/assets/IMG_4245.jpg"
       src="//v2.grommet.io/assets/IMG_4245_not_exists.jpg"
     />
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Image', module).add('Fallback', () => <Fallback />);

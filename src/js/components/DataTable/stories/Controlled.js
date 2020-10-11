@@ -1,11 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, DataTable, CheckBox } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, DataTable, CheckBox } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 // Source code for the data can be found here
-// https://github.com/grommet/grommet/blob/master/src/js/components/DataTable/stories/data.js
+// https://github.com/hercules/hercules-theme/blob/master/src/js/components/DataTable/stories/data.js
 import { columns, DATA } from './data';
 
 const controlledColumns = columns.map(col => ({ ...col }));
@@ -29,7 +29,7 @@ const ControlledDataTable = () => {
     setChecked(event.target.checked ? DATA.map(datum => datum.name) : []);
 
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box align="center" pad="medium">
         <DataTable
           columns={[
@@ -60,7 +60,7 @@ const ControlledDataTable = () => {
           size="medium"
         />
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

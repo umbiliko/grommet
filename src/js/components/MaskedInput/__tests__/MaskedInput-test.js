@@ -16,7 +16,7 @@ import { Search } from 'grommet-icons';
 
 import { createPortal, expectPortal } from '../../../utils/portal';
 
-import { Grommet } from '../../Grommet';
+import { Hercules } from '../../Hercules
 import { Keyboard } from '../../Keyboard';
 import { MaskedInput } from '..';
 
@@ -200,11 +200,11 @@ describe('MaskedInput', () => {
   test('Escape events should propagage if there is no drop', () => {
     const callback = jest.fn();
     const { getByTestId } = render(
-      <Grommet>
+      <Hercules>
         <Keyboard onEsc={callback}>
           <MaskedInput data-testid="test-input" id="item" name="item" />
         </Keyboard>
-      </Grommet>,
+      </Hercules>,
     );
 
     fireEvent.change(getByTestId('test-input'), {
@@ -363,7 +363,7 @@ describe('MaskedInput', () => {
 
     const onChange = jest.fn(event => event.target.value);
     const { getByTestId, container } = render(
-      <Grommet theme={customTheme}>
+      <Hercules theme={customTheme}>
         <MaskedInput
           data-testid="test-input"
           plain
@@ -380,7 +380,7 @@ describe('MaskedInput', () => {
           ]}
           onChange={onChange}
         />
-      </Grommet>,
+      </Hercules>,
     );
     expect(container.firstChild).toMatchSnapshot();
     fireEvent.focus(getByTestId('test-input'));

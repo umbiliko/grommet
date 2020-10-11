@@ -1,11 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, Menu } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, Menu } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const SimpleMenu = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box align="center" pad="large">
       <Menu
         dropProps={{
@@ -20,7 +20,7 @@ const SimpleMenu = () => (
         ]}
       />
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Menu', module).add('Simple', () => <SimpleMenu />, {

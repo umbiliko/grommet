@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, DataTable, Meter, Text } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, DataTable, Meter, Text } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 import { ColumnConfig } from '../..';
 
@@ -136,7 +136,7 @@ export const DATA: RowType[] = [
 ];
 
 const ClickableDataTable = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box align="center" pad="large">
       {/* eslint-disable no-alert */}
       <DataTable
@@ -146,7 +146,7 @@ const ClickableDataTable = () => (
         onClickRow={event => console.log(event.datum)}
       />
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('DataTable', module).add('TS-Clickable', () => (

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Grommet, Select, Button } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Hercules, Select, Button } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const optionList = [
   'One',
@@ -29,7 +29,7 @@ const UnSelect = () => {
   };
 
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box
         pad="medium"
         direction="row"
@@ -51,7 +51,7 @@ const UnSelect = () => {
           label="Clear All"
         />
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

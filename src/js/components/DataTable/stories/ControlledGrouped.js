@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, DataTable } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, DataTable } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 // Source code for the data can be found here
-// https://github.com/grommet/grommet/blob/master/src/js/components/DataTable/stories/data.js
+// https://github.com/hercules/hercules-theme/blob/master/src/js/components/DataTable/stories/data.js
 import { columns, DATA } from './data';
 
 const groupColumns = [...columns];
@@ -19,7 +19,7 @@ const ControlledGroupedDataTable = () => {
   const [expandedGroups, setExpandedGroups] = useState([DATA[2].location]);
 
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <DataTable
         columns={groupColumns}
         data={DATA}
@@ -30,7 +30,7 @@ const ControlledGroupedDataTable = () => {
         }}
         sortable
       />
-    </Grommet>
+    </Hercules>
   );
 };
 

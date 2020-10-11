@@ -18,7 +18,7 @@ export const doc = Button => {
       of the Button in those cases.`,
     )
     .usage(
-      `import { Button } from 'grommet';
+      `import { Button } from 'hercules-theme';
 <Button primary label='Label' />`,
     )
     .intrinsicElement('button');

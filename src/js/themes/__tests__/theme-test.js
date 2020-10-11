@@ -2,10 +2,10 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 
-import { hpe } from 'grommet-theme-hpe';
+import { hpe } from 'hercules-theme-theme-hpe';
 import { Add } from 'grommet-icons';
 
-import { Grommet, Anchor, Box, Text, TextInput } from '../../components';
+import { Hercules, Anchor, Box, Text, TextInput } from '../../components';
 import { dark } from '..';
 
 // hpe theme has deprecated the accent and neutral colors
@@ -74,16 +74,16 @@ const customTheme = {
   },
 };
 
-describe('Grommet', () => {
+describe('Hercules', () => {
   test('default theme', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         {colors.map(color => (
           <Box key={color} background={color}>
             <Text>{color}</Text>
           </Box>
         ))}
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -91,13 +91,13 @@ describe('Grommet', () => {
 
   test('dark theme', () => {
     const component = renderer.create(
-      <Grommet theme={dark}>
+      <Hercules theme={dark}>
         {colors.map(color => (
           <Box key={color} background={color}>
             <Text>{color}</Text>
           </Box>
         ))}
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -105,13 +105,13 @@ describe('Grommet', () => {
 
   test('hpe theme', () => {
     const component = renderer.create(
-      <Grommet theme={hpe}>
+      <Hercules theme={hpe}>
         {hpeColors.map(color => (
           <Box key={color} background={color}>
             <Text>{color}</Text>
           </Box>
         ))}
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -119,7 +119,7 @@ describe('Grommet', () => {
 
   test('custom theme', () => {
     const component = renderer.create(
-      <Grommet theme={customTheme}>
+      <Hercules theme={customTheme}>
         <Box>
           <Anchor icon={<Add />} label="Add" />
           <Anchor icon={<Add />} label="Add" color="custom" />
@@ -131,7 +131,7 @@ describe('Grommet', () => {
         <Box>
           <TextInput value="Value" placeholder="Placeholder" />
         </Box>
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();

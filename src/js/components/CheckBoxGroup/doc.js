@@ -7,7 +7,7 @@ export const doc = CheckBoxGroup => {
     .availableAt(getAvailableAtBadge('CheckBoxGroup'))
     .description('A group of CheckBoxes.')
     .usage(
-      `import { CheckBoxGroup } from 'grommet';
+      `import { CheckBoxGroup } from 'hercules-theme';
         <CheckBoxGroup />`,
     )
     .intrinsicElement('div');

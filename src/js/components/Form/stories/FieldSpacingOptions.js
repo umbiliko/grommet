@@ -2,20 +2,20 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 
 import {
-  grommet,
+  microfocus,
   Box,
   Form,
   FormField,
   Grid,
-  Grommet,
+  Hercules,
   Heading,
   RadioButtonGroup,
   TextInput,
   ThemeContext,
-} from 'grommet';
-import { deepMerge } from 'grommet/utils';
+} from 'hercules-theme';
+import { deepMerge } from 'hercules-theme/utils';
 
-const customTheme = deepMerge(grommet, {
+const customTheme = deepMerge(microfocus, {
   formField: {
     border: {
       side: 'all',
@@ -54,7 +54,7 @@ const adjustedLabelMargins = {
 
 const FieldSpacingOptions = () => {
   return (
-    <Grommet theme={customTheme}>
+    <Hercules theme={customTheme}>
       <Grid columns={{ count: 'fit', size: 'medium' }} gap="medium">
         <Box pad={{ horizontal: 'medium' }}>
           <Form>
@@ -256,7 +256,7 @@ const FieldSpacingOptions = () => {
           </Form>
         </Box>
       </Grid>
-    </Grommet>
+    </Hercules>
   );
 };
 

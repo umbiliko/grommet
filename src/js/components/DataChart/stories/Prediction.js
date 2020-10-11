@@ -3,8 +3,8 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import styled, { keyframes } from 'styled-components';
 
-import { Box, DataChart, Grommet, Stack } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, DataChart, Hercules, Stack } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 export const keyFrameExampleOne = keyframes`
 0% {
@@ -42,7 +42,7 @@ for (let i = 0; i < 13; i += 1) {
 }
 
 const Example = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box align="center" justify="start" pad="large">
       <Stack anchor="top-right" interactiveChild="first">
         <DataChart
@@ -130,7 +130,7 @@ const Example = () => (
         <AnimatedBox width="small" height="small" />
       </Stack>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('DataChart', module).add('Prediction', () => <Example />);

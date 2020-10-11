@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 
 import { FormClose } from 'grommet-icons';
 
-import { Box, Button, CheckBox, Grommet, Select, Text } from 'grommet';
+import { Box, Button, CheckBox, Hercules, Select, Text } from 'hercules-theme';
 
 import { theme as customSearchTheme } from './theme';
 
@@ -151,7 +151,7 @@ const CustomSearchSelect = () => {
   };
 
   return (
-    <Grommet full theme={customSearchTheme}>
+    <Hercules full theme={customSearchTheme}>
       <Box fill align="center" justify="center" width="medium">
         <Select
           ref={selectRef}
@@ -195,7 +195,7 @@ const CustomSearchSelect = () => {
           {renderOption}
         </Select>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
 import {
-  Grommet,
+  Hercules,
   Box,
   InfiniteScroll,
   InfiniteScrollProps,
   Text,
-} from 'grommet';
-import { grommet } from 'grommet/themes';
+} from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 import { allItems } from '../Basics';
 
@@ -31,7 +31,7 @@ const OnMoreInfiniteScroll: React.FC<IProps> = ({ props }) => {
   };
 
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box>
         <InfiniteScroll items={items} onMore={onMore} {...props}>
           {item => (
@@ -46,7 +46,7 @@ const OnMoreInfiniteScroll: React.FC<IProps> = ({ props }) => {
           )}
         </InfiniteScroll>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

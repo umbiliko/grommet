@@ -1,9 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { deepMerge } from 'grommet/utils';
+import { deepMerge } from 'hercules-theme/utils';
 
 import {
-  grommet,
+  microfocus,
   Box,
   Button,
   CheckBox,
@@ -15,8 +15,8 @@ import {
   Select,
   TextArea,
   TextInput,
-  Grommet,
-} from 'grommet';
+  Hercules,
+} from 'hercules-theme';
 
 const customFormFieldTheme = {
   global: {
@@ -58,7 +58,7 @@ const customFormFieldTheme = {
 };
 
 const CustomFormField = () => (
-  <Grommet full theme={deepMerge(grommet, customFormFieldTheme)}>
+  <Hercules full theme={deepMerge(microfocus, customFormFieldTheme)}>
     <Box fill align="center" justify="center">
       <Box width="medium">
         <Form
@@ -103,7 +103,7 @@ const CustomFormField = () => (
         </Form>
       </Box>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Form', module).add('Custom theme', () => <CustomFormField />);

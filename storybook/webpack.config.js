@@ -32,7 +32,10 @@ module.exports = async ({ config }) => {
   });
 
   // eslint-disable-next-line no-param-reassign
-  config.resolve.alias.grommet = path.resolve(__dirname, '../src/js');
+  Object.assign(
+    config.resolve.alias,
+    { ['hercules-theme']: path.resolve(__dirname, '../src/js') }
+  );
 
   return config;
 };

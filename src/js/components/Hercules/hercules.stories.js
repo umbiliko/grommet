@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { grommet, Grommet, Anchor, Box } from 'grommet';
+import { microfocus, Hercules, Anchor, Box } from 'hercules-theme';
 import { Add } from 'grommet-icons';
 
 const customTheme = {
@@ -13,42 +13,42 @@ const customTheme = {
 };
 
 const Themed = () => (
-  <Grommet theme={customTheme}>
+  <Hercules theme={customTheme}>
     <Box pad="medium">
       <Anchor icon={<Add />} label="Add" color="custom" />
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 const Plain = () => (
   <>
-    <Grommet plain>
+    <Hercules plain>
       <Box pad="medium">
-        <p>Plain Grommet</p>
+        <p>Plain Hercules</p>
       </Box>
-    </Grommet>
-    <Grommet>
+    </Hercules>
+    <Hercules>
       <Box pad="medium">
-        <p>Not plain Grommet</p>
+        <p>Not plain Hercules</p>
       </Box>
-    </Grommet>
+    </Hercules>
   </>
 );
 
 const GrommetVars = () => (
-  <Grommet theme={grommet} cssVars>
+  <Hercules theme={microfocus} cssVars>
     <Box pad="medium" background="var(--accent-2)" gap="medium">
       <Box>
-        Checkout Grommet variables, you can find them in the StyledGrommet DOM.
+        Checkout Hercules variables, you can find them in the StyledGrommet DOM.
       </Box>
       <Box with>
         For example, the background color in this Box is using var(--accent-2)
       </Box>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
-storiesOf('Grommet', module)
+storiesOf('Hercules', module)
   .add('Plain', () => <Plain />)
   .add('Theme', () => <Themed />)
   .add('Vars', () => <GrommetVars />);

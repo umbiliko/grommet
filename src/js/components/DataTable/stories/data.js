@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Box, Meter, Text } from 'grommet';
+import { Box, Meter, Text } from 'hercules-theme';
 
 const amountFormatter = new Intl.NumberFormat('en-US', {
   style: 'currency',

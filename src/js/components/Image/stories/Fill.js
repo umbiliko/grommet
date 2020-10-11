@@ -1,12 +1,12 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, Image, Anchor } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, Image, Anchor } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const Fill = () => {
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box align="start" gap="small">
         <Box height="small" width="small" border>
           <Anchor href="#">
@@ -23,7 +23,7 @@ const Fill = () => {
           </Anchor>
         </Box>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

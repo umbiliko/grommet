@@ -1,14 +1,14 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, Menu, Text } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, Menu, Text } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 import { FormDown, Github, Slack } from 'grommet-icons';
 
 // This story offers a suggested workaround for issue #3209.
 
 const IconItemsMenu = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box align="center" pad="large">
       <Menu
         plain
@@ -40,7 +40,7 @@ const IconItemsMenu = () => (
         </Box>
       </Menu>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Menu', module).add('Item with icon', () => <IconItemsMenu />);

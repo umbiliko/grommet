@@ -2,8 +2,8 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import styled from 'styled-components';
 
-import { Box, Grommet, Markdown } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Hercules, Markdown } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const CONTENT = `
   # Out of Breath
@@ -15,7 +15,7 @@ const CONTENT = `
   [reference](#)
 
 \`\`\`
-import { Grommet } from 'grommet';
+import { Hercules } from 'hercules-theme';
 \`\`\`
 
   > i carry your heart with me
@@ -29,11 +29,11 @@ import { Grommet } from 'grommet';
 `;
 
 const SimpleMarkdown = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box align="center" pad="large">
       <Markdown>{CONTENT}</Markdown>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 const StyledPre = styled.pre`
@@ -41,11 +41,11 @@ const StyledPre = styled.pre`
 `;
 
 const ComponentOverrideMarkdown = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box align="center" pad="large">
       <Markdown components={{ pre: StyledPre }}>{CONTENT}</Markdown>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Markdown', module)

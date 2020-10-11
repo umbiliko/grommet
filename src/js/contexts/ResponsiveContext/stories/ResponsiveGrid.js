@@ -1,12 +1,12 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { deepMerge } from 'grommet/utils';
-import { grommet } from 'grommet/themes';
+import { deepMerge } from 'hercules-theme/utils';
+import { microfocus } from 'hercules-theme/themes';
 
-import { Box, Grid, Paragraph, Grommet, ResponsiveContext } from 'grommet';
+import { Box, Grid, Paragraph, Hercules, ResponsiveContext } from 'hercules-theme';
 
-const customBreakpoints = deepMerge(grommet, {
+const customBreakpoints = deepMerge(microfocus, {
   global: {
     breakpoints: {
       xsmall: {
@@ -33,7 +33,7 @@ const ResponsiveGrid = ({ children, areas, ...props }) => {
 };
 
 const ResponsiveGridExample = () => (
-  <Grommet theme={customBreakpoints} full>
+  <Hercules theme={customBreakpoints} full>
     <ResponsiveGrid
       columns={['25%', '25%', '25%', '25%']}
       rows={['3em', '3em', '3em']}
@@ -73,7 +73,7 @@ const ResponsiveGridExample = () => (
       Below a certain threshold, Columns 1 &amp; 2 switch to 50% and Column 3
       moves down to a new spot in the grid.
     </Paragraph>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('ResponsiveContext', module).add('Responsive grid', () => (

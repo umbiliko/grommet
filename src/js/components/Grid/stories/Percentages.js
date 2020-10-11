@@ -1,11 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, Grid } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, Grid } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const Percentages = () => (
-  <Grommet theme={grommet} full>
+  <Hercules theme={microfocus} full>
     <Grid
       fill
       areas={[
@@ -19,7 +19,7 @@ const Percentages = () => (
       <Box gridArea="nav" background="brand" />
       <Box gridArea="main" background="brand" />
     </Grid>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Grid', module).add('Percentages', () => <Percentages />);

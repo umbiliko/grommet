@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet as GrommetIcon } from 'grommet-icons';
-import { Anchor, Box, Footer, grommet, Grommet, Main, Text } from 'grommet';
+import { Hercules as GrommetIcon } from 'grommet-icons';
+import { Anchor, Box, Footer, microfocus, Hercules, Main, Text } from 'hercules-theme';
 import { threeColumns as data } from './data';
 
 const FooterAnchor = ({ ...rest }) => (
@@ -26,7 +26,7 @@ const FooterContent = () => {
 
 const Sitemap = () => {
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Main
         background="light-4"
         elevation="large"
@@ -50,7 +50,7 @@ const Sitemap = () => {
         </Box>
         <FooterContent />
       </Footer>
-    </Grommet>
+    </Hercules>
   );
 };
 

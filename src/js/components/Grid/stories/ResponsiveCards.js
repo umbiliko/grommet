@@ -2,14 +2,14 @@ import React, { useContext } from 'react';
 import { storiesOf } from '@storybook/react';
 
 import {
-  grommet,
+  microfocus,
   Box,
   Card,
   Grid,
-  Grommet,
+  Hercules,
   ResponsiveContext,
   Text,
-} from 'grommet';
+} from 'hercules-theme';
 
 const cards = Array(20)
   .fill()
@@ -19,7 +19,7 @@ const cards = Array(20)
 const Example = () => {
   const size = useContext(ResponsiveContext);
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box pad="large">
         <Grid columns={size !== 'small' ? 'small' : '100%'} gap="small">
           {cards.map((card, index) => (
@@ -30,7 +30,7 @@ const Example = () => {
           ))}
         </Grid>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

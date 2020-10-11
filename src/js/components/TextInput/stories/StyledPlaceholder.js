@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Box, Form, TextInput, Text } from 'grommet';
+import { Box, Form, TextInput, Text } from 'hercules-theme';
 
 const StyledPlaceholder = () => {
   return (

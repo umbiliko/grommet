@@ -2,11 +2,11 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { Close, Send, User } from 'grommet-icons';
 
-import { Box, Button, Grommet, Text } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Button, Hercules, Text } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const IconPlain = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box align="center" pad="large">
       <Text margin="small"> plain=true (no padding, no border) </Text>
       <Box direction="row">
@@ -31,7 +31,7 @@ const IconPlain = () => (
         <Button icon={<User />} onClick={() => {}} />
       </Box>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Button', module).add('Icon plain', () => <IconPlain />);

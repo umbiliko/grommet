@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { storiesOf } from '@storybook/react';
-import { grommet } from 'grommet/themes';
-import { AnnounceContext, Box, Grommet, Heading, Text } from 'grommet';
+import { microfocus } from 'hercules-theme/themes';
+import { AnnounceContext, Box, Hercules, Heading, Text } from 'hercules-theme';
 
 const Announcer = ({ announce, message, mode, role }) => {
   React.useEffect(() => {
@@ -31,14 +31,14 @@ Announcer.defaultProps = {
 };
 
 const AnnounceContextComponent = props => (
-  <Grommet theme={grommet} full>
+  <Hercules theme={microfocus} full>
     <Box justify="center" align="center" background="brand" fill>
       <Heading>Welcome to announcement section</Heading>
       <AnnounceContext.Consumer>
         {announce => <Announcer announce={announce} {...props} />}
       </AnnounceContext.Consumer>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('AnnounceContext', module)

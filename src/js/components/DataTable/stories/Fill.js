@@ -1,17 +1,17 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Grommet, Box, DataTable } from 'grommet';
-import { grommet } from 'grommet/themes';
-import { deepMerge } from 'grommet/utils';
+import { Hercules, Box, DataTable } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
+import { deepMerge } from 'hercules-theme/utils';
 
 // Source code for the data can be found here
-// https://github.com/grommet/grommet/blob/master/src/js/components/DataTable/stories/data.js
+// https://github.com/hercules/hercules-theme/blob/master/src/js/components/DataTable/stories/data.js
 import { columns, data } from './data';
 
 const pinnedColumns = columns.map(c => ({ ...c }));
 pinnedColumns[0].pin = true;
 
-const myTheme = deepMerge(grommet, {
+const myTheme = deepMerge(microfocus, {
   table: {
     header: {
       background: {
@@ -41,7 +41,7 @@ const myTheme = deepMerge(grommet, {
 });
 
 const Example = () => (
-  <Grommet theme={myTheme} full>
+  <Hercules theme={myTheme} full>
     <Box fill="vertical">
       <DataTable
         columns={pinnedColumns}
@@ -54,7 +54,7 @@ const Example = () => (
         }}
       />
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('DataTable', module).add('Fill and pin', () => <Example />);

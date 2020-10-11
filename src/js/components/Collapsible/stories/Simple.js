@@ -1,14 +1,14 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Button, Collapsible, Grommet, Text } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Button, Collapsible, Hercules, Text } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const SimpleCollapsible = props => {
   const [open, setOpen] = React.useState(false);
 
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box align="start" gap="small">
         <Button primary onClick={() => setOpen(!open)} label="Toggle" />
         <Collapsible open={open} {...props}>
@@ -24,7 +24,7 @@ const SimpleCollapsible = props => {
         </Collapsible>
         <Text>This is other content outside the Collapsible box</Text>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

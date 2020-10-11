@@ -1,18 +1,18 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Anchor, Box, Grommet } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Anchor, Box, Hercules } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const Disabled = () => {
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box align="center" pad="large">
         <Box margin="small">
           <Anchor disabled label="Disabled Anchor" />
         </Box>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

@@ -3,14 +3,14 @@ import { storiesOf } from '@storybook/react';
 import {
   Box,
   Button,
-  Grommet,
+  Hercules,
   Keyboard,
   Text,
   Calendar,
   MaskedInput,
   DropButton,
-} from 'grommet';
-import { grommet } from 'grommet/themes';
+} from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 import { Schedule } from 'grommet-icons';
 
 const DropContent = ({ date: initialDate, time: initialTime, onClose }) => {
@@ -96,7 +96,7 @@ const DateTimeDropButton = () => {
   };
 
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box align="center" pad="large">
         <DropButton
           open={open}
@@ -116,7 +116,7 @@ const DateTimeDropButton = () => {
           </Box>
         </DropButton>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

@@ -7,7 +7,7 @@ export const doc = RadioButtonGroup => {
     .availableAt(getAvailableAtBadge('RadioButtonGroup'))
     .description('A group of radio buttons.')
     .usage(
-      `import { RadioButtonGroup } from 'grommet';
+      `import { RadioButtonGroup } from 'hercules-theme';
 <RadioButtonGroup />`,
     )
     .intrinsicElement('div');

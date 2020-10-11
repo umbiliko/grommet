@@ -1,10 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { Attraction, Car, TreeOption } from 'grommet-icons';
-import { Box, Grommet, grommet, Tab, Tabs } from 'grommet';
-import { deepMerge } from 'grommet/utils';
+import { Box, Hercules, microfocus, Tab, Tabs } from 'hercules-theme';
+import { deepMerge } from 'hercules-theme/utils';
 
-const myTheme = deepMerge(grommet, {
+const myTheme = deepMerge(microfocus, {
   tabs: {
     header: {
       border: {
@@ -29,7 +29,7 @@ const myTheme = deepMerge(grommet, {
 });
 
 const AlignControls = () => (
-  <Grommet theme={myTheme} full>
+  <Hercules theme={myTheme} full>
     <Tabs justify="start" alignControls="start">
       <Tab title="Tab 1">
         <Box fill pad="large" align="center">
@@ -47,7 +47,7 @@ const AlignControls = () => (
         </Box>
       </Tab>
     </Tabs>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Tabs', module).add('Align controls', () => <AlignControls />);

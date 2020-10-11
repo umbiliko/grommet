@@ -3,14 +3,14 @@ import { storiesOf } from '@storybook/react';
 
 import { Notification } from 'grommet-icons';
 
-import { Box, Button, Collapsible, Heading, Grommet, Text } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Button, Collapsible, Heading, Hercules, Text } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const HorizontalCollapsible = () => {
   const [openNotification, setOpenNotification] = React.useState();
 
   return (
-    <Grommet full theme={grommet}>
+    <Hercules full theme={microfocus}>
       <Box fill>
         <Box
           as="header"
@@ -47,7 +47,7 @@ const HorizontalCollapsible = () => {
           </Collapsible>
         </Box>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

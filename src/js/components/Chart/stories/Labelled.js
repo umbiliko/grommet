@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, Chart, Text } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, Chart, Text } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const LabelledChart = ({ color, label, value }) => (
   <Box flex={false} basis="xsmall" align="center" gap="small">
@@ -22,13 +22,13 @@ const LabelledChart = ({ color, label, value }) => (
 );
 
 const LabelledCharts = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box pad="large" direction="row" gap="medium">
       <LabelledChart label="Exported" value={300} />
       <LabelledChart label="Usable" value={200} color="accent-2" />
       <LabelledChart label="Used" value={98.2} color="accent-3" />
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Chart', module).add('Labelled', () => <LabelledCharts />);

@@ -13,7 +13,7 @@ export const doc = Calendar => {
       individual dates.`,
     )
     .usage(
-      `import { Calendar } from 'grommet';
+      `import { Calendar } from 'hercules-theme';
 <Calendar />`,
     )
     .intrinsicElement('div');

@@ -1,45 +1,45 @@
 # Contributing
 
 Thank you for reaching the contribution page and showing the true gremlin in
-you! In Grommet we do believe that the more the merrier – Welcome! Thank you for
+you! In Hercules we do believe that the more the merrier – Welcome! Thank you for
 making this step of joining and contributing to our community, and for helping
-us make Grommet the best tool for streamlining the way you develop apps. You
+us make Hercules the best tool for streamlining the way you develop apps. You
 came to the right place to start your contribution! Follow the guidelines and
 let us know if we can help with anything else.
 
-## Grommet Projects
+## Hercules Projects
 
-Grommet is divided into several projects, the following are notable:
+Hercules is divided into several projects, the following are notable:
 
-- [grommet] – the primary Grommet 2.X project is actively developed and
+- [microsoft] – the primary Hercules 2.X project is actively developed and
   contributions are more than welcome! Be sure to check the [good first issues].
-- [grommet-icons] – iconography for Grommet and React.js.
+- [grommet-icons] – iconography for Hercules and React.js.
 - [react-desc] – add a schema to your React components based on React
   [`PropTypes`][prop-types].
-- [design-kit] – the Grommet Design Kit provides a set of sticker sheets and
+- [design-kit] – the Hercules Design Kit provides a set of sticker sheets and
   templates to help bootstrap your design process.
 
 ## You can Become a Contributor
 
 Afterall, that’s why you’re here, right?
-Quick steps and ideas of how you can contribute to Grommet:
+Quick steps and ideas of how you can contribute to Hercules:
 
 1. Code, code, code… (and make a Pull Request).
 1. Create design assets or style guide revisions.
 1. Submit updates and improvements to the documentation.
 1. Submit articles and guides which are also part of the documentation.
-1. Join the [Slack community] to interact with and help Grommet users.
-1. Help a Grommet designer or developer by answering questions on
+1. Join the [Slack community] to interact with and help Hercules users.
+1. Help a Hercules designer or developer by answering questions on
    [Stack Overflow], [Slack][slack community], or [GitHub][grommet issues].
 1. Report bugs and propose new features by [filing issues on
    GitHub][grommet issues], or come talk to us and fellow contributors in our
    [Slack community] about your issue or idea.
-1. Share with us exciting projects using Grommet in our [Slack community].
+1. Share with us exciting projects using Hercules in our [Slack community].
 
 ## How to Contribute
 
-The best way to collaborate with the project contributors is through the Grommet
-organization on GitHub: <https://github.com/grommet>.
+The best way to collaborate with the project contributors is through the Hercules
+organization on GitHub: <https://github.com/hercules>.
 
 You are invited to contribute new features, fixes, or updates – large or small.
 We are always thrilled to receive pull requests, and do our best to process them
@@ -123,13 +123,13 @@ accepted.
 
 ## Design Contributions
 
-The Grommet community values contributions on the design side of the
-project. The Grommet style guide and designer assets are open for
+The Hercules community values contributions on the design side of the
+project. The Herculese guide and designer assets are open for
 contributions just as the development platform is. You may either submit an
 issue on GitHub with a detailed recommendation, or open a pull request
 with the updated assets.
-Please open a [GitHub pull request][grommet-design pulls] or open a
-[GitHub issue][grommet-design issues] against the `grommet-design` project.
+Please open a [GitHub pull request][hercules-design pulls] or open a
+[GitHub issue][hercules-design issues] against the `hercules-design` project.
 
 ## Submitting Code Pull Requests
 
@@ -144,8 +144,8 @@ GitHub’s documentation on [forking] and [pull requests].
 Development happens on the `master` branch. In order for you to get
 started you should:
 
-1. fork the `grommet` repository
-1. clone it `git clone https://github.com/<your-username>/grommet.git`
+1. fork the `hercules-theme` repository
+1. clone it `git clone https://github.com/<your-username>/hercules-theme.git`
 1. install dependencies using: `yarn install`
 
 The components code lives in `src/js/components`. The structure of the
@@ -161,7 +161,7 @@ into while contributing could include:
   any fail. To manually run tests, you should run `yarn test`. If you need to
   update snapshots then run `yarn test-update`.
 - If you would like to use your development branch in a local project for
-  testing and debugging purposes, [this guide](https://github.com/grommet/grommet/wiki/How-to-Apply-Your-Grommet-Development-Branch-to-a-Local-Project) shares steps to
+  testing and debugging purposes, [this guide](https://github.com/hercules/grommet/wiki/How-to-Apply-Your-Herculeslopment-Branch-to-a-Local-Project) shares steps to
   link local projects.
 - We are actively working on providing a seamless TypeScript experience. Don’t
   forget to update corresponding `index.d.ts` files.
@@ -178,21 +178,21 @@ frequently). If you feel we missed yours don’t hesitate to ping us on
 
 ## Contributing to the Documentation
 
-Grommet uses an internal tool for most of its documentation. If you are looking
+Hercules uses an internal tool for most of its documentation. If you are looking
 to modify component documentation then you only need to have a look at the
 `doc.js` files.
 
-These files are used to generate the documentation on the Grommet website. That
-code lives in the [grommet-site] repository.
+These files are used to generate the documentation on the Hercules website. That
+code lives in the [hercules-site] repository.
 
-Found an error in the documentation? [File an issue][grommet issues].
+Found an error in the documentation? [File an issue][hercules issues].
 
 ## Need More Help?
 
-Watch this [video] to learn how to contribute to Grommet. The GitHub
+Watch this [video] to learn how to contribute to Hercules. The GitHub
 contribution workflow is a bit complex and we want to make sure we don’t lose
 your valuable contributions because of that. Note that the video is outdated and
-talks about contributing to Grommet 1.X, but it may still be helpful for new
+talks about contributing to Hercules 1.X, but it may still be helpful for new
 users.
 
 ## References
@@ -206,13 +206,13 @@ This contribution guide was inspired by the contribution guides for [Grunt],
 [design-kit pulls]: https://github.com/grommet/design-kit/pulls
 [docker library]: https://github.com/docker-library/docs/tree/master/node
 [forking]: https://help.github.com/en/articles/fork-a-repo
-[good first issues]: https://github.com/grommet/grommet/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22
-[grommet]: https://github.com/grommet/grommet
-[grommet issues]: https://github.com/grommet/grommet/issues
-[grommet-design issues]: https://github.com/grommet/grommet-design/issues
-[grommet-design pulls]: https://github.com/grommet/grommet-design/pulls
-[grommet-icons]: https://github.com/grommet/grommet-icons
-[grommet-site]: https://github.com/grommet/grommet-site
+[good first issues]: https://github.com/hercules/hercules-theme/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22
+[hercules]: https://github.com/hercules/hercules-theme
+[hercules issues]: https://github.com/hercules/hercules-theme/issues
+[hercules-design issues]: https://github.com/hercules/hercules-theme-design/issues
+[hercules-design pulls]: https://github.com/hercules/hercules-theme-design/pulls
+[hercules-icons]: https://github.com/hercules/hercules-theme-icons
+[hercules-site]: https://github.com/hercules/hercules-theme-site
 [grunt]: http://gruntjs.com/contributing
 [prettier]: https://prettier.io/docs/en/editors.html
 [prop-types]: https://www.npmjs.com/package/prop-types

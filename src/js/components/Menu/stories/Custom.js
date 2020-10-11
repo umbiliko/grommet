@@ -1,12 +1,12 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, Menu, Text } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, Menu, Text } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 import { FormDown } from 'grommet-icons';
 
 const CustomMenu = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box
       align="center"
       pad="large"
@@ -35,7 +35,7 @@ const CustomMenu = () => (
         }}
       </Menu>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Menu', module).add('Custom', () => <CustomMenu />, {

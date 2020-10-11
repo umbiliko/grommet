@@ -2,18 +2,18 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 
 import {
-  grommet,
+  microfocus,
   Box,
   Card,
   CardBody,
   CardFooter,
   CardHeader,
-  Grommet,
+  Hercules,
   Text,
-} from 'grommet';
+} from 'hercules-theme';
 
 const Example = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box pad="large" gap="medium" height="large" width="medium">
       <Card pad="small" background="dark-1" gap="medium">
         <CardHeader>header</CardHeader>
@@ -37,7 +37,7 @@ const Example = () => (
         <Box>box - random component</Box>
       </Card>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Card', module).add('Simple', () => <Example />);

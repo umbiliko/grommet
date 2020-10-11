@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { Box, Grommet, Tab, Tabs, Text, ThemeContext } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Hercules, Tab, Tabs, Text, ThemeContext } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const colors = {
   'background-contrast': '#0000000A',
@@ -101,9 +101,9 @@ const TabsExample = ({ label }) => {
 
 const TabStates = () => {
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box gap="large" pad="large" width={{ max: 'large' }}>
-        <TabsExample label="Grommet Default" />
+        <TabsExample label="Hercules Default" />
         <ThemeContext.Extend value={customTheme}>
           <TabsExample label="Customized Disabled State" />
         </ThemeContext.Extend>
@@ -114,7 +114,7 @@ const TabStates = () => {
           />
         </ThemeContext.Extend>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

@@ -5,12 +5,12 @@ import {
   Avatar,
   Button,
   Box,
-  grommet,
-  Grommet,
+  microfocus,
+  Hercules,
   Nav,
   Stack,
   Text,
-} from 'grommet';
+} from 'hercules-theme';
 
 import {
   Analytics,
@@ -69,7 +69,7 @@ const MainNavigation = () => (
 );
 
 export const Labels = () => (
-  <Grommet theme={grommet} full>
+  <Hercules theme={microfocus} full>
     <Box direction="row" height={{ min: '100%' }}>
       <Sidebar
         responsive={false}
@@ -81,7 +81,7 @@ export const Labels = () => (
         <MainNavigation />
       </Sidebar>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Sidebar', module).add('Labels', () => <Labels />);

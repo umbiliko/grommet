@@ -4,20 +4,20 @@ import { storiesOf } from '@storybook/react';
 
 import {
   Box,
-  Grommet,
+  Hercules,
   Meter,
   Table,
   TableBody,
   TableCell,
   TableRow,
   Text,
-} from 'grommet';
-import { grommet } from 'grommet/themes';
+} from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const values = [20, 40, 60, 80, 100];
 
 const MeterInTable = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box align="center" pad="large">
       <Box border pad={{ top: 'xsmall' }}>
         <Table caption="Meter Inside Table">
@@ -43,7 +43,7 @@ const MeterInTable = () => (
         </Table>
       </Box>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Table', module).add('Meter inside table', () => <MeterInTable />);

@@ -1,12 +1,12 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, Menu } from 'grommet';
+import { Hercules, Box, Menu } from 'hercules-theme';
 import { Power, User } from 'grommet-icons';
-import { grommet } from 'grommet/themes';
+import { microfocus } from 'hercules-theme/themes';
 
 const Reverse = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box align="center" pad="large">
       <Menu
         dropProps={{ align: { top: 'bottom', left: 'left' } }}
@@ -18,7 +18,7 @@ const Reverse = () => (
         ]}
       />
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Menu', module).add('Reverse', () => <Reverse />, {

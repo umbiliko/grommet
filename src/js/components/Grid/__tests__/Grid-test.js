@@ -3,15 +3,15 @@ import renderer from 'react-test-renderer';
 import { render } from '@testing-library/react';
 import 'jest-styled-components';
 
-import { Grommet } from '../../Grommet';
+import { Hercules } from '../../Hercules';
 import { Grid } from '..';
 
 describe('Grid', () => {
   test('renders', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Grid />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -19,9 +19,9 @@ describe('Grid', () => {
 
   test('a11yTitle renders', () => {
     const { container, getByLabelText } = render(
-      <Grommet>
+      <Hercules>
         <Grid a11yTitle="My Grid" />
-      </Grommet>,
+      </Hercules>,
     );
     const gridWithLabel = getByLabelText('My Grid');
     expect(gridWithLabel).toBeTruthy();
@@ -30,10 +30,10 @@ describe('Grid', () => {
 
   test('rows renders', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Grid rows={['small', 'large', 'medium']} />
         <Grid rows="small" />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -41,14 +41,14 @@ describe('Grid', () => {
 
   test('columns renders', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Grid columns={['1/2', '2/4']} />
         <Grid columns={['1/3', '2/3']} />
         <Grid columns={['1/4', '3/4']} />
         <Grid columns="small" />
         <Grid columns={{ count: 'fit', size: 'small' }} />
         <Grid columns={{ count: 'fill', size: ['small', 'medium'] }} />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -56,7 +56,7 @@ describe('Grid', () => {
 
   test('areas renders', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Grid
           rows={['xxsmall', 'medium', 'xsmall']}
           columns={['3/4', '1/4']}
@@ -67,7 +67,7 @@ describe('Grid', () => {
             { name: 'footer', start: [2, 0], end: [2, 1] },
           ]}
         />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -75,7 +75,7 @@ describe('Grid', () => {
 
   test('areas renders when given an array of string arrays', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Grid
           rows={['xxsmall', 'medium', 'xsmall']}
           columns={['3/4', '1/4']}
@@ -85,7 +85,7 @@ describe('Grid', () => {
             ['footer', 'footer'],
           ]}
         />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -93,12 +93,12 @@ describe('Grid', () => {
 
   test('justify renders', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Grid justify="start" />
         <Grid justify="center" />
         <Grid justify="end" />
         <Grid justify="stretch" />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -106,12 +106,12 @@ describe('Grid', () => {
 
   test('align renders', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Grid align="start" />
         <Grid align="center" />
         <Grid align="end" />
         <Grid align="stretch" />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -119,14 +119,14 @@ describe('Grid', () => {
 
   test('justifyContent renders', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Grid justifyContent="start" />
         <Grid justifyContent="center" />
         <Grid justifyContent="between" />
         <Grid justifyContent="around" />
         <Grid justifyContent="end" />
         <Grid justifyContent="stretch" />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -134,14 +134,14 @@ describe('Grid', () => {
 
   test('alignContent renders', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Grid alignContent="start" />
         <Grid alignContent="center" />
         <Grid alignContent="between" />
         <Grid alignContent="around" />
         <Grid alignContent="end" />
         <Grid alignContent="stretch" />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -149,7 +149,7 @@ describe('Grid', () => {
 
   test('gap renders', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Grid gap="small" />
         <Grid gap="medium" />
         <Grid gap="large" />
@@ -160,7 +160,7 @@ describe('Grid', () => {
         <Grid gap={{ column: 'medium' }} />
         <Grid gap={{ column: 'large' }} />
         <Grid gap={{ row: 'small', column: 'medium' }} />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -168,12 +168,12 @@ describe('Grid', () => {
 
   test('fill renders', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Grid fill />
         <Grid fill={false} />
         <Grid fill="horizontal" />
         <Grid fill="vertical" />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -181,10 +181,10 @@ describe('Grid', () => {
 
   test('responsive', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Grid responsive />
         <Grid responsive={false} />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -192,9 +192,9 @@ describe('Grid', () => {
 
   test('as renders', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Grid as="article" />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -202,21 +202,21 @@ describe('Grid', () => {
 
   test('proxies tag', () => {
     const tagComponent = renderer.create(
-      <Grommet>
+      <Hercules>
         <Grid tag="article" />
-      </Grommet>,
+      </Hercules>,
     );
     const asComponent = renderer.create(
-      <Grommet>
+      <Hercules>
         <Grid as="article" />
-      </Grommet>,
+      </Hercules>,
     );
     expect(tagComponent.toJSON()).toEqual(asComponent.toJSON());
   });
 
   test('pad', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Grid pad="small" />
         <Grid pad="medium" />
         <Grid pad="large" />
@@ -228,7 +228,7 @@ describe('Grid', () => {
         <Grid pad={{ start: 'small' }} />
         <Grid pad={{ end: 'small' }} />
         <Grid pad={{ top: 'small' }} />
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();

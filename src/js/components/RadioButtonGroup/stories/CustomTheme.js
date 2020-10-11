@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Grommet, RadioButtonGroup, ThemeContext } from 'grommet';
-import { grommet } from 'grommet/themes';
-import { deepMerge } from 'grommet/utils';
+import { Box, Hercules, RadioButtonGroup, ThemeContext } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
+import { deepMerge } from 'hercules-theme/utils';
 
-const customTheme = deepMerge(grommet, {
+const customTheme = deepMerge(microfocus, {
   radioButtonGroup: {
     container: {
       gap: 'xlarge',
@@ -38,7 +38,7 @@ const CustomRadioButtomGroup = ({ value: initialValue, ...props }) => {
   const [value, setValue] = useState(initialValue);
 
   return (
-    <Grommet theme={customTheme}>
+    <Hercules theme={customTheme}>
       <ThemeContext.Consumer>
         {theme => console.log(JSON.stringify(theme.radioButton))}
       </ThemeContext.Consumer>
@@ -55,7 +55,7 @@ const CustomRadioButtomGroup = ({ value: initialValue, ...props }) => {
           {...props}
         />
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

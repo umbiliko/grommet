@@ -6,16 +6,16 @@ import 'regenerator-runtime/runtime';
 import { axe } from 'jest-axe';
 import { render, cleanup } from '@testing-library/react';
 
-import { Grommet, Nav } from '../..';
+import { Hercules, Nav } from '../..';
 
 describe('Nav', () => {
   afterEach(cleanup);
 
   test('should have no accessibility violations', async () => {
     const { container } = render(
-      <Grommet>
+      <Hercules>
         <Nav />
-      </Grommet>,
+      </Hercules>,
     );
 
     const results = await axe(container);

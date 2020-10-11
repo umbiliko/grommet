@@ -2,13 +2,13 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 
 import {
-  Grommet as GrommetIcon,
+  Hercules as GrommetIcon,
   FacebookOption,
   Instagram,
   Twitter,
 } from 'grommet-icons';
 
-import { Anchor, Box, Footer, grommet, Grommet, Main, Text } from 'grommet';
+import { Anchor, Box, Footer, microfocus, Hercules, Main, Text } from 'hercules-theme';
 
 const Media = () => (
   <Box direction="row" gap="xxsmall" justify="center">
@@ -31,7 +31,7 @@ const Media = () => (
 );
 
 const Social = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Main background="light-2" elevation="large" pad="medium" gap="large">
       <Text margin="small" size="xsmall">
         Main Content
@@ -42,7 +42,7 @@ const Social = () => (
       <Box align="center" direction="row" gap="xsmall">
         <GrommetIcon color="brand" size="medium" />
         <Text alignSelf="center" color="brand" size="small">
-          Grommet
+          Hercules
         </Text>
       </Box>
       <Media />
@@ -50,7 +50,7 @@ const Social = () => (
         ©Copyright
       </Text>
     </Footer>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Footer', module).add('Social', () => <Social />);

@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 
 import { Gremlin, IceCream } from 'grommet-icons';
-import { Stack, grommet, Grommet, Box, Diagram } from 'grommet';
+import { Stack, microfocus, Hercules, Box, Diagram } from 'hercules-theme';
 
 import { DiagramConnectionAnchor, DiagramConnectionType } from '../../index';
 
@@ -26,7 +26,7 @@ const connections = [connection];
 
 const Connections = () => {
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Stack>
         <Box fill pad="xlarge">
           <Box align="start">
@@ -38,7 +38,7 @@ const Connections = () => {
         </Box>
         <Diagram connections={connections} />
       </Stack>
-    </Grommet>
+    </Hercules>
   );
 };
 

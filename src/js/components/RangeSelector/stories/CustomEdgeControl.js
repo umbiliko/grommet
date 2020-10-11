@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { Gremlin, Grommet as GrommetIcon } from 'grommet-icons';
-import { Grommet, Box, RangeSelector, Stack, Text } from 'grommet';
-import { grommet } from 'grommet/themes';
-import { deepMerge } from 'grommet/utils';
+import { Gremlin, Hercules } from 'grommet-icons';
+import { Hercules, Box, RangeSelector, Stack, Text } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
+import { deepMerge } from 'hercules-theme/utils';
 
-const customEdge = deepMerge(grommet, {
+const customEdge = deepMerge(microfocus, {
   rangeSelector: {
     edge: {
       type: <Gremlin size="large" color="neutral-2" />,
@@ -22,7 +22,7 @@ const CustomEdgeControl = ({ direction = 'horizontal', ...rest }) => {
   };
 
   return (
-    <Grommet theme={customEdge}>
+    <Hercules theme={customEdge}>
       <Box align="center" pad="xlarge" gap="large">
         <Text style={{ fontFamily: 'Comic Sans MS' }} color="brand">
           Feed the gremlins with grommets...{' '}
@@ -55,7 +55,7 @@ const CustomEdgeControl = ({ direction = 'horizontal', ...rest }) => {
           />
         </Stack>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

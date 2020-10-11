@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, Button } from 'grommet';
+import { Hercules, Box, Button } from 'hercules-theme';
 
 const customButtonColor = {
   global: { font: { family: 'Arial' } },
@@ -14,7 +14,7 @@ const customButtonColor = {
 };
 
 const Colored = props => (
-  <Grommet theme={customButtonColor}>
+  <Hercules theme={customButtonColor}>
     <Box align="center" pad="large" gap="small">
       <Button primary label="Submit" onClick={() => {}} />
       <Button
@@ -47,7 +47,7 @@ const Colored = props => (
       />
       <Button plain label="plain inherit" onClick={() => {}} {...props} />
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Button', module).add('Colored', () => <Colored />);

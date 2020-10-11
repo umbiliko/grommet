@@ -1,11 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Grommet, Layer } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Hercules, Layer } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const MarginLayer = ({ margin, ...rest }) => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Layer
       margin={
         margin || { left: '40px', top: '50px', right: '30px', bottom: '10px' }
@@ -21,7 +21,7 @@ const MarginLayer = ({ margin, ...rest }) => (
         <Box pad="xlarge">text</Box>
       </Box>
     </Layer>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Layer', module)

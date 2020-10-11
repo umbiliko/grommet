@@ -1,8 +1,8 @@
 import React, { useReducer, useEffect } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, Diagram, Stack, Text } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, Diagram, Stack, Text } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const Node = ({ id, ...rest }) => (
   <Box
@@ -57,7 +57,7 @@ const SimpleDiagram = () => {
   }
 
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box align="start" pad="large">
         <Text> Adding and removing nodes</Text>
         <Stack>
@@ -76,7 +76,7 @@ const SimpleDiagram = () => {
           <Diagram connections={connections} />
         </Stack>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

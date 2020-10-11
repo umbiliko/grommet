@@ -2,7 +2,7 @@ import * as React from 'react';
 import { storiesOf } from '@storybook/react';
 import isChromatic from 'chromatic/isChromatic';
 
-import { Grommet, Box, Menu, ThemeType } from 'grommet';
+import { Hercules, Box, Menu, ThemeType } from 'hercules-theme';
 import { FormUp, FormDown } from 'grommet-icons';
 
 // Type annotations can only be used in TypeScript files.
@@ -69,7 +69,7 @@ const customBreakpoints: ThemeType = {
 };
 const App = () => {
   return (
-    <Grommet theme={customBreakpoints}>
+    <Hercules theme={customBreakpoints}>
       <Box align="center" pad="large">
         <Menu
           dropProps={{ align: { top: 'bottom', left: 'left' } }}
@@ -81,7 +81,7 @@ const App = () => {
           ]}
         />
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

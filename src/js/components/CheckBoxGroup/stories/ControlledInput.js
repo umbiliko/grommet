@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Button, CheckBoxGroup, Form, FormField, Grommet } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Button, CheckBoxGroup, Form, FormField, Hercules } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const CheckBoxGroupForm = () => {
   const [value, setValue] = useState();
 
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box pad="medium" width="medium">
         <Form
           onSubmit={({ value: values, touched }) =>
@@ -29,7 +29,7 @@ const CheckBoxGroupForm = () => {
           <Button type="submit" label="Submit" />
         </Form>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

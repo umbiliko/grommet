@@ -1,11 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Grommet, DataTable } from 'grommet';
+import { Box, Hercules, DataTable } from 'hercules-theme';
 import { Blank } from 'grommet-icons';
 
 // Source code for the data can be found here
-// https://github.com/grommet/grommet/blob/master/src/js/components/DataTable/stories/data.js
+// https://github.com/hercules/hercules-theme/blob/master/src/js/components/DataTable/stories/data.js
 import { columns, DATA } from './data';
 
 const SortableIcon = () => (
@@ -36,7 +36,7 @@ const Example = () => {
     direction: 'desc',
   });
   return (
-    <Grommet theme={customTheme}>
+    <Hercules theme={customTheme}>
       <Box align="center" pad="large">
         <DataTable
           columns={columns}
@@ -46,7 +46,7 @@ const Example = () => {
           onSort={setSort}
         />
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

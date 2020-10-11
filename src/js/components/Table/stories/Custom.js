@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 
 import {
   Box,
-  Grommet,
+  Hercules,
   Table,
   TableBody,
   TableCell,
@@ -11,7 +11,7 @@ import {
   TableHeader,
   TableRow,
   Text,
-} from 'grommet';
+} from 'hercules-theme';
 import { data, columns } from './data';
 
 const customTheme = {
@@ -48,7 +48,7 @@ const customTheme = {
 };
 
 const CustomThemeTable = () => (
-  <Grommet theme={customTheme}>
+  <Hercules theme={customTheme}>
     <Box align="center" pad="large">
       <Table caption="Custom Theme Table">
         <TableHeader>
@@ -82,7 +82,7 @@ const CustomThemeTable = () => (
         </TableFooter>
       </Table>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Table', module).add('Custom', () => <CustomThemeTable />);

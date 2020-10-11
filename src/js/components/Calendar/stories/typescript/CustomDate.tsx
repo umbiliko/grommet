@@ -1,9 +1,9 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Calendar, Box, Text, Grommet } from 'grommet';
+import { Calendar, Box, Text, Hercules } from 'hercules-theme';
 import { Plan } from 'grommet-icons';
-import { ThemeType } from 'grommet/themes';
+import { ThemeType } from 'hercules-theme/themes';
 
 // Remove ': ThemeType' if you are not using Typescript.
 const customTheme: ThemeType = {
@@ -24,7 +24,7 @@ const customTheme: ThemeType = {
 };
 
 export const Example = () => (
-  <Grommet theme={customTheme} themeMode="dark">
+  <Hercules theme={customTheme} themeMode="dark">
     <Box align="center" background="dark-1" gap="small">
       <Box
         direction="row"
@@ -45,7 +45,7 @@ export const Example = () => (
         firstDayOfWeek={1}
       />
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Calendar', module).add('Custom date', () => <Example />);

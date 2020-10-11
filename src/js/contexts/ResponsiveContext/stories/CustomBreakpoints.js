@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Grommet, Heading, ResponsiveContext } from 'grommet';
+import { Box, Hercules, Heading, ResponsiveContext } from 'hercules-theme';
 
 const customBreakpoints = {
   global: {
@@ -50,7 +50,7 @@ const customBreakpoints = {
 };
 
 storiesOf('ResponsiveContext', module).add('Custom breakpoints', () => (
-  <Grommet theme={customBreakpoints} full>
+  <Hercules theme={customBreakpoints} full>
     <ResponsiveContext.Consumer>
       {size => (
         <Box fill background="brand">
@@ -58,5 +58,5 @@ storiesOf('ResponsiveContext', module).add('Custom breakpoints', () => (
         </Box>
       )}
     </ResponsiveContext.Consumer>
-  </Grommet>
+  </Hercules>
 ));

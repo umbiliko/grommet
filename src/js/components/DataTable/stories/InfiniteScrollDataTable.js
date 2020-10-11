@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, DataTable, Heading, Meter, Text } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, DataTable, Heading, Meter, Text } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const amountFormatter = new Intl.NumberFormat('en-US', {
   style: 'currency',
@@ -311,7 +311,7 @@ const InfiniteScrollDataTable = () => {
   };
 
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box align="center" pad="large">
         <Heading level={3}>
           <Box gap="small">
@@ -328,7 +328,7 @@ const InfiniteScrollDataTable = () => {
           onMore={() => load()}
         />
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

@@ -3,8 +3,8 @@ import { storiesOf } from '@storybook/react';
 
 import { Add } from 'grommet-icons';
 
-import { Box, Button, Grommet, Layer, Text } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Button, Hercules, Layer, Text } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const CornerLayer = () => {
   const [open, setOpen] = React.useState();
@@ -14,7 +14,7 @@ const CornerLayer = () => {
   const onClose = () => setOpen(undefined);
 
   return (
-    <Grommet theme={grommet} full>
+    <Hercules theme={microfocus} full>
       <Box fill align="center" justify="center">
         <Button
           icon={<Add color="brand" />}
@@ -34,7 +34,7 @@ const CornerLayer = () => {
           </Box>
         </Layer>
       )}
-    </Grommet>
+    </Hercules>
   );
 };
 

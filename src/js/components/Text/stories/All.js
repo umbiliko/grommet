@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Grommet, Text } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Hercules, Text } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const sizes = [
   'xxlarge',
@@ -15,13 +15,13 @@ const sizes = [
 ];
 
 const All = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     {sizes.map(size => (
       <Box key={size} margin="small">
         <Text size={size}>{`Text ${size}`}</Text>
       </Box>
     ))}
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Text', module).add('All', () => <All />);

@@ -1,15 +1,15 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, DataTable } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, DataTable } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 // Source code for the data can be found here
-// https://github.com/grommet/grommet/blob/master/src/js/components/DataTable/stories/data.js
+// https://github.com/hercules/hercules-theme/blob/master/src/js/components/DataTable/stories/data.js
 import { columns, DATA } from './data';
 
 const StyledDataTable = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box align="center" pad="large">
       <DataTable
         columns={columns}
@@ -25,7 +25,7 @@ const StyledDataTable = () => (
         rowProps={{ Eric: { background: 'accent-2', pad: 'large' } }}
       />
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('DataTable', module).add('Styled', () => <StyledDataTable />);

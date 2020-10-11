@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Button, Grommet, RangeInput } from 'grommet';
+import { Box, Button, Hercules, RangeInput } from 'hercules-theme';
 
 import { Add, Subtract } from 'grommet-icons';
 
@@ -28,7 +28,7 @@ const CustomRangeInput = () => {
 
   const onChange = event => setValue(event.target.value);
   return (
-    <Grommet theme={rangeInputTheme}>
+    <Hercules theme={rangeInputTheme}>
       <Box direction="row" align="center" pad="large" gap="small">
         <Button
           plain={false}
@@ -62,7 +62,7 @@ const CustomRangeInput = () => {
           }}
         />
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

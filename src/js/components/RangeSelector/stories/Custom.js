@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, RangeSelector, Stack, Text } from 'grommet';
-import { grommet } from 'grommet/themes';
-import { deepMerge } from 'grommet/utils';
+import { Hercules, Box, RangeSelector, Stack, Text } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
+import { deepMerge } from 'hercules-theme/utils';
 
-const customThemeRangeSelector = deepMerge(grommet, {
+const customThemeRangeSelector = deepMerge(microfocus, {
   global: {
     borderSize: {
       small: '6px',
@@ -38,7 +38,7 @@ const CustomRangeSelector = ({ direction = 'horizontal', ...rest }) => {
   };
 
   return (
-    <Grommet theme={customThemeRangeSelector}>
+    <Hercules theme={customThemeRangeSelector}>
       <Box align="center" pad="large">
         <Stack>
           <Box
@@ -70,7 +70,7 @@ const CustomRangeSelector = ({ direction = 'horizontal', ...rest }) => {
           />
         </Stack>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

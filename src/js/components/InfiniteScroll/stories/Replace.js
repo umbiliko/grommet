@@ -1,16 +1,16 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import isChromatic from 'chromatic/isChromatic';
-import { grommet } from 'grommet/themes';
+import { microfocus } from 'hercules-theme/themes';
 
-import { Grommet, Box, InfiniteScroll, Text } from 'grommet';
+import { Hercules, Box, InfiniteScroll, Text } from 'hercules-theme';
 
 const allItems = Array(240)
   .fill()
   .map((_, i) => `item ${i + 1}`);
 
 const InfiniteScrollReplace = props => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <InfiniteScroll items={allItems} {...props}>
       {item => (
         <Box key={item} pad="medium" border={{ side: 'bottom' }} align="center">
@@ -18,7 +18,7 @@ const InfiniteScrollReplace = props => (
         </Box>
       )}
     </InfiniteScroll>
-  </Grommet>
+  </Hercules>
 );
 
 if (!isChromatic()) {

@@ -5,7 +5,7 @@ import {
   Box,
   Button,
   CheckBox,
-  Grommet,
+  Hercules,
   Form,
   FormField,
   MaskedInput,
@@ -14,8 +14,8 @@ import {
   Select,
   TextArea,
   TextInput,
-} from 'grommet';
-import { grommet } from 'grommet/themes';
+} from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const defaultValue = {
   name: '',
@@ -43,7 +43,7 @@ const Example = () => {
     [],
   );
   return (
-    <Grommet full theme={grommet}>
+    <Hercules full theme={microfocus}>
       <Box fill align="center" justify="center">
         <Box width="medium">
           <Form
@@ -95,7 +95,7 @@ const Example = () => {
           </Form>
         </Box>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

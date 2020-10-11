@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 import { cleanup, render, fireEvent, act } from '@testing-library/react';
 
-import { Grommet } from '../../Grommet';
+import { Hercules } from '../../Hercules';
 import { Carousel } from '..';
 import { Image } from '../../Image';
 
@@ -12,12 +12,12 @@ describe('Carousel', () => {
 
   test('basic', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Carousel>
           <Image src="//v2.grommet.io/assets/IMG_4245.jpg" />
           <Image src="//v2.grommet.io/assets/IMG_4210.jpg" />
         </Carousel>
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -25,12 +25,12 @@ describe('Carousel', () => {
 
   test('basic with `initialChild: 1`', () => {
     const component = renderer.create(
-      <Grommet>
+      <Hercules>
         <Carousel initialChild={1}>
           <Image src="//v2.grommet.io/assets/IMG_4245.jpg" />
           <Image src="//v2.grommet.io/assets/IMG_4210.jpg" />
         </Carousel>
-      </Grommet>,
+      </Hercules>,
     );
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
@@ -38,12 +38,12 @@ describe('Carousel', () => {
 
   test('navigate', () => {
     const { getByTestId, container } = render(
-      <Grommet>
+      <Hercules>
         <Carousel data-testid="test-carousel">
           <Image src="//v2.grommet.io/assets/IMG_4245.jpg" />
           <Image src="//v2.grommet.io/assets/IMG_4210.jpg" />
         </Carousel>
-      </Grommet>,
+      </Hercules>,
     );
     expect(container.firstChild).toMatchSnapshot();
 
@@ -65,12 +65,12 @@ describe('Carousel', () => {
   test('play', () => {
     jest.useFakeTimers();
     const { container } = render(
-      <Grommet>
+      <Hercules>
         <Carousel play={1000}>
           <Image src="//v2.grommet.io/assets/IMG_4245.jpg" />
           <Image src="//v2.grommet.io/assets/IMG_4210.jpg" />
         </Carousel>
-      </Grommet>,
+      </Hercules>,
     );
     expect(container.firstChild).toMatchSnapshot();
     // Advance timers so the carousel advances

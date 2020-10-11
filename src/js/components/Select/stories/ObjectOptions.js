@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { grommet, Box, Grommet, Select } from 'grommet';
+import { microfocus, Box, Hercules, Select } from 'hercules-theme';
 
 const objectOptions = [
   {
@@ -25,7 +25,7 @@ const Example = () => {
   const [value, setValue] = useState('');
 
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box fill align="center" justify="start" pad="large">
         <Select
           id="select"
@@ -38,7 +38,7 @@ const Example = () => {
           onChange={({ value: nextValue }) => setValue(nextValue)}
         />
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

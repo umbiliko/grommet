@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
-import { Grommet, Box, Form, FormField, TextInput } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, Form, FormField, TextInput } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const allSuggestions = Array(100)
   .fill()
@@ -32,7 +32,7 @@ const FormFieldTextInput = props => {
   const onSelect = event => setState({ ...state, value: event.suggestion });
 
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box align="center" pad="large">
         <Form>
           <FormField label="Label" htmlFor="text-input" {...props}>
@@ -47,7 +47,7 @@ const FormFieldTextInput = props => {
           </FormField>
         </Form>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

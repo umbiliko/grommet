@@ -15,14 +15,14 @@ import {
   normalizeColor,
 } from '../../utils';
 import { base as baseTheme } from '../../themes';
-import { StyledGrommet } from './StyledGrommet';
+import { StyledGrommet } from './StyledHercules';
 
 const FullGlobalStyle = createGlobalStyle`
   body { margin: 0; }
 `;
 
-class Grommet extends Component {
-  static displayName = 'Grommet';
+class Hercules extends Component {
+  static displayName = 'Hercules';
 
   static getDerivedStateFromProps(nextProps, prevState) {
     const {
@@ -163,8 +163,8 @@ class Grommet extends Component {
 let GrommetDoc;
 if (process.env.NODE_ENV !== 'production') {
   // eslint-disable-next-line global-require
-  GrommetDoc = require('./doc').doc(Grommet);
+  GrommetDoc = require('./doc').doc(Hercules);
 }
-const GrommetWrapper = GrommetDoc || Grommet;
+const GrommetWrapper = GrommetDoc || Hercules;
 
-export { GrommetWrapper as Grommet };
+export { GrommetWrapper as Hercules };

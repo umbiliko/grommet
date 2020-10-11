@@ -1,12 +1,12 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Button, Grommet } from 'grommet';
+import { Box, Button, Hercules } from 'hercules-theme';
 import { Next, Add } from 'grommet-icons';
-import { grommet } from 'grommet/themes';
+import { microfocus } from 'hercules-theme/themes';
 
 const SizedButton = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box direction="row">
       <Box align="start" pad="large" gap="large">
         <Button size="small" label="Small" />
@@ -33,7 +33,7 @@ const SizedButton = () => (
         <Button size="large" icon={<Add />} primary />
       </Box>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Button', module).add('Sizes', () => <SizedButton active />);

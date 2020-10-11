@@ -1,11 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Paragraph } from 'grommet';
-import { deepMerge } from 'grommet/utils';
-import { grommet } from 'grommet/themes';
+import { Hercules, Paragraph } from 'hercules-theme';
+import { deepMerge } from 'hercules-theme/utils';
+import { microfocus } from 'hercules-theme/themes';
 
-const customTheme = deepMerge(grommet, {
+const customTheme = deepMerge(microfocus, {
   paragraph: {
     font: {
       family: 'Comic Sans MS',
@@ -14,11 +14,11 @@ const customTheme = deepMerge(grommet, {
 });
 
 const All = () => (
-  <Grommet theme={customTheme}>
+  <Hercules theme={customTheme}>
     <Paragraph>
       The font family for this paragraph is being defined by a custom theme.
     </Paragraph>
-  </Grommet>
+  </Hercules>
 );
 
 // disabling chromatic because snapshot doesn't capture font

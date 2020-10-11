@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Grommet custom theme 1`] = `
+exports[`Hercules custom theme 1`] = `
 .c4 {
   display: inline-block;
   -webkit-flex: 0 0 auto;
@@ -423,7 +423,7 @@ exports[`Grommet custom theme 1`] = `
 </div>
 `;
 
-exports[`Grommet dark theme 1`] = `
+exports[`Hercules dark theme 1`] = `
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -977,7 +977,7 @@ exports[`Grommet dark theme 1`] = `
 </div>
 `;
 
-exports[`Grommet default theme 1`] = `
+exports[`Hercules default theme 1`] = `
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1528,7 +1528,7 @@ exports[`Grommet default theme 1`] = `
 </div>
 `;
 
-exports[`Grommet hpe theme 1`] = `
+exports[`Hercules hpe theme 1`] = `
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;

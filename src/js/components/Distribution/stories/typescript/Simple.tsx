@@ -1,11 +1,11 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, Distribution, Text } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, Distribution, Text } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const SimpleDistribution = () => (
-  <Grommet theme={grommet} full>
+  <Hercules theme={microfocus} full>
     <Distribution
       fill
       values={[
@@ -22,7 +22,7 @@ const SimpleDistribution = () => (
         </Box>
       )}
     </Distribution>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Distribution', module).add('Simple', () => <SimpleDistribution />);

@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, CheckBoxGroup, Grommet } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, CheckBoxGroup, Hercules } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const objectOptions = [];
 for (let i = 1; i <= 5; i += 1) {
@@ -14,7 +14,7 @@ for (let i = 1; i <= 5; i += 1) {
 
 const Example = () => {
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box pad="medium">
         <CheckBoxGroup
           labelKey="label"
@@ -22,7 +22,7 @@ const Example = () => {
           options={objectOptions}
         />
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

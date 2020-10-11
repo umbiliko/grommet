@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, List } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, List } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 export const locations = [
   'Boise',
@@ -22,7 +22,7 @@ for (let i = 0; i < 40; i += 1) {
 }
 
 const SecondaryKeyList = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box align="center" pad="large">
       <List
         data={data.slice(0, 10)}
@@ -30,7 +30,7 @@ const SecondaryKeyList = () => (
         secondaryKey="location"
       />
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('List', module).add('secondaryKey', () => <SecondaryKeyList />);

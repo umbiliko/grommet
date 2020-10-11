@@ -1,8 +1,8 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, List, Text } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, List, Text } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const locations = [
   'Boise',
@@ -21,7 +21,7 @@ for (let i = 0; i < 40; i += 1) {
 }
 
 const RenderedList = () => (
-  <Grommet theme={grommet}>
+  <Hercules theme={microfocus}>
     <Box align="center" pad="large">
       <List
         data={data.slice(0, 10)}
@@ -37,7 +37,7 @@ const RenderedList = () => (
         )}
       />
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('List', module).add('Key render', () => <RenderedList />);

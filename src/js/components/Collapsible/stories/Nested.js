@@ -3,8 +3,8 @@ import { storiesOf } from '@storybook/react';
 
 import { FormDown, FormNext } from 'grommet-icons';
 
-import { Box, Button, Collapsible, Grommet, Text } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Button, Collapsible, Hercules, Text } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const MenuButton = ({ label, open, submenu, ...rest }) => {
   const Icon = open ? FormDown : FormNext;
@@ -29,7 +29,7 @@ const NestedCollapsible = () => {
   const [openMenu2, setOpenMenu2] = React.useState(false);
 
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box width="small">
         <MenuButton
           open={openMenu1}
@@ -101,7 +101,7 @@ const NestedCollapsible = () => {
           {/* eslint-enable no-alert */}
         </Collapsible>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

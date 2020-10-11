@@ -1,13 +1,13 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Avatar, Box, Grommet } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Avatar, Box, Hercules } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const Sizes = () => {
   const src = '//s.gravatar.com/avatar/b7fb138d53ba0f573212ccce38a7c43b?s=80';
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Box direction="row" pad="large" gap="small">
         <Avatar size="small" src={src} />
         <Avatar size="medium" src={src} />
@@ -28,7 +28,7 @@ const Sizes = () => {
           SY
         </Avatar>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

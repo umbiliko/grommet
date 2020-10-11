@@ -1,9 +1,8 @@
-import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { Hercules as GrommetIcon } from 'grommet-icons';
+import { Anchor, Box, Footer, Hercules, Main, microfocus, Text } from 'hercules-theme';
+import React from 'react';
 import styled from 'styled-components';
-
-import { Grommet as GrommetIcon } from 'grommet-icons';
-import { Anchor, Box, Footer, grommet, Grommet, Main, Text } from 'grommet';
 import { fiveColumns as data } from './data';
 
 const StyledAnchor = styled(Anchor)`
@@ -31,7 +30,7 @@ const FooterContent = () => {
 
 const DoubleFooter = () => {
   return (
-    <Grommet theme={grommet}>
+    <Hercules theme={microfocus}>
       <Main background="light-4" elevation="large" pad="large" border>
         <Text margin="small" size="xsmall">
           Main Content
@@ -53,7 +52,7 @@ const DoubleFooter = () => {
           © 2019 Copyright
         </Text>
       </Footer>
-    </Grommet>
+    </Hercules>
   );
 };
 

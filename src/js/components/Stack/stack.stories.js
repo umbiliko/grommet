@@ -1,26 +1,26 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Grommet, Box, Stack } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Hercules, Box, Stack } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const SimpleStack = () => (
-  <Grommet>
+  <Hercules>
     <Stack anchor="center">
       <Box pad="large" background="neutral-1" />
       <Box pad="small" background="accent-1" />
     </Stack>
-  </Grommet>
+  </Hercules>
 );
 
 const FillStack = () => (
-  <Grommet theme={grommet} full>
+  <Hercules theme={microfocus} full>
     <Stack fill>
       <Box background="brand" fill>
         Test
       </Box>
     </Stack>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Stack', module)

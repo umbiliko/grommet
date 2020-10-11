@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Grommet, Select } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Hercules, Select } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const objectOptions = [];
 for (let i = 1; i <= 200; i += 1) {
@@ -18,7 +18,7 @@ const Example = () => {
   const [value, setValue] = useState([1, 2]);
 
   return (
-    <Grommet full theme={grommet}>
+    <Hercules full theme={microfocus}>
       <Box fill align="center" justify="start" pad="large">
         <Select
           size="medium"
@@ -45,7 +45,7 @@ const Example = () => {
           }}
         />
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

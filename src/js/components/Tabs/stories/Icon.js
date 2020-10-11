@@ -2,11 +2,11 @@ import React from 'react';
 import { css } from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import { Attraction, Car, TreeOption } from 'grommet-icons';
-import { Box, Grommet, Tab, Tabs } from 'grommet';
-import { grommet } from 'grommet/themes';
-import { deepMerge } from 'grommet/utils';
+import { Box, Hercules, Tab, Tabs } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
+import { deepMerge } from 'hercules-theme/utils';
 
-const customTheme = deepMerge(grommet, {
+const customTheme = deepMerge(microfocus, {
   tab: {
     color: 'text',
     active: {
@@ -38,7 +38,7 @@ const customTheme = deepMerge(grommet, {
   },
 });
 const Icon = () => (
-  <Grommet theme={customTheme} full>
+  <Hercules theme={customTheme} full>
     <Box pad="medium" fill>
       <Tabs flex>
         <Tab title="Tab 1" icon={<Attraction />}>
@@ -58,7 +58,7 @@ const Icon = () => (
         </Tab>
       </Tabs>
     </Box>
-  </Grommet>
+  </Hercules>
 );
 
 storiesOf('Tabs', module).add('Icon', () => <Icon />);

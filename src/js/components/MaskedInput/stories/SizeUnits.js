@@ -1,13 +1,13 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Box, Grommet, MaskedInput } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Hercules, MaskedInput } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const SizeUnitsMaskedInput = () => {
   const [value, setValue] = React.useState('');
 
   return (
-    <Grommet full theme={grommet}>
+    <Hercules full theme={microfocus}>
       <Box fill align="center" justify="start" pad="large">
         <Box width="medium">
           <MaskedInput
@@ -31,7 +31,7 @@ const SizeUnitsMaskedInput = () => {
           />
         </Box>
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 

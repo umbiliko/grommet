@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
-import { Box, Grommet, Select } from 'grommet';
-import { grommet } from 'grommet/themes';
+import { Box, Hercules, Select } from 'hercules-theme';
+import { microfocus } from 'hercules-theme/themes';
 
 const DarkSelect = () => {
   const options = ['one', 'two'];
   const [value, setValue] = useState('');
 
   return (
-    <Grommet full theme={grommet}>
+    <Hercules full theme={microfocus}>
       <Box fill background="dark-1" align="center" justify="center">
         <Select
           placeholder="Select"
@@ -18,7 +18,7 @@ const DarkSelect = () => {
           onChange={({ option }) => setValue(option)}
         />
       </Box>
-    </Grommet>
+    </Hercules>
   );
 };
 
