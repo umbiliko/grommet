@@ -1,5 +1,5 @@
 import { ColorType } from 'grommet/utils';
-import { undefinedColor } from './base/colors';
+import { undefinedColor } from '../microfocus/colors';
 import { StyledProps } from 'styled-components';
 
 export interface normalize {
@@ -9,14 +9,17 @@ export interface normalize {
 
 const pick = <P = any>(
   values: string | normalize | Record<string, string>,
-  base: string = 'light'
+  base: string = 'light',
 ) => {
   switch (typeof values) {
     case 'object':
       return (props: StyledProps<P>): string => {
         let mode = props?.theme?.mode || base;
-        const themeValue = typeof mode === 'function' ? mode(values) : values[mode];
-        return typeof themeValue === 'function' ? themeValue(props) : themeValue;
+        const themeValue =
+          typeof mode === 'function' ? mode(values) : values[mode];
+        return typeof themeValue === 'function'
+          ? themeValue(props)
+          : themeValue;
       };
     case 'string':
       () => values;
