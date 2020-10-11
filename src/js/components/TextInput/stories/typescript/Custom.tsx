@@ -82,7 +82,7 @@ const CustomSuggestionsTextInput = () => {
   const [suggestedFolks, setSuggestedFolks] = useState([]);
 
   const [, updateState] = useState();
-  const forceUpdate = useCallback(() => updateState({}), []);
+  const forceUpdate = useCallback(() => updateState({} as any), []);
 
   const boxRef = useRef();
 

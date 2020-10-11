@@ -20,7 +20,7 @@ export default create({
   inputTextColor: '#333333',
   inputBorderRadius: 4,
 
-  brandTitle: 'Grommet',
+  brandTitle: 'Everything UX',
   brandImage: 'grommet-logo.svg',
   brandUrl: 'https://v2.grommet.io/',
 });

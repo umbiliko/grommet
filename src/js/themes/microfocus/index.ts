@@ -193,3 +193,7 @@ export const generator = (
       {},
     ),
   );
+
+  const microfocus = generator();
+
+  export default microfocus;

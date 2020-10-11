@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react';
 import { Favorite, UserFemale, UserNew } from 'grommet-icons';
 
 import { Avatar, Box, Grommet, Stack } from 'grommet';
-import { grommet } from 'grommet/themes';
+import theme from 'grommet/themes/microfocus';
 
 const Stacked = () => {
   const shimi = '//s.gravatar.com/avatar/b7fb138d53ba0f573212ccce38a7c43b?s=80';
@@ -51,7 +51,7 @@ const Stacked = () => {
   );
 
   return (
-    <Grommet theme={grommet}>
+    <Grommet theme={theme}>
       <Box align="center" gap="medium" pad="large" background="dark-1">
         {/* Nested Avatars */}
         <Stack anchor="bottom-right">
