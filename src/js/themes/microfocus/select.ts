@@ -46,9 +46,11 @@ export const select = {
     textTransform: 'none',
 
     hover: {
-      backgroundColor: {
-        dark: dropdownListItem.backgroundColorHoverDark,
-        light: dropdownListItem.backgroundColorHover,
+      background: {
+        color: {
+          dark: dropdownListItem.backgroundColorHoverDark,
+          light: dropdownListItem.backgroundColorHover,
+        },
       },
       color: {
         dark: dropdownListItem.fontColorHoverDark,

@@ -16,12 +16,13 @@ export const navigationPills = {
   borderRadius: Number(_navigationPills.borderRadius),
   borderSize: _navigationPills.borderSize,
   borderStyle: _navigationPills.borderStyle,
-  borderColor: {
-    dark: _navigationPills.borderColorDark,
-    light: _navigationPills.borderColor,
+  border: {
+    color: {
+      dark: _navigationPills.borderColorDark,
+      light: _navigationPills.borderColor,
+    },
+    style: _navigationPills.border,
   },
-  border: _navigationPills.border,
-
   fontSize: _navigationPills.fontSize,
   fontWeight: _navigationPills.fontWeight,
 
@@ -43,9 +44,11 @@ export const navigationPills = {
   textTransform: _navigationPills.textTransform,
 
   active: {
-    backgroundColor: {
-      dark: _navigationPills.backgroundColorActiveDark,
-      light: _navigationPills.backgroundColorActive,
+    background: {
+      color: {
+        dark: _navigationPills.backgroundColorActiveDark,
+        light: _navigationPills.backgroundColorActive,
+      },
     },
     boxShadow: {
       dark: _navigationPills.boxShadowActiveDark,
@@ -73,13 +76,17 @@ export const navigationPills = {
   },
 
   disabled: {
-    backgroundColor: {
-      dark: _navigationPills.backgroundColorDisabledDark,
-      light: _navigationPills.backgroundColorDisabled,
+    background: {
+      color: {
+        dark: _navigationPills.backgroundColorDisabledDark,
+        light: _navigationPills.backgroundColorDisabled,
+      },
     },
-    borderColor: {
-      dark: _navigationPills.borderColorDisabledDark,
-      light: _navigationPills.borderColorDisabled,
+    border: {
+      color: {
+        dark: _navigationPills.borderColorDisabledDark,
+        light: _navigationPills.borderColorDisabled,
+      },
     },
     color: {
       dark: _navigationPills.colorDisabledDark,
@@ -88,29 +95,37 @@ export const navigationPills = {
   },
 
   focus: {
-    backgroundColor: {
-      dark: _navigationPills.backgroundColorFocusDark,
-      light: _navigationPills.backgroundColorFocus,
+    background: {
+      color: {
+        dark: _navigationPills.backgroundColorFocusDark,
+        light: _navigationPills.backgroundColorFocus,
+      },
     },
-    borderColor: {
-      dark: _navigationPills.borderColorFocusDark,
-      light: _navigationPills.borderColorFocus,
+    border: {
+      color: {
+        dark: _navigationPills.borderColorFocusDark,
+        light: _navigationPills.borderColorFocus,
+      },
     },
     color: {
       dark: _navigationPills.colorFocusDark,
       light: _navigationPills.colorFocus,
     },
-    outlineColor: {
-      dark: _navigationPills.outlineColorFocus,
-      light: _navigationPills.outlineColorFocus,
+    outline: {
+      color: {
+        dark: _navigationPills.outlineColorFocus,
+        light: _navigationPills.outlineColorFocus,
+      },
     },
     textDecoration: _navigationPills.textDecorationFocus,
   },
 
   hover: {
-    backgroundColor: {
-      dark: _navigationPills.backgroundColorHoverDark,
-      light: _navigationPills.backgroundColorHover,
+    background: {
+      color: {
+        dark: _navigationPills.backgroundColorHoverDark,
+        light: _navigationPills.backgroundColorHover,
+      },
     },
     color: {
       dark: _navigationPills.colorHoverDark,
@@ -180,9 +195,11 @@ export const navigationPillsCaret = {
 
 export const navigationPillsChild = {
   active: {
-    backgroundColor: {
-      dark: _navigationPills.backgroundColorChildActiveDark,
-      light: _navigationPills.backgroundColorChildActive,
+    background: {
+      color: {
+        dark: _navigationPills.backgroundColorChildActiveDark,
+        light: _navigationPills.backgroundColorChildActive,
+      },
     },
     color: {
       dark: _navigationPills.colorChildActiveDark,
@@ -193,9 +210,11 @@ export const navigationPillsChild = {
 };
 
 export const navigationPillsContainer = {
-  backgroundColor: {
-    dark: _navigationPillsContainer.backgroundColorDark,
-    light: _navigationPillsContainer.backgroundColor,
+  background: {
+    color: {
+      dark: _navigationPillsContainer.backgroundColorDark,
+      light: _navigationPillsContainer.backgroundColor,
+    },
   },
   marginBottom: _navigationPillsContainer.marginBottom,
 };

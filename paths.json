@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "baseUrl": "./",
+      "paths": {
+        "hercules-theme": ["src/js"],
+        "hercules-theme/components": ["src/js/components"],
+        "hercules-theme/contexts": ["src/js/contexts"],
+        "hercules-theme/themes": ["src/js/themes"],
+        "hercules-theme/utils": ["src/js/utils"],
+        "quantum-ux": ["src/js/themes/quantum-ux"]
+      }
+    }
+  }
+  

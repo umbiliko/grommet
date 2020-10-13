@@ -10,9 +10,11 @@ import { backgroundColor, borderColor } from '../utils/css';
 import pick from '../utils/pick';
 
 export const radioButton = {
-  borderColor: {
-    dark: radio.borderColorDark,
-    light: radio.borderColor,
+  border: {
+    color: {
+      dark: radio.borderColorDark,
+      light: radio.borderColor,
+    },
   },
 
   color: {

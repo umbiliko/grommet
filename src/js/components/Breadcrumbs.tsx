@@ -2,6 +2,7 @@ import { Box, BoxProps } from './Box';
 import React from 'react';
 import styled, { css, ThemeProps } from 'styled-components';
 import pick from '../themes/utils/pick';
+import { backgroundColor } from '../themes/utils/css';
 import { ExtendedTheme } from '../themes/microfocus';
 
 export interface BreadcrumbsProps extends BoxProps {
@@ -12,7 +13,7 @@ type BreadcrumbsThemedProps = BreadcrumbsProps & ThemeProps<Pick<ExtendedTheme, 
 
 const BoxStyled = styled<React.ComponentType<BreadcrumbsThemedProps>>(Box)`
   ${(props: any) => css`
-    background-color: ${pick(props.theme?.breadcrumbs?.backgroundColor)};
+    background-color: ${backgroundColor(props.theme?.breadcrumbs)};
     border-radius: ${props.theme?.breadcrumbs?.borderRadius};
     display: ${props.theme?.breadcrumbs?.display};
     font-size: ${props.theme?.breadcrumbs?.fontSize};

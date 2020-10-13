@@ -47,13 +47,17 @@ export const rangeInput = {
     },
 
     hover: {
-      backgroundColor: {
-        dark: '#000',
-        light: '#fff',
+      background: {
+        color: {
+          dark: '#000',
+          light: '#fff',
+        },
       },
-      borderColor: {
-        dark: '#fff',
-        light: '#000',
+      border: {
+        color: {
+          dark: '#fff',
+          light: '#000',
+        },
       },
       boxShadow: 'none',
       height: sliderHandle.baseSizeHover,
@@ -87,8 +91,8 @@ const extendThumb = css`
     -moz-box-shadow: ${rangeInput.thumb.hover.boxShadow};
     box-shadow: ${rangeInput.thumb.hover.boxShadow};
     border: ${rangeInput.thumb.borderWidth} solid
-      ${pick(rangeInput.thumb.hover.borderColor)};
-    background-color: ${pick(rangeInput.thumb.hover.backgroundColor)};
+      ${borderColor(rangeInput.thumb.hover)};
+    background-color: ${backgroundColor(rangeInput.thumb.hover)};
   }
   &:active {
     height: ${rangeInput.thumb.active.height};

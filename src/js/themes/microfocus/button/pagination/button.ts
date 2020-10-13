@@ -2,9 +2,11 @@ import buttonPagination from '../../../quantum-ux/button-pagination';
 
 const button = {
   alignItems: buttonPagination.alignItems,
-  backgroundColor: {
-    dark: buttonPagination.backgroundColor,
-    light: buttonPagination.backgroundColor,
+  background: {
+    color: {
+      dark: buttonPagination.backgroundColor,
+      light: buttonPagination.backgroundColor,
+    },
   },
   display: buttonPagination.display,
   borderWidth: buttonPagination.borderWidth,
@@ -23,9 +25,11 @@ const button = {
   padding: buttonPagination.padding,
 
   active: {
-    backgroundColor: {
-      dark: buttonPagination.backgroundColorActive,
-      light: buttonPagination.backgroundColorActive,
+    background: {
+      color: {
+        dark: buttonPagination.backgroundColorActive,
+        light: buttonPagination.backgroundColorActive,
+      },
     },
     borderLeftRightColor: {
       dark: buttonPagination.borderLeftRightActive,
@@ -42,9 +46,11 @@ const button = {
   },
 
   disabled: {
-    backgroundColor: {
-      dark: buttonPagination.backgroundColorDisabled,
-      light: buttonPagination.backgroundColorDisabled,
+    background: {
+      color: {
+        dark: buttonPagination.backgroundColorDisabled,
+        light: buttonPagination.backgroundColorDisabled,
+      },
     },
     color: {
       dark: buttonPagination.colorDisabled,
@@ -53,9 +59,11 @@ const button = {
   },
 
   hover: {
-    backgroundColor: {
-      dark: buttonPagination.backgroundColorHover,
-      light: buttonPagination.backgroundColorHover,
+    background: {
+      color: {
+        dark: buttonPagination.backgroundColorHover,
+        light: buttonPagination.backgroundColorHover,
+      },
     },
   },
 };

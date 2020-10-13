@@ -27,9 +27,11 @@ export const breadcrumbs = {
 };
 
 export const breadcrumbsLink = {
-  backgroundColor: {
-    dark: _breadcrumbsLinks.backgroundColorDark,
-    light: _breadcrumbsLinks.backgroundColor,
+  background: {
+    color: {
+      dark: _breadcrumbsLinks.backgroundColorDark,
+      light: _breadcrumbsLinks.backgroundColor,
+    },
   },
   color: {
     dark: _breadcrumbsLinks.colorDark,

@@ -40,6 +40,7 @@
     "quantum-ux-update-specs": "node ./scripts/quantum-ux/update-specs",
     "readme": "npm run generate-readme",
     "test": "react-scripts test",
+    "jest": "jest",
     "test-update": "npm run generate-readme && react-scripts test --updateSnapshot",
     "test-bundlesize": "bundlesize",
     "test-coverage": "react-scripts test --coverage",
@@ -64,8 +65,8 @@
     "react-desc": "^4.1.2"
   },
   "devDependencies": {
-    "@babel/cli": "^7.1.2",
-    "@babel/core": "^7.3.4",
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
     "@babel/node": "^7.8.3",
     "@babel/plugin-proposal-class-properties": "^7.3.4",
     "@babel/plugin-proposal-do-expressions": "^7.0.0",
@@ -96,7 +97,7 @@
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.8.0",
     "babel-loader": "^8.0.0-beta.6",
-    "babel-plugin-styled-components": "^1.6.4",
+    "babel-plugin-styled-components": "^1.11.1",
     "babel-plugin-transform-imports": "^2.0.0",
     "bundlesize": "^0.18.0",
     "camel-case": "^4.1.1",
@@ -164,11 +165,6 @@
       "!src/js/components/**/__tests__/**/*.js"
     ]
   },
-  "pre-commit": [
-    "lint-fix",
-    "prettier",
-    "test"
-  ],
   "bundlesize": [
     {
       "path": "./dist/hercules-theme.min.js",

@@ -4,6 +4,7 @@ import color from '../quantum-ux/color';
 import _formField from '../quantum-ux/form-field';
 import input from '../quantum-ux/input';
 import _text from '../quantum-ux/text';
+import { backgroundColor, borderColor } from '../utils/css';
 import pick from '../utils/pick';
 
 export const formField = {
@@ -42,9 +43,11 @@ export const formField = {
   email: {},
 
   error: {
-    borderColor: {
-      dark: input.borderColorErrorDark,
-      light: input.borderColorError,
+    border: {
+      color: {
+        dark: input.borderColorErrorDark,
+        light: input.borderColorError,
+      },
     },
 
     color: {
@@ -100,9 +103,11 @@ export const formField = {
   },
 
   text: {
-    backgroundColor: {
-      dark: input.backgroundColorDark,
-      light: input.backgroundColor,
+    background: {
+      color: {
+        dark: input.backgroundColorDark,
+        light: input.backgroundColor,
+      },
     },
     paddingLeft: input.paddingLeft,
     paddingRight: input.paddingRight,
@@ -187,7 +192,7 @@ const formFieldErrorInputStyle = css`
   > div > input[type='email'],
   > div > input[type='password'] {
     border-bottom: ${formField.input.borderBottomWidth} ${input.borderStyle}
-      ${pick(formField.error.borderColor)};
+      ${borderColor(formField.error)};
   }
 `;
 
@@ -257,7 +262,7 @@ const formFieldInputStyle = css`
     }
 
     > div .input.text-input.input {
-      background: ${pick(formField.text.backgroundColor)};
+      background: ${backgroundColor(formField.text)};
       padding-left: ${formField.text.paddingLeft};
       padding-right: ${formField.text.paddingRight};
       &:focus {

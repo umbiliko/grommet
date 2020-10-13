@@ -7,11 +7,13 @@ export const tab = {
     dark: navigationTabs.colorDark,
     light: navigationTabs.color,
   },
-  borderColor: {
-    dark: navigationTabs.borderColorDark,
-    light: navigationTabs.borderColor,
+  border: {
+    color: {
+      dark: navigationTabs.borderColorDark,
+      light: navigationTabs.borderColor,
+    },
+    radius: navigationTabs.borderRadius,
   },
-  borderRadius: navigationTabs.borderRadius,
   borderBottomWidth: navigationTabs.borderBottomWidth,
   fontWeight: navigationTabs.fontWeight,
   margin: navigationTabs.margin,

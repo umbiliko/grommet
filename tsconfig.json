@@ -1,4 +1,5 @@
 {
+  "extends": "./paths.json",
   "compileOnSave": true,
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
@@ -14,13 +15,6 @@
     "declaration": true,
     "strict": false,
     "baseUrl": "./",
-    "paths": {
-      "hercules-theme": ["src/js"],
-      "hercules-theme/components": ["src/js/components"],
-      "hercules-theme/contexts": ["src/js/contexts"],
-      "hercules-theme/themes": ["src/js/themes"],
-      "hercules-theme/utils": ["src/js/utils"]
-    },
     "lib": [
       "dom",
       "es2017"

@@ -102,7 +102,7 @@ const extend = css<{ sidebarGrid: boolean }>`
             color: ${pick(sidebar.menu.hover.color)};
           }
           &.active {
-            border-color: ${pick(sidebar.menu.active.borderColor)};
+            border-color: ${borderColor(sidebar.menu.active)};
             color: ${pick(sidebar.menu.active.color)};
             font-weight: ${sidebar.menu.active.fontWeight};
             svg {

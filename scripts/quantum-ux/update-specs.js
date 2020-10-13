@@ -14,7 +14,7 @@ const specs = path.join(root, 'src', 'js', 'themes', 'quantum-ux');
     }
     const { global } = require(allFileName);
     Object.entries(global).forEach(([key, obj]) => {
-      const filename = path.join(specs, toSnakeCase(key) + '.ts');
+      const filename = path.join(specs, toSnakeCase(key) + '.js');
       const content = formatFile(obj);
       fs.writeFileSync(filename, content);
     });

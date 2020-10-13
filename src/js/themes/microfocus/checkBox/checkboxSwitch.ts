@@ -2,6 +2,7 @@ import { css } from 'styled-components';
 import { CheckBoxProps } from '../../../components/CheckBox';
 import _checkbox from '../../quantum-ux/checkbox';
 import _checkboxSwitch from '../../quantum-ux/checkbox-switch';
+import { backgroundColor, borderColor } from '../../utils/css';
 import themed from '../../utils/pick';
 import { checkboxSwitchCircle } from './checkboxSwitchCircle';
 
@@ -33,11 +34,13 @@ export const checkBoxSwitch = {
       dark: _checkboxSwitch.backgroundColorHoverDark,
       light: _checkboxSwitch.backgroundColorHover,
     },
-    borderColor: {
-      dark: _checkbox.borderColorHoverDark,
-      light: _checkbox.borderColorHover,
+    border: {
+      color: {
+        dark: _checkbox.borderColorHoverDark,
+        light: _checkbox.borderColorHover,
+      },
+      width: _checkboxSwitch.borderHover,
     },
-    border: _checkboxSwitch.borderHover,
   },
 
   checked: {
@@ -129,8 +132,8 @@ export const toggleCheckedStyle = css`
 export const toggleEnabledStyle = css`
   :hover {
     div > span {
-      border-color: ${themed(checkBoxSwitch.hover.borderColor)};
-      background-color: ${themed(checkBoxSwitch.backgroundColor)};
+      border-color: ${borderColor(checkBoxSwitch.hover)};
+      background-color: ${backgroundColor(checkBoxSwitch)};
     }
     &:after {
       width: calc(
@@ -140,18 +143,18 @@ export const toggleEnabledStyle = css`
       left: -calc(
         ${checkboxSwitchCircle.height} + ${checkboxSwitchCircle.borderWidth}
       );
-      background-color: ${themed(
-        checkboxSwitchCircle.checked.hover.backgroundColor,
+      background-color: ${backgroundColor(
+        checkboxSwitchCircle.checked.hover,
       )};
-      border-color: ${themed(checkboxSwitchCircle.hover.borderColor)};
+      border-color: ${borderColor(checkboxSwitchCircle.hover)};
     }
   }
 `;
 
 export const toggleDisabledStyle = css`
   :hover {
-    border-color: ${themed(checkBoxSwitch.hover.borderColor)};
-    background-color: ${themed(checkBoxSwitch.backgroundColor)};
+    border-color: ${borderColor(checkBoxSwitch.hover)};
+    background-color: ${backgroundColor(checkBoxSwitch)};
   }
 `;
 

@@ -1,7 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const root = path.join(__dirname, '../../');
-const filename = 'quantum-spec-module.js';
+const filename = 'quantum-ux-module.js';
 const moduleFileName = path.join(root, filename);
 
 const promise = new Promise((resolve, reject) => {

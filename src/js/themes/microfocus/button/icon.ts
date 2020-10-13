@@ -1,9 +1,11 @@
 import buttonIcon from '../../quantum-ux/button-icon';
 
 export const icon = {
-  backgroundColor: {
-    dark: buttonIcon.backgroundColorDark,
-    light: buttonIcon.backgroundColor,
+  background: {
+    color: {
+      dark: buttonIcon.backgroundColorDark,
+      light: buttonIcon.backgroundColor,
+    },
   },
   border: buttonIcon.border,
   color: {

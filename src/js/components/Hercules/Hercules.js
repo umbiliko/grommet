@@ -14,7 +14,7 @@ import {
   getDeviceBreakpoint,
   normalizeColor,
 } from '../../utils';
-import { base as baseTheme } from '../../themes';
+import { default as baseTheme } from '../../themes/microfocus';
 import { StyledGrommet } from './StyledHercules';
 
 const FullGlobalStyle = createGlobalStyle`

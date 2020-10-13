@@ -100,7 +100,9 @@ export const alert = {
 };
 
 export type AlertTheme = Omit<Partial<typeof alert>, 'icon' | 'link' | 'tooltip'> & {
-  backgroundColor?: ColorType;
+  background: {
+    color?: ColorType;
+  },
   depth?: string;
   icon?: Partial<typeof alert.icon> & {
     image?: ColorType;
@@ -137,9 +139,11 @@ export const alertLarge: Partial<AlertTheme> = {
 };
 
 export const alertGeneral: Partial<AlertTheme> = {
-  backgroundColor: {
-    dark: _alertGeneral.backgroundColor,
-    light: _alertGeneral.backgroundColor,
+  background: {
+    color: {
+      dark: _alertGeneral.backgroundColor,
+      light: _alertGeneral.backgroundColor,
+    },
   },
   color: {
     dark: _alertGeneral.color,
@@ -166,9 +170,11 @@ export const alertGeneral: Partial<AlertTheme> = {
 };
 
 export const alertDanger: Partial<AlertTheme> = {
-  backgroundColor: {
-    dark: _alert.backgroundColorDangerDark,
-    light: _alert.backgroundColorDanger,
+  background: {
+    color: {
+      dark: _alert.backgroundColorDangerDark,
+      light: _alert.backgroundColorDanger,
+    },
   },
   color: {
     dark: _alert.colorDangerDark,
@@ -191,9 +197,11 @@ export const alertDanger: Partial<AlertTheme> = {
 };
 
 export const alertError: Partial<AlertTheme> = {
-  backgroundColor: {
-    dark: _alert.backgroundColorErrorDark,
-    light: _alert.backgroundColorError,
+  background: {
+    color: {
+      dark: _alert.backgroundColorErrorDark,
+      light: _alert.backgroundColorError,
+    },
   },
   color: {
     dark: _alert.colorErrorDark,
@@ -216,9 +224,11 @@ export const alertError: Partial<AlertTheme> = {
 };
 
 export const alertInfo: Partial<AlertTheme> = {
-  backgroundColor: {
-    dark: _alert.backgroundColorInfoDark,
-    light: _alert.backgroundColorInfo,
+  background: {
+    color: {
+      dark: _alert.backgroundColorInfoDark,
+      light: _alert.backgroundColorInfo,
+    },
   },
   color: {
     dark: _alert.colorInfoDark,
@@ -241,9 +251,11 @@ export const alertInfo: Partial<AlertTheme> = {
 };
 
 export const alertSuccess: Partial<AlertTheme> = {
-  backgroundColor: {
-    dark: _alert.backgroundColorSuccessDark,
-    light: _alert.backgroundColorSuccess,
+  background: {
+    color: {
+      dark: _alert.backgroundColorSuccessDark,
+      light: _alert.backgroundColorSuccess,
+    },
   },
   color: {
     dark: _alert.colorSuccessDark,
@@ -266,9 +278,11 @@ export const alertSuccess: Partial<AlertTheme> = {
 };
 
 export const alertWarning: Partial<AlertTheme> = {
-  backgroundColor: {
-    dark: _alert.backgroundColorWarningDark,
-    light: _alert.backgroundColorWarning,
+  background: {
+    color: {
+      dark: _alert.backgroundColorWarningDark,
+      light: _alert.backgroundColorWarning,
+    },
   },
   color: {
     dark: _alert.colorWarningDark,
@@ -302,9 +316,11 @@ export const alertInverse: Partial<AlertTheme> = {
 };
 
 export const alertInverseCrossInterface: Partial<AlertTheme> = {
-  backgroundColor: {
-    dark: _alert.backgroundColorCrossInterfaceInverseDark,
-    light: _alert.backgroundColorCrossInterfaceInverse,
+  background: {
+    color: {
+      dark: _alert.backgroundColorCrossInterfaceInverseDark,
+      light: _alert.backgroundColorCrossInterfaceInverse,
+    },
   },
   color: {
     dark: _alert.colorCrossInterfaceInverseDark,
@@ -313,9 +329,11 @@ export const alertInverseCrossInterface: Partial<AlertTheme> = {
 };
 
 export const alertInverseDanger: Partial<AlertTheme> = {
-  backgroundColor: {
-    dark: _alert.backgroundColorDangerInverseDark,
-    light: _alert.backgroundColorDangerInverse,
+  background: {
+    color: {
+      dark: _alert.backgroundColorDangerInverseDark,
+      light: _alert.backgroundColorDangerInverse,
+    },
   },
   color: {
     dark: _alert.colorDangerInverseDark,
@@ -330,9 +348,11 @@ export const alertInverseDanger: Partial<AlertTheme> = {
 };
 
 export const alertInverseError: Partial<AlertTheme> = {
-  backgroundColor: {
-    dark: _alert.backgroundColorInverseErrorDark,
-    light: _alert.backgroundColorInverseError,
+  background: {
+    color: {
+      dark: _alert.backgroundColorInverseErrorDark,
+      light: _alert.backgroundColorInverseError,
+    },
   },
   color: {
     dark: _alert.colorInverseErrorDark,
@@ -341,9 +361,11 @@ export const alertInverseError: Partial<AlertTheme> = {
 };
 
 export const alertInverseInfo: Partial<AlertTheme> = {
-  backgroundColor: {
-    dark: _alert.backgroundColorInfoInverseDark,
-    light: _alert.backgroundColorInfoInverse,
+  background: {
+    color: {
+      dark: _alert.backgroundColorInfoInverseDark,
+      light: _alert.backgroundColorInfoInverse,
+    },
   },
   color: {
     dark: _alert.colorInfoInverseDark,
@@ -362,9 +384,11 @@ export const alertInverseInfo: Partial<AlertTheme> = {
 };
 
 export const alertInverseSuccess: Partial<AlertTheme> = {
-  backgroundColor: {
-    dark: _alert.backgroundColorSuccessInverseDark,
-    light: _alert.backgroundColorSuccessInverse,
+  background: {
+    color: {
+      dark: _alert.backgroundColorSuccessInverseDark,
+      light: _alert.backgroundColorSuccessInverse,
+    },
   },
   color: {
     dark: _alert.colorSuccessInverseDark,
@@ -379,9 +403,11 @@ export const alertInverseSuccess: Partial<AlertTheme> = {
 };
 
 export const alertInverseWarning: Partial<AlertTheme> = {
-  backgroundColor: {
-    dark: _alert.backgroundColorWarningInverseDark,
-    light: _alert.backgroundColorWarningInverse,
+  background: {
+    color: {
+      dark: _alert.backgroundColorWarningInverseDark,
+      light: _alert.backgroundColorWarningInverse,
+    },
   },
   color: {
     dark: _alert.colorWarningInverseDark,
@@ -396,9 +422,11 @@ export const alertInverseWarning: Partial<AlertTheme> = {
 };
 
 export const alertOverlay: Partial<AlertTheme> = {
-  backgroundColor: {
-    dark: _alert.backgroundColorOverlayDark,
-    light: _alert.backgroundColorOverlay,
+  background: {
+    color: {
+      dark: _alert.backgroundColorOverlayDark,
+      light: _alert.backgroundColorOverlay,
+    },
   },
   padding: _alert.paddingOverlay,
   depth: _alert.depthOverlay,

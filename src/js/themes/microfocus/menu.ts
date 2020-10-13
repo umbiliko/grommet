@@ -1,21 +1,26 @@
 import { css } from 'styled-components';
 import { PartialThemeGenerator } from '.';
 import _menu from '../quantum-ux/menu';
+import { backgroundColor } from '../utils/css';
 import pick from '../utils/pick';
 import { color } from './colors';
 import { text } from './text';
 
 export const menu = {
   active: {
-    backgroundColor: {
-      dark: _menu.activeBackgroundColor,
-      light: _menu.activeBackgroundColor,
+    background: {
+      color: {
+        dark: _menu.activeBackgroundColor,
+        light: _menu.activeBackgroundColor,
+      },
     },
   },
   hover: {
-    backgroundColor: {
-      dark: _menu.hoverBackgroundColor,
-      light: _menu.hoverBackgroundColor,
+    background: {
+      color: {
+        dark: _menu.hoverBackgroundColor,
+        light: _menu.hoverBackgroundColor,
+      },
     },
   },
 };
@@ -46,12 +51,12 @@ const generator: PartialThemeGenerator<'menu'> = ({
 
           :hover {
             color: ${pick(text.primary.color)};
-            background-color: ${pick(menu.hover.backgroundColor)};
+            background-color: ${backgroundColor(menu.hover)};
           }
           :active {
             color: ${pick(text.primary.color)};
             line-height: ${text.lineHeight};
-            background-color: ${pick(menu.active.backgroundColor)};
+            background-color: ${backgroundColor(menu.active)};
             font-size: ${text.body.fontSize};
             font-weight: ${text.secondary.fontWeight};
           }

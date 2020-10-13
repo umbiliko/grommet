@@ -4,12 +4,15 @@ import color from '../quantum-ux/color';
 import input from '../quantum-ux/input';
 import inputTextArea from '../quantum-ux/input-text-area';
 import text from '../quantum-ux/text';
+import { borderColor } from '../utils/css';
 
 export const textArea = {
-  borderColor: inputTextArea.borderColor,
-  borderWidth: inputTextArea.borderWidth,
-  borderRadius: 0,
-  borderStyle: inputTextArea.borderStyle,
+  border: {
+    color: inputTextArea.borderColor,
+    radius: 0,
+    style: inputTextArea.borderStyle,
+    width: inputTextArea.borderWidth,
+  },
   height: 'auto',
   padding: inputTextArea.padding,
   resize: 'vertical',
@@ -23,10 +26,10 @@ const generator: PartialThemeGenerator<'textArea'> = ({
     textArea: {
       ...textArea,
       extend: css`
-        border-color: ${textArea.borderColor};
-        border-radius: ${textArea.borderRadius};
-        border-style: ${textArea.borderStyle};
-        border-width: ${textArea.borderWidth};
+        border-color: ${borderColor(textArea)};
+        border-radius: ${textArea.border.radius};
+        border-style: ${textArea.border.style};
+        border-width: ${textArea.border.width};
         padding: ${textArea.padding};
         resize: ${textArea.resize};
         width: ${input.width};

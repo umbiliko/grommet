@@ -14,13 +14,17 @@ export const iconButton = {
   padding: buttonIcon.padding,
 
   active: {
-    backgroundColor: {
-      dark: buttonIcon.backgroundColorActiveDark,
-      light: buttonIcon.backgroundColorActive,
+    background: {
+      color: {
+        dark: buttonIcon.backgroundColorActiveDark,
+        light: buttonIcon.backgroundColorActive,
+      },
     },
-    borderColor: {
-      dark: buttonIcon.borderColorActiveDark,
-      light: buttonIcon.borderColorActive,
+    border: {
+      color: {
+        dark: buttonIcon.borderColorActiveDark,
+        light: buttonIcon.borderColorActive,
+      },
     },
     boxShadow: {
       dark: buttonIcon.boxShadowActiveDark,
@@ -44,13 +48,17 @@ export const iconButton = {
   },
 
   focus: {
-    backgroundColor: {
-      dark: buttonIcon.backgroundColorFocusDark,
-      light: buttonIcon.backgroundColorFocus,
+    background: {
+      color: {
+        dark: buttonIcon.backgroundColorFocusDark,
+        light: buttonIcon.backgroundColorFocus,
+      },
     },
-    borderColor: {
-      dark: buttonIcon.borderColorFocusDark,
-      light: buttonIcon.borderColorFocus,
+    border: {
+      color: {
+        dark: buttonIcon.borderColorFocusDark,
+        light: buttonIcon.borderColorFocus,
+      },
     },
     boxShadow: {
       dark: buttonIcon.boxShadowFocusDark,
@@ -63,13 +71,17 @@ export const iconButton = {
   },
 
   hover: {
-    backgroundColor: {
-      dark: buttonIcon.backgroundColorHoverDark,
-      light: buttonIcon.backgroundColorHover,
+    background: {
+      color: {
+        dark: buttonIcon.backgroundColorHoverDark,
+        light: buttonIcon.backgroundColorHover,
+      },
     },
-    borderColor: {
-      dark: buttonIcon.borderColorHoverDark,
-      light: buttonIcon.borderColorHover,
+    border: {
+      color: {
+        dark: buttonIcon.borderColorHoverDark,
+        light: buttonIcon.borderColorHover,
+      },
     },
     boxShadow: {
       dark: buttonIcon.boxShadowHoverDark,

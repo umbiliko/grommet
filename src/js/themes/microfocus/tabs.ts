@@ -23,7 +23,7 @@ const generator: PartialThemeGenerator<'tabs'> = ({
         }
         button > div > span {
           color: ${pick(tab.color)};
-          border-radius: ${tab.borderRadius};
+          border-radius: ${tab.border.radius};
           padding: 0 0 ${tab.paddingBottom} 0;
           font-size: 0.875rem;
           line-height: ${text.lineHeight};

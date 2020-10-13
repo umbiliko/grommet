@@ -12,7 +12,9 @@ import { text } from './text';
 const sidebarHerculesUX = {
   button: {
     circular: {
-      borderColor: '#627279',
+      border: {
+        color: '#627279',
+      },
     },
   },
   colors: {
@@ -170,7 +172,9 @@ const sidebarQuantumUX = {
     },
 
     active: {
-      borderColor: normalize(color.primary),
+      border: {
+        color: normalize(color.primary),
+      },
       color: normalize(color.darkest),
       fontWeight: text.semiBold.fontWeight,
     },

@@ -3,53 +3,70 @@ import { CheckBoxProps } from '../../../components/CheckBox';
 import _checkbox from '../../quantum-ux/checkbox';
 import _checkboxLabel from '../../quantum-ux/checkbox-label';
 import _common from '../../quantum-ux/common';
+import { backgroundColor, borderColor } from '../../utils/css';
 import themed from '../../utils/pick';
 import { checkboxTick } from './checkboxTick';
 
 export const checkBox = {
-  borderColor: {
-    dark: _checkbox.borderColorDark,
-    light: _checkbox.borderColor,
+  border: {
+    color: {
+      dark: _checkbox.borderColorDark,
+      light: _checkbox.borderColor,
+    },
+    radius: _checkbox.borderRadius,
   },
-  borderRadius: _checkbox.borderRadius,
-  backgroundColor: {
-    dark: _checkbox.backgroundColorDark,
-    light: _checkbox.backgroundColor,
+  background: {
+    color: {
+      dark: _checkbox.backgroundColorDark,
+      light: _checkbox.backgroundColor,
+    },
   },
   size: _checkbox.size,
   transition: _checkbox.transition,
 
   focus: {
-    borderColor: {
-      dark: _checkbox.borderColorFocusDark,
-      light: _checkbox.borderColorFocus,
+    border: {
+      color: {
+        dark: _checkbox.borderColorFocusDark,
+        light: _checkbox.borderColorFocus,
+      },
     },
   },
 
   hover: {
-    backgroundColor: {
-      dark: _checkbox.backgroundColorHoverDark,
-      light: _checkbox.backgroundColorHover,
+    background: {
+      color: {
+        dark: _checkbox.backgroundColorHoverDark,
+        light: _checkbox.backgroundColorHover,
+      },
     },
-    borderColor: {
-      dark: _checkbox.borderColorHoverDark,
-      light: _checkbox.borderColorHover,
+    border: {
+      color: {
+        dark: _checkbox.borderColorHoverDark,
+        light: _checkbox.borderColorHover,
+      },
     },
   },
 
   checked: {
-    backgroundColor: {
-      dark: _checkbox.backgroundColorCheckedDark,
-      light: _checkbox.backgroundColorChecked,
+    background: {
+      color: {
+        dark: _checkbox.backgroundColorCheckedDark,
+        light: _checkbox.backgroundColorChecked,
+      },
     },
-    borderColor: {
-      dark: _checkbox.borderColorCheckedDark,
-      light: _checkbox.borderColorChecked,
+    border: {
+      color: {
+        dark: _checkbox.borderColorCheckedDark,
+        light: _checkbox.borderColorChecked,
+      },
     },
     hover: {
-      backgroundColor: {
-        dark: _checkbox.backgroundColorHoverCheckedDark,
-        light: _checkbox.backgroundColorHoverChecked,
+      background: {
+        color: {
+          dark: _checkbox.backgroundColorHoverCheckedDark,
+          light: _checkbox.backgroundColorHoverChecked,
+        },
       },
     },
   },
@@ -72,13 +89,13 @@ export const checkBoxUncheckedStyle = css`
   div {
     width: ${checkBox.size};
     height: ${checkBox.size};
-    border: 1px solid ${themed(checkBox.borderColor)};
-    border-radius: ${checkBox.borderRadius};
+    border: 1px solid ${borderColor(checkBox)};
+    border-radius: ${checkBox.border.radius};
     transition: ${checkBox.transition};
     -webkit-transition: ${checkBox.transition};
     &:hover {
-      background-color: ${themed(checkBox.hover.backgroundColor)};
-      border-color: ${themed(checkBox.hover.borderColor)};
+      background-color: ${backgroundColor(checkBox.hover)};
+      border-color: ${borderColor(checkBox.hover)};
     }
   }
 `;
@@ -112,17 +129,17 @@ export const checkBoxCheckedStyle = css`
   div > svg {
     width: ${checkBox.size};
     height: ${checkBox.size};
-    border-color: ${themed(checkBox.checked.borderColor)};
-    background-color: ${themed(checkBox.checked.backgroundColor)};
+    border-color: ${borderColor(checkBox.checked)};
+    background-color: ${backgroundColor(checkBox.checked)};
     stroke: ${themed(checkboxTick.color)};
     &:focus {
       animation: ${checkboxTick.animationChecked};
-      border-color: ${themed(checkBox.focus.borderColor)};
+      border-color: ${borderColor(checkBox.focus)};
       box-shadow: ${_common.boxShadowFocus};
     }
     &:hover {
-      border: 1px solid ${themed(checkBox.hover.borderColor)};
-      background-color: ${themed(checkBox.checked.hover.backgroundColor)};
+      border: 1px solid ${borderColor(checkBox.hover)};
+      background-color: ${backgroundColor(checkBox.checked.hover)};
     }
   }
 `;

@@ -1,4 +1,4 @@
-import 'jsdom-global/register'; //at the top of file , even  , before importing react
+// import 'jsdom-global/register'; //at the top of file , even  , before importing react
 
 global.console.warn = message => {
   throw message;
